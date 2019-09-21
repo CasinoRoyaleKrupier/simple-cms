@@ -3,6 +3,7 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    background-color: #000000;
     color: #000000;
 }
 
@@ -15,20 +16,24 @@ body
 #dock1
 {
     width: 40%;
-    height: 900px;
+    height: 100%;
     background-color: #ffdd00;
     float: left;
+    position: fixed;
 }
 
 #dock2
 {
     width: 50%;
     height: 100%;
+    min-height: 100% !important;
+    padding: 5%;
+    margin-left: 40%;
     background-color: #000000;
     color: #ffdd00;
     font-size: 20px;
     float: left;
-    padding: 5%;
+    text-align: justify;
 }
 
 #logo
@@ -65,4 +70,18 @@ a, a:link, a:visited
     text-decoration: none;
     color: #000000;
     display: block;
+}
+
+#about_content
+{
+    display: block;
+}
+
+#screenshot_content
+{
+    display: none;
+}
+#download_content
+{
+    display: none;
 }

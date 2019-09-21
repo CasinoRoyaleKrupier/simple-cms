@@ -16,34 +16,44 @@
 <body>
     <div id="container">
         <div id="dock1">
-            <div id="logo">System information</div>
+            <div id="logo">systeminfo</div>
 
-            <div class="section-button" id="system_information" onclick="get_section_about();">
-                <a href="#">
-                    <i class="icon-cog-alt"></i>
-                    About program
-                </a>
+            <div class="section-button" onclick="get_section_about();">
+                <i class="icon-cog-alt"></i>
+                About program
             </div>
-            <div class="section-button" id="cpu_information" onclick="get_section_download();">
-                <a href="#">
-                    <i class="icon-download"></i>
-                    Download
-                </a>
+            <div class="section-button" onclick="get_section_screenshot();">
+                <i class="icon-desktop"></i>
+                Screenshots
             </div>
-            <div class="section-button" id="memory_information" onclick="get_section_screenshot();">
-                <a href="#">
-                    <i class="icon-desktop"></i>
-                    Screenshots
-                </a>
+            <div class="section-button" onclick="get_section_download();">
+                <i class="icon-download"></i>
+                Download
             </div>
-            <div class="section-button" id="network_information">
-                <a href="https://github.com/CasinoRoyaleKrupier/systeminfo/issues">
-                    <i class="icon-network"></i>
-                    Network
+            <div class="section-button">
+                <a href="https://github.com/CasinoRoyaleKrupier/systeminfo/issues" target="_blank">
+                    <i class="icon-bug"></i>
+                    Bug tracer
                 </a>
             </div>
         </div>
-        <div id="dock2"></div>
+        <div id="dock2">
+            <span id="about_content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis. Mauris imperdiet vel nisi quis pharetra. Donec lacus diam, consectetur in lectus id, commodo luctus ex. Praesent bibendum lorem vel libero venenatis tincidunt. Aenean facilisis purus eget lorem lacinia, dignissim porta risus tristique. Suspendisse hendrerit elit nisl, eget mollis magna scelerisque ut. Nunc posuere risus nec sem venenatis faucibus eget vel tortor. Nulla ut facilisis enim.
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis. Mauris imperdiet vel nisi quis pharetra. Donec lacus diam, consectetur in lectus id, commodo luctus ex. Praesent bibendum lorem vel libero venenatis tincidunt. Aenean facilisis purus eget lorem lacinia, dignissim porta risus tristique. Suspendisse hendrerit elit nisl, eget mollis magna scelerisque ut. Nunc posuere risus nec sem venenatis faucibus eget vel tortor. Nulla ut facilisis enim.
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis. Mauris imperdiet vel nisi quis pharetra. Donec lacus diam, consectetur in lectus id, commodo luctus ex. Praesent bibendum lorem vel libero venenatis tincidunt. Aenean facilisis purus eget lorem lacinia, dignissim porta risus tristique. Suspendisse hendrerit elit nisl, eget mollis magna scelerisque ut. Nunc posuere risus nec sem venenatis faucibus eget vel tortor. Nulla ut facilisis enim.
+                <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis. Mauris imperdiet vel nisi quis pharetra. Donec lacus diam, consectetur in lectus id, commodo luctus ex. Praesent bibendum lorem vel libero venenatis tincidunt. Aenean facilisis purus eget lorem lacinia, dignissim porta risus tristique. Suspendisse hendrerit elit nisl, eget mollis magna scelerisque ut. Nunc posuere risus nec sem venenatis faucibus eget vel tortor. Nulla ut facilisis enim.
+            </span>
+            <span id="screenshot_content">
+                Screenshots program
+            </span>
+            <span id="download_content">
+                Download program
+            </span>
+        </div>
     </div>
 
     <script src="scripts/main.js"></script>
