@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="styles/fontello/css/fontello.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/get_os.js"></script>
+
+    <title>systeminfo</title>
+</head>
+<body>
+    <div id="container">
+        <div id="dock1">
+            <div id="logo">System information</div>
+
+            <div class="section-button" id="system_information" onclick="get_section_about();">
+                <a href="#">
+                    <i class="icon-cog-alt"></i>
+                    About program
+                </a>
+            </div>
+            <div class="section-button" id="cpu_information" onclick="get_section_download();">
+                <a href="#">
+                    <i class="icon-download"></i>
+                    Download
+                </a>
+            </div>
+            <div class="section-button" id="memory_information" onclick="get_section_screenshot();">
+                <a href="#">
+                    <i class="icon-desktop"></i>
+                    Screenshots
+                </a>
+            </div>
+            <div class="section-button" id="network_information">
+                <a href="https://github.com/CasinoRoyaleKrupier/systeminfo/issues">
+                    <i class="icon-network"></i>
+                    Network
+                </a>
+            </div>
+        </div>
+        <div id="dock2"></div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+}
+
+#container
+{
+    width: auto;
+    height: auto;
+}
+
+#dock1
+{
+    width: 40%;
+    height: 900px;
+    background-color: #ffdd00;
+    float: left;
+}
+
+#dock2
+{
+    width: 50%;
+    height: 100%;
+    background-color: #000000;
+    color: #ffdd00;
+    font-size: 20px;
+    float: left;
+    padding: 5%;
+}
+
+#logo
+{
+    margin: 30px;
+    font-size: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.section-button
+{
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+    padding: 20px 0;
+    padding-left: 10px;
+    font-size: 30px;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: #ddbb00;
+}
+
+.section-button:hover
+{
+    background-color: #ccaa00;
+}
+
+a, a:link, a:visited
+{
+    text-decoration: none;
+    color: #000000;
+    display: block;
+}
