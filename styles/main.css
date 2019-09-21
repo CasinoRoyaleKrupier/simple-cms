@@ -58,6 +58,7 @@ body
     margin-right: auto;
     border-radius: 10px;
     background-color: #ddbb00;
+    transition-duration: 0.5s;
 }
 
 .section-button:hover
@@ -72,16 +73,25 @@ a, a:link, a:visited
     display: block;
 }
 
-#about_content
+#animation
 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#animation_images
+{
+    width: auto;
+    height: auto;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
 }
 
-#screenshot_content
-{
-    display: none;
-}
-#download_content
+#about_content, #screenshot_content, #download_content
 {
     display: none;
 }

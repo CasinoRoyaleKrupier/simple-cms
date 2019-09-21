@@ -1,37 +1,39 @@
-window.onload = getOS();
-
-function get_section_about()
+$(document).ready(function()
 {
-    if (document.getElementById("about_content").style.display = "none") {
-        document.getElementById("about_content").style.display = "block";
-        document.getElementById("screenshot_content").style.display = "none";
-        document.getElementById("download_content").style.display = "none";
-    }
-    else if (document.getElementById("about_content").style.display = "block") {
-        document.getElementById("about_content").style.display = "none";
-    }
-}
 
-function get_section_screenshot()
-{
-    if (document.getElementById("screenshot_content").style.display = "none") {
-        document.getElementById("about_content").style.display = "none";
-        document.getElementById("screenshot_content").style.display = "block";
-        document.getElementById("download_content").style.display = "none";
-    }
-    else if (document.getElementById("screenshot_content").style.display = "block") {
-        document.getElementById("screenshot_content").style.display = "none";
-    }
-}
+    $("#about").click(function()
+    {
+        $("#animation").hide();
 
-function get_section_download()
-{
-    if (document.getElementById("download_content").style.display = "none") {
-        document.getElementById("about_content").style.display = "none";
-        document.getElementById("screenshot_content").style.display = "none";
-        document.getElementById("download_content").style.display = "block";
-    }
-    else if (document.getElementById("download_content").style.display = "block") {
-        document.getElementById("download_content").style.display = "none";
-    }
-}
+        $("#about_content").show("fast");
+        $("#about_content").animate({opacity: 1});
+        $("#screenshot_content").hide();
+        $("#screenshot_content").animate({opacity: 0});
+        $("#download_content").hide();
+        $("#download_content").animate({opacity: 0});
+    });
+
+    $("#screenshots").click(function()
+    {
+        $("#animation").hide();
+
+        $("#about_content").hide();
+        $("#about_content").animate({opacity: 0});
+        $("#screenshot_content").show("fast");
+        $("#screenshot_content").animate({opacity: 1});
+        $("#download_content").hide();
+        $("#download_content").animate({opacity: 0});
+    });
+
+    $("#download").click(function()
+    {
+        $("#animation").hide();
+
+        $("#about_content").hide();
+        $("#about_content").animate({opacity: 0});
+        $("#screenshot_content").hide();
+        $("#screenshot_content").animate({opacity: 0});
+        $("#download_content").show("fast");
+        $("#download_content").animate({opacity: 1});
+    });
+});

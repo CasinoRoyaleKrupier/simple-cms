@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 
+    <script src="scripts/jquery-3.4.1.min.js"></script>
     <script src="scripts/get_os.js"></script>
 
     <title>systeminfo</title>
@@ -18,15 +19,15 @@
         <div id="dock1">
             <div id="logo">systeminfo</div>
 
-            <div class="section-button" onclick="get_section_about();">
+            <div class="section-button" id="about">
                 <i class="icon-cog-alt"></i>
                 About program
             </div>
-            <div class="section-button" onclick="get_section_screenshot();">
+            <div class="section-button" id="screenshots">
                 <i class="icon-desktop"></i>
                 Screenshots
             </div>
-            <div class="section-button" onclick="get_section_download();">
+            <div class="section-button" id="download">
                 <i class="icon-download"></i>
                 Download
             </div>
@@ -38,20 +39,21 @@
             </div>
         </div>
         <div id="dock2">
+            <div id="animation">
+                Example of program use
+                <img src="images/animation.gif" id="animation_images">
+            </div>
             <span id="about_content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis. Mauris imperdiet vel nisi quis pharetra. Donec lacus diam, consectetur in lectus id, commodo luctus ex. Praesent bibendum lorem vel libero venenatis tincidunt. Aenean facilisis purus eget lorem lacinia, dignissim porta risus tristique. Suspendisse hendrerit elit nisl, eget mollis magna scelerisque ut. Nunc posuere risus nec sem venenatis faucibus eget vel tortor. Nulla ut facilisis enim.
-                <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis. Mauris imperdiet vel nisi quis pharetra. Donec lacus diam, consectetur in lectus id, commodo luctus ex. Praesent bibendum lorem vel libero venenatis tincidunt. Aenean facilisis purus eget lorem lacinia, dignissim porta risus tristique. Suspendisse hendrerit elit nisl, eget mollis magna scelerisque ut. Nunc posuere risus nec sem venenatis faucibus eget vel tortor. Nulla ut facilisis enim.
-                <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis. Mauris imperdiet vel nisi quis pharetra. Donec lacus diam, consectetur in lectus id, commodo luctus ex. Praesent bibendum lorem vel libero venenatis tincidunt. Aenean facilisis purus eget lorem lacinia, dignissim porta risus tristique. Suspendisse hendrerit elit nisl, eget mollis magna scelerisque ut. Nunc posuere risus nec sem venenatis faucibus eget vel tortor. Nulla ut facilisis enim.
-                <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis. Mauris imperdiet vel nisi quis pharetra. Donec lacus diam, consectetur in lectus id, commodo luctus ex. Praesent bibendum lorem vel libero venenatis tincidunt. Aenean facilisis purus eget lorem lacinia, dignissim porta risus tristique. Suspendisse hendrerit elit nisl, eget mollis magna scelerisque ut. Nunc posuere risus nec sem venenatis faucibus eget vel tortor. Nulla ut facilisis enim.
+                About <br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis.
             </span>
             <span id="screenshot_content">
-                Screenshots program
+                Screenshots program<br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis.
             </span>
             <span id="download_content">
-                Download program
+                Download program<br><br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis.
             </span>
         </div>
     </div>
