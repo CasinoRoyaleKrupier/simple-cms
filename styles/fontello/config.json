@@ -65,6 +65,12 @@
       "css": "bug",
       "code": 61832,
       "src": "fontawesome"
+    },
+    {
+      "uid": "jh3jpcb1t1bcm80gidkadilh080aq79h",
+      "css": "menu",
+      "code": 59397,
+      "src": "typicons"
     }
   ]
 }

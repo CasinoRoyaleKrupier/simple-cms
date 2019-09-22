@@ -5,11 +5,11 @@ $(document).ready(function()
     {
         $("#animation").hide();
 
-        $("#about_content").show("fast");
+        $("#about_content").css("display", "block");
         $("#about_content").animate({opacity: 1});
-        $("#screenshot_content").hide();
+        $("#screenshot_content").css("display", "none");
         $("#screenshot_content").animate({opacity: 0});
-        $("#download_content").hide();
+        $("#download_content").css("display", "none");
         $("#download_content").animate({opacity: 0});
     });
 
@@ -17,11 +17,11 @@ $(document).ready(function()
     {
         $("#animation").hide();
 
-        $("#about_content").hide();
+        $("#about_content").css("display", "none");
         $("#about_content").animate({opacity: 0});
-        $("#screenshot_content").show("fast");
+        $("#screenshot_content").css("display", "block");
         $("#screenshot_content").animate({opacity: 1});
-        $("#download_content").hide();
+        $("#download_content").css("display", "none");
         $("#download_content").animate({opacity: 0});
     });
 
@@ -29,11 +29,19 @@ $(document).ready(function()
     {
         $("#animation").hide();
 
-        $("#about_content").hide();
+        $("#about_content").css("display", "none");
         $("#about_content").animate({opacity: 0});
-        $("#screenshot_content").hide();
+        $("#screenshot_content").css("display", "none");
         $("#screenshot_content").animate({opacity: 0});
-        $("#download_content").show("fast");
+        $("#download_content").css("display", "block");
         $("#download_content").animate({opacity: 1});
+    });
+
+    $("#nav_menu").click(function ()
+    {
+        if (window.innerWidth <= 1000)
+        {
+            $("#buttons").toggle();
+        }
     });
 });
