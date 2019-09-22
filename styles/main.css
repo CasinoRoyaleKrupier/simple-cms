@@ -21,7 +21,7 @@ body
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #000000;
+    background-color: #202020;
     color: #000000;
     overflow: visible;
 }
@@ -48,7 +48,6 @@ body
     min-height: 100% !important;
     padding: 5%;
     margin-left: 40%;
-    background-color: #000000;
     color: #ffdd00;
     font-size: 20px;
     float: left;
