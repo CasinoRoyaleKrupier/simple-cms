@@ -1,3 +1,18 @@
+// window.onload = check_width_nav_menu();
+
+// function check_width_nav_menu()
+// {
+//     for (i = 0; i < 2; i++)
+//     {
+//         var body_width = $(window).width();
+//         if (body_width > 1000 && $('#buttons').css('display') == 'none')
+//         {
+//             $("#buttons").css("display", "block");
+//         }
+//         i--;
+//     }
+// }
+
 $(document).ready(function()
 {
 
@@ -44,4 +59,9 @@ $(document).ready(function()
             $("#buttons").toggle();
         }
     });
+
+    $("#bug_tracer").click(function()
+    {
+        location.href = "https://github.com/CasinoRoyaleKrupier/systeminfo/issues";
+    })
 });
