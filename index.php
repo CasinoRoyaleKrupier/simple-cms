@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="styles/fontello/css/fontello.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 
@@ -17,23 +16,23 @@
     <div id="container">
         <div id="dock1">
             <div id="logo">systeminfo</div>
-            <div id="nav_menu"><i class="icon-menu"></i></div>
+            <div id="nav_menu"><img src="images/nav-menu-button.svg"></div>
 
             <div id="buttons">
                 <div class="section-button" id="about">
-                    <i class="icon-cog-alt"></i>
+                    <img src="images/main_about_content.svg">
                     About program
                 </div>
                 <div class="section-button" id="screenshots">
-                    <i class="icon-desktop"></i>
+                    <img src="images/screenshot.svg">
                     Screenshots
                 </div>
                 <div class="section-button" id="download">
-                    <i class="icon-download"></i>
+                    <img src="images/download.svg">
                     Download
                 </div>
                 <div class="section-button" id="bug_tracer">
-                    <i class="icon-bug"></i>
+                    <img src="images/issuse.svg">
                     Bug tracer
                 </div>
             </div>
@@ -52,8 +51,27 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis.
             </span>
             <span id="download_content">
-                Download program<br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis.
+                <?php
+                    $database = mysqli_connect("localhost", "root", "", "systeminfo_cms");
+
+                    if ( mysqli_connect_errno() )
+                    {
+                        echo "Database connection error has occurred";
+                    }
+
+                    $query = mysqli_query($database, "SELECT * FROM download_content");
+
+                    while($row = mysqli_fetch_array($query))
+                    {
+                        $title = $row['title'];
+                        $content = $row['content'];
+                    }
+
+                    mysqli_close($database);
+
+                    echo "<h3>" . $title . "</h3><br>";
+                    echo $content;
+                ?>
             </span>
         </div>
     </div>

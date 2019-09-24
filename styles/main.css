@@ -43,12 +43,14 @@ body
     height: 100%;
     background-color: #ffdd00;
     float: left;
+    position: fixed;
 }
 
 #dock2
 {
     width: 65%;
     height: 100%;
+    margin-left: 35%;
     color: #ffdd00;
     font-size: 20px;
     float: left;
@@ -70,6 +72,11 @@ body
     display: none;
 }
 
+#nav_menu img
+{
+    height: 50px;
+}
+
 #buttons
 {
     margin-top: 30px;
@@ -79,10 +86,8 @@ body
 {
     width: 90%;
     margin: 10px;
-    padding: 20px 0;
-    padding-left: 10px;
+    padding: 15px 0px 15px 10px;
     font-size: 30px;
-    vertical-align: middle;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
@@ -93,6 +98,12 @@ body
 .section-button:hover
 {
     background-color: #ccaa00;
+}
+
+.section-button img
+{
+    height: 40px;
+    vertical-align: middle;
 }
 
 a, a:link, a:visited
@@ -172,6 +183,7 @@ a, a:link, a:visited
     {
         width: 100%;
         height: auto;
+        margin-top: 95px;
         margin-left: auto;
         margin-right: auto;
         color: #ffdd00;
@@ -191,7 +203,7 @@ a, a:link, a:visited
         display: block;
         float: right;
         font-size: 30px;
-        margin-top: 30px;
+        margin-top: 20px;
         margin-right: 10px;
         float: right;
     }
@@ -223,7 +235,7 @@ a, a:link, a:visited
 
     #animation_image
     {
-        width: 70%;
+        width: 90%;
         height: auto;
         text-align: center;
 
