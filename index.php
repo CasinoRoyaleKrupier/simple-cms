@@ -45,16 +45,62 @@
                 <img src="images/animation.gif" id="animation_image">
             </div>
             <span id="about_content">
-                About <br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis.
+                <?php
+                    require_once "administrator/connect.php";
+
+                    $database = mysqli_connect($host, $db_user, $db_password, $db_name);
+
+                    if ( mysqli_connect_errno() )
+                    {
+                        echo "Database connection error has occurred";
+                    }
+
+                    mysqli_query($database, "SET NAMES utf8");
+                    $query = mysqli_query($database, "SELECT * FROM about_content");
+
+                    while($row = mysqli_fetch_array($query))
+                    {
+                        $title = $row['title'];
+                        $content = $row['content'];
+                    }
+
+                    mysqli_close($database);
+
+                    echo "<h3>" . $title . "</h3><br>";
+                    echo $content;
+                ?>
             </span>
             <span id="screenshot_content">
-                Screenshots program<br><br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur eleifend enim, quis tristique odio varius sed. Etiam quis venenatis enim, id eleifend purus. Aliquam at tincidunt enim. Vestibulum fringilla, purus vel lobortis tempor, tellus risus volutpat magna, ut commodo est nisi ac erat. Cras aliquet imperdiet felis id convallis.
+                <?php
+                    require_once "administrator/connect.php";
+
+                    $database = mysqli_connect($host, $db_user, $db_password, $db_name);
+
+                    if ( mysqli_connect_errno() )
+                    {
+                        echo "Database connection error has occurred";
+                    }
+
+                    mysqli_query($database, "SET NAMES utf8");
+                    $query = mysqli_query($database, "SELECT * FROM screenshot_content");
+
+                    while($row = mysqli_fetch_array($query))
+                    {
+                        $title = $row['title'];
+                        $content = $row['content'];
+                    }
+
+                    mysqli_close($database);
+
+                    echo "<h3>" . $title . "</h3><br>";
+                    echo $content;
+                ?>
             </span>
             <span id="download_content">
                 <?php
-                    $database = mysqli_connect("localhost", "root", "", "systeminfo_cms");
+                    require_once "administrator/connect.php";
+
+                    $database = mysqli_connect($host, $db_user, $db_password, $db_name);
 
                     if ( mysqli_connect_errno() )
                     {
