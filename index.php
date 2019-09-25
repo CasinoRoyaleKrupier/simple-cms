@@ -61,6 +61,7 @@
                         echo "Database connection error has occurred";
                     }
 
+                    mysqli_query($database, "SET NAMES utf8");
                     $query = mysqli_query($database, "SELECT * FROM download_content");
 
                     while($row = mysqli_fetch_array($query))
