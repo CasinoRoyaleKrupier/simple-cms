@@ -1,3 +1,9 @@
+<?php
+
+    session_start();
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,78 +54,81 @@
                 <?php
                     require_once "administrator/connect.php";
 
-                    $database = mysqli_connect($host, $db_user, $db_password, $db_name);
+                    $connection = @new mysqli($host, $db_user, $db_password, $db_name);
 
-                    if ( mysqli_connect_errno() )
+                    if ($connection->connect_errno != 0)
                     {
-                        echo "Database connection error has occurred";
+                        echo "Error: " . $connection->connect_errno;
                     }
-
-                    mysqli_query($database, "SET NAMES utf8");
-                    $query = mysqli_query($database, "SELECT * FROM about_content");
-
-                    while($row = mysqli_fetch_array($query))
+                    else
                     {
-                        $title = $row['title'];
-                        $content = $row['content'];
+                        if ($result = $connection->query("SELECT * FROM about_content WHERE id = 1"))
+                        {
+                            $row = $result->fetch_assoc();
+                            $title = $row['title'];
+                            $content = $row['content'];
+
+                            echo "<h3>" . $title . "</h3><br>";
+                            echo $content;
+                        }
+
+                        $result->close();
+                        $connection->close();
                     }
-
-                    mysqli_close($database);
-
-                    echo "<h3>" . $title . "</h3><br>";
-                    echo $content;
                 ?>
             </span>
             <span id="screenshot_content">
                 <?php
                     require_once "administrator/connect.php";
 
-                    $database = mysqli_connect($host, $db_user, $db_password, $db_name);
+                    $connection = @new mysqli($host, $db_user, $db_password, $db_name);
 
-                    if ( mysqli_connect_errno() )
+                    if ($connection->connect_errno != 0)
                     {
-                        echo "Database connection error has occurred";
+                        echo "Error: " . $connection->connect_errno;
                     }
-
-                    mysqli_query($database, "SET NAMES utf8");
-                    $query = mysqli_query($database, "SELECT * FROM screenshot_content");
-
-                    while($row = mysqli_fetch_array($query))
+                    else
                     {
-                        $title = $row['title'];
-                        $content = $row['content'];
+                        if ($result = $connection->query("SELECT * FROM screenshot_content WHERE id = 1"))
+                        {
+                            $row = $result->fetch_assoc();
+                            $title = $row['title'];
+                            $content = $row['content'];
+
+                            echo "<h3>" . $title . "</h3><br>";
+                            echo $content;
+                        }
+
+                        $result->close();
+                        $connection->close();
                     }
-
-                    mysqli_close($database);
-
-                    echo "<h3>" . $title . "</h3><br>";
-                    echo $content;
                 ?>
             </span>
             <span id="download_content">
                 <?php
                     require_once "administrator/connect.php";
 
-                    $database = mysqli_connect($host, $db_user, $db_password, $db_name);
+                    $connection = @new mysqli($host, $db_user, $db_password, $db_name);
 
-                    if ( mysqli_connect_errno() )
+                    if ($connection->connect_errno != 0)
                     {
-                        echo "Database connection error has occurred";
+                        echo "Error: " . $connection->connect_errno;
                     }
-
-                    mysqli_query($database, "SET NAMES utf8");
-                    $query = mysqli_query($database, "SELECT * FROM download_content");
-
-                    while($row = mysqli_fetch_array($query))
+                    else
                     {
-                        $title = $row['title'];
-                        $content = $row['content'];
+                        if ($result = $connection->query("SELECT * FROM download_content WHERE id = 1"))
+                        {
+                            $row = $result->fetch_assoc();
+                            $title = $row['title'];
+                            $content = $row['content'];
+
+                            echo "<h3>" . $title . "</h3><br>";
+                            echo $content;
+                        }
+
+                        $result->close();
+                        $connection->close();
                     }
-
-                    mysqli_close($database);
-
-                    echo "<h3>" . $title . "</h3><br>";
-                    echo $content;
                 ?>
             </span>
         </div>
