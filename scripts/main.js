@@ -68,7 +68,7 @@ $(document).ready(function()
     {
         if (window.innerWidth <= 1000)
         {
-            $("#buttons").toggle();
+            $("#buttons").slideToggle();
         }
     });
 

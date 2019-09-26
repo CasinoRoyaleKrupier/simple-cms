@@ -23,7 +23,7 @@
 <body>
     <div id="container">
         <div id="dock1">
-            <div id="logo">systeminfo</div>
+            <div id="logo"><a href="index.php">systeminfo</a></div>
             <div id="nav_menu"><img src="images/nav-menu-button.svg"></div>
 
             <div id="buttons">

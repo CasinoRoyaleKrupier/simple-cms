@@ -22,8 +22,6 @@
         $login = htmlentities($login, ENT_QUOTES, "UTF-8");
         $password = htmlentities($password, ENT_QUOTES, "UTF-8");
 
-        //$sql = "SELECT * FROM administrators WHERE username = '$login' AND pass = '$password'";
-
         if ( $result = $connection->query(sprintf("SELECT * FROM administrators WHERE username = '%s' AND pass = '%s'", mysqli_real_escape_string($connection, $login), mysqli_real_escape_string($connection, $password))))
         {
             $user_count = $result->num_rows;
@@ -42,7 +40,7 @@
             }
             else
             {
-                $_SESSION['error'] = '<span style="color: red;">Incorect login or password!</span>';
+                $_SESSION['error'] = '<div style="color: red; margin-top: 10px; font-size: 18px; font-family: \'Roboto\', sans-serif;">Incorect login or password!</div>';
                 header('Location: index.php');
             }
         }
