@@ -1,0 +1,35 @@
+#nav_panel
+{
+    width: 150px;
+    height: 100%;
+    background-color: #303030;
+    color: #ffffff;
+    position: fixed;
+}
+
+#nav_bar_buttons_section
+{
+    width: 100%;
+}
+
+#nav_bar_buttons_section a,
+#nav_bar_buttons_section a:link,
+#nav_bar_buttons_section a:visited,
+#nav_bar_buttons_section a:active
+{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.nav_bar_button
+{
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav_bar_button:hover
+{
+    background-color: #414141;
+    color: #dd7600;
+}
