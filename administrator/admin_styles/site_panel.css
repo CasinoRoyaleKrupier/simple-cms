@@ -1,0 +1,44 @@
+.section
+{
+    height: 200px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.section_left
+{
+    width: 20%;
+    float: left;
+}
+
+.section_name
+{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section_title
+{
+    width: 100%;
+    margin-top: 10px;
+}
+
+.section_right
+{
+    width: 80%;
+    float: left;
+}
+
+.section textarea
+{
+    width: 100%;
+    height: 180px;
+    font-size: 15px;
+}
+
+.section input[type=submit]
+{
+    margin: 20px;
+    padding: 15px 10px;
+}

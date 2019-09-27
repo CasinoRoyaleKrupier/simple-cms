@@ -1,6 +1,6 @@
 #nav_panel
 {
-    width: 150px;
+    width: 10%;
     height: 100%;
     margin-top: 40px;
     background-color: #303030;
@@ -28,22 +28,5 @@
 {
     color: #dd7600;
     background-color: #414141;
+    font-weight: bold;
 }
-
-/* #nav_bar_buttons_section a,
-#nav_bar_buttons_section a:link,
-#nav_bar_buttons_section a:visited,
-#nav_bar_buttons_section a:active
-{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.nav_bar_buttons_section a:hover
-{
-    background-color: #414141;
-    color: #dd7600;
-} */
-
-
-

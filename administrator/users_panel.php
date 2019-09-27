@@ -55,11 +55,10 @@
 
     <div id="container">
         <div id="content">
-            <?php require_once "connect.php"; ?>
-
-            Logged user: <?php echo $_SESSION['user']; ?><br><br>
-
-            Database name: <?php echo $db_name ?><br>
+            Username: <input type="text"><br>
+            Old password:<input type="text"><br>
+            New password:<input type="text"><br>
+            E-mail:<input type="text"><br>
         </div>
     </div>
 </body>
