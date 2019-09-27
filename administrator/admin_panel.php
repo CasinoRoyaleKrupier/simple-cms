@@ -31,6 +31,9 @@
         <div class="top_bar_button left">
             <a href="../index.php">Test site</a>
         </div>
+        <div class="top_bar_button left">
+            <a href="index.php">Admin panel</a>
+        </div>
         <div class="top_bar_button right">
             <a href="logout.php">Log out</a>
         </div>

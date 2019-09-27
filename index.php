@@ -59,7 +59,10 @@
 <body>
     <div id="top_bar">
         <div class="top_bar_button left">
-            <a href="index.php">Test Site</a>
+            <a href="index.php">Test site</a>
+        </div>
+        <div class="top_bar_button left">
+            <a href="administrator/index.php">Admin panel</a>
         </div>
         <div class="top_bar_button right">
             <a href="administrator/logout.php">Log out</a>
@@ -102,83 +105,26 @@
             </div>
             <div id="about_content">
                 <?php
-                    require_once "administrator/connect.php";
+                    require_once "administrator/get_about.php";
 
-                    $connection = @new mysqli($host, $db_user, $db_password, $db_name);
-
-                    if ($connection->connect_errno != 0)
-                    {
-                        echo "Error: " . $connection->connect_errno;
-                    }
-                    else
-                    {
-                        if ($result = $connection->query("SELECT * FROM about_content WHERE id = 1"))
-                        {
-                            $row = $result->fetch_assoc();
-                            $title = $row['title'];
-                            $content = $row['content'];
-
-                            echo "<h3>" . $title . "</h3><br>";
-                            echo $content;
-                        }
-
-                        $result->close();
-                        $connection->close();
-                    }
+                    echo "<h3>" . $title . "</h3><br>";
+                    echo $content;
                 ?>
             </div>
             <div id="screenshot_content">
                 <?php
-                    require_once "administrator/connect.php";
+                    require_once "administrator/get_screenshot.php";
 
-                    $connection = @new mysqli($host, $db_user, $db_password, $db_name);
-
-                    if ($connection->connect_errno != 0)
-                    {
-                        echo "Error: " . $connection->connect_errno;
-                    }
-                    else
-                    {
-                        if ($result = $connection->query("SELECT * FROM screenshot_content WHERE id = 1"))
-                        {
-                            $row = $result->fetch_assoc();
-                            $title = $row['title'];
-                            $content = $row['content'];
-
-                            echo "<h3>" . $title . "</h3><br>";
-                            echo $content;
-                        }
-
-                        $result->close();
-                        $connection->close();
-                    }
+                    echo "<h3>" . $title . "</h3><br>";
+                    echo $content;
                 ?>
             </div>
             <div id="download_content">
                 <?php
-                    require_once "administrator/connect.php";
+                    require_once "administrator/get_download.php";
 
-                    $connection = @new mysqli($host, $db_user, $db_password, $db_name);
-
-                    if ($connection->connect_errno != 0)
-                    {
-                        echo "Error: " . $connection->connect_errno;
-                    }
-                    else
-                    {
-                        if ($result = $connection->query("SELECT * FROM download_content WHERE id = 1"))
-                        {
-                            $row = $result->fetch_assoc();
-                            $title = $row['title'];
-                            $content = $row['content'];
-
-                            echo "<h3>" . $title . "</h3><br>";
-                            echo $content;
-                        }
-
-                        $result->close();
-                        $connection->close();
-                    }
+                    echo "<h3>" . $title . "</h3><br>";
+                    echo $content;
                 ?>
             </div>
     </div>
