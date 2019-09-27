@@ -4,7 +4,7 @@
 
     if (isset($_SESSION['logged']) && ($_SESSION['logged'] == true))
     {
-        header('Location: control_panel.php');
+        header('Location: admin_panel.php');
         exit();
     }
 

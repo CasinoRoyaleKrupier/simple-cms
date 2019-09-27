@@ -35,7 +35,7 @@
                 $_SESSION['email'] = $row['mail'];
 
                 unset($_SESSION['error']);
-                header('Location: control_panel.php');
+                header('Location: admin_panel.php');
                 $result->close();
             }
             else

@@ -7,7 +7,7 @@
         background-color: #ffdd00;
     }
 
-    #content_section
+    #container
     {
         width: 100%;
         height: auto;
@@ -55,9 +55,16 @@
         transition-duration: 0.5s;
     }
 
+    #animation,
+    #about_content,
+    #screenshot_content,
+    #download_content
+    {
+        margin-top: 150px;
+    }
+
     .animation_title
     {
-
         margin-bottom: 20px;
         display: block;
     }

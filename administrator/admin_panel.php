@@ -28,13 +28,13 @@
 </head>
 <body>
     <div id="top_bar">
-        <div class="top_bar_button_left">
+        <div class="top_bar_button left">
             <a href="../index.php">Test Site</a>
         </div>
-        <div class="top_bar_button_right">
+        <div class="top_bar_button right">
             <a href="logout.php">Log out</a>
         </div>
-        <div class="top_bar_button_right">
+        <div class="top_bar_button right">
             <a href="#">
                 <?php echo $_SESSION['user'] . ""; ?>
             </a>
@@ -43,7 +43,7 @@
 
     <div id="nav_panel">
     <div class="nav_bar_button">
-            <a href="control_panel.php">Main Site</a>
+            <a href="admin_panel.php">Main Site</a>
         </div>
         <div class="nav_bar_button">
             <a href="#">Users</a>
@@ -54,7 +54,22 @@
     </div>
 
     <div id="container">
-        container
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
+            container <br><br><br><br>
     </div>
 </body>
 </html>
