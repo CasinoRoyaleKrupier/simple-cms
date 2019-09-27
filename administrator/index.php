@@ -37,6 +37,8 @@
                 echo $_SESSION['error'];
             }
         ?>
+
+        <a href="../index.php">Return to the side</a>
     </div>
 </body>
 </html>

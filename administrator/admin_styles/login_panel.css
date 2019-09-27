@@ -4,6 +4,7 @@ body
     background: url(../../images/login_panel.png);
     background-attachment: fixed;
     color: #ffffff;
+    font-family: 'Roboto', sans-serif;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -75,6 +76,37 @@ input[type=submit]:focus
 }
 
 input[type=submit]:hover
+{
+    background-color: #ff8800;
+}
+
+a
+{
+    width: 150px;
+    background-color: #dd7600;
+    font-size: 15px;
+    color: #ffffff;
+    padding: 10px 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+input[type=button]:focus
+{
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+    box-shadow: 0px 0px 15px 5px rgba(204,204,204,0.9);
+}
+
+a:hover
 {
     background-color: #ff8800;
 }
