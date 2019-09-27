@@ -1,6 +1,7 @@
 body
 {
-    background: url(../../images/login_panel.png); /* Background pattern from Toptal Subtle Patterns */
+    /* Background pattern from Toptal Subtle Patterns */
+    background: url(../../images/login_panel.png);
     background-attachment: fixed;
     color: #ffffff;
     font-size: 20px;

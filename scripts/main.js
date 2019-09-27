@@ -5,9 +5,9 @@
 //     for (i = 0; i < 2; i++)
 //     {
 //         var body_width = $(window).width();
-//         if (body_width > 1000 && $('#buttons').css('display') == 'none')
+//         if (body_width > 1000 && $('#nav_menu_buttons').css('display') == 'none')
 //         {
-//             $("#buttons").css("display", "block");
+//             $("#nav_menu_buttons").css("display", "block");
 //         }
 //         i--;
 //     }
@@ -28,7 +28,7 @@ $(document).ready(function()
         $("#download_content").animate({opacity: 0});
 
         if ($(window).width() < 1000) {
-            $("#buttons").css("display", "none");
+            $("#nav_menu_buttons").css("display", "none");
         }
     });
 
@@ -44,7 +44,7 @@ $(document).ready(function()
         $("#download_content").animate({opacity: 0});
 
         if ($(window).width() < 1000) {
-            $("#buttons").css("display", "none");
+            $("#nav_menu_buttons").css("display", "none");
         }
     });
 
@@ -60,15 +60,15 @@ $(document).ready(function()
         $("#download_content").animate({opacity: 1});
 
         if ($(window).width() < 1000) {
-            $("#buttons").css("display", "none");
+            $("#nav_menu_buttons").css("display", "none");
         }
     });
 
-    $("#nav_menu").click(function ()
+    $("#nav_list_menu_button").click(function ()
     {
         if (window.innerWidth <= 1000)
         {
-            $("#buttons").slideToggle();
+            $("#nav_menu_buttons").slideToggle();
         }
     });
 

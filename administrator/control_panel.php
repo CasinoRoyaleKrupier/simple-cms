@@ -24,32 +24,37 @@
 
     <script src="../scripts/jquery-3.4.1.min.js"></script>
 
-    <title>Document</title>
+    <title>Panel administration</title>
 </head>
 <body>
     <div id="top_bar">
-        <div id="top_bar_logout">
+        <div class="top_bar_button_left">
+            <a href="../index.php">Test Site</a>
+        </div>
+        <div class="top_bar_button_right">
             <a href="logout.php">Log out</a>
         </div>
-        <div id="top_bar_user">
-            <?php
-                echo $_SESSION['user'] . "";
-            ?>
+        <div class="top_bar_button_right">
+            <a href="#">
+                <?php echo $_SESSION['user'] . ""; ?>
+            </a>
         </div>
     </div>
 
     <div id="nav_panel">
-        <div id="nav_bar_buttons_section">
-            <a href="#">
-                <div class="nav_bar_button">Users</div>
-            </a>
-            <a href="#">
-                <div class="nav_bar_button">Sites</div>
-            </a>
+    <div class="nav_bar_button">
+            <a href="control_panel.php">Main Site</a>
+        </div>
+        <div class="nav_bar_button">
+            <a href="#">Users</a>
+        </div>
+        <div class="nav_bar_button">
+            <a href="#">Sites</a>
         </div>
     </div>
-    <div id="container">assadsaassadsaassadsaassadsaassadsaassdsa</div>
 
-    <script src="admin_scripts/time.js"></script>
+    <div id="container">
+        container
+    </div>
 </body>
 </html>

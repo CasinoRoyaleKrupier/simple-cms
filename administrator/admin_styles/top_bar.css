@@ -11,10 +11,9 @@
 }
 
 #top_bar a,
-#top_bar a:link,
-#top_bar a:visited,
-#top_bar a:active
+#top_bar a:link
 {
+    padding: 10px 10px;
     text-decoration: none;
     color: #ffffff;
 }
@@ -22,16 +21,16 @@
 #top_bar a:hover
 {
     color: #dd7600;
+    background-color: #414141;
 }
 
-#top_bar_time
+.top_bar_button_left
 {
+    height: 100%;
     float: left;
 }
 
-#top_bar_user, #top_bar_logout
+.top_bar_button_right
 {
-    vertical-align: middle;
     float: right;
-    padding: 0 10px;
 }

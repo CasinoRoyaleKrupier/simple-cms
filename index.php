@@ -15,6 +15,9 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/scrollbar.css">
+    <link rel="stylesheet" href="styles/max_width_1300.css">
+    <link rel="stylesheet" href="styles/max_width_1000.css">
 
     <script src="scripts/jquery-3.4.1.min.js"></script>
 
@@ -22,11 +25,11 @@
 </head>
 <body>
     <div id="container">
-        <div id="dock1">
+        <div id="nav_section">
             <div id="logo"><a href="index.php">systeminfo</a></div>
-            <div id="nav_menu"><img src="images/nav-menu-button.svg"></div>
+            <div id="nav_list_menu_button"><img src="images/nav-menu-button.svg"></div>
 
-            <div id="buttons">
+            <div id="nav_menu_buttons">
                 <div class="section-button" id="about">
                     <img src="images/main_about_content.svg">
                     About program
@@ -45,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div id="dock2">
+        <div id="content_section">
             <div id="animation">
                 <span class="animation_title">Example of program use</span>
                 <img src="images/animation.gif" id="animation_image">

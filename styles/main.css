@@ -4,24 +4,6 @@ html, body, #fullheight {
     height: 100%;
 }
 
-body::-webkit-scrollbar
-{
-    width: 0;
-    height: 0;
-}
-
-body::-webkit-scrollbar-track
-{
-    background-color: #000000;
-}
-
-body::-webkit-scrollbar-thumb
-{
-    background-color: #ffdd00;
-    border-radius: 100px;
-    margin-right: 10px;
-}
-
 body
 {
     margin: 0;
@@ -37,7 +19,7 @@ body
     height: 100%;
 }
 
-#dock1
+#nav_section
 {
     width: 35%;
     height: 100%;
@@ -46,7 +28,7 @@ body
     position: fixed;
 }
 
-#dock2
+#content_section
 {
     width: 65%;
     height: 100%;
@@ -67,17 +49,17 @@ body
     text-align: center;
 }
 
-#nav_menu
+#nav_list_menu_button
 {
     display: none;
 }
 
-#nav_menu img
+#nav_list_menu_button img
 {
     height: 50px;
 }
 
-#buttons
+#nav_menu_buttons
 {
     margin-top: 30px;
 }
@@ -142,108 +124,4 @@ a, a:link, a:visited
 {
     margin: 100px;
     display: none;
-}
-
-@media(max-width: 1300px)
-{
-    .animation_title
-    {
-        margin-left: auto;
-        margin-right: auto;
-        margin-bottom: 20px;
-        display: block;
-    }
-
-    #animation_image
-    {
-        width: 600px;
-        height: auto;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-    }
-
-    #about_content, #screenshot_content, #download_content
-    {
-        margin: 50px;
-    }
-}
-
-@media(max-width: 1000px)
-{
-    #dock1
-    {
-        width: 100%;
-        height: auto;
-        background-color: #ffdd00;
-    }
-
-    #dock2
-    {
-        width: 100%;
-        height: auto;
-        margin-top: 95px;
-        margin-left: auto;
-        margin-right: auto;
-        color: #ffdd00;
-        font-size: 20px;
-        text-align: justify;
-    }
-
-    #logo
-    {
-        font-size: 30px;
-        float: left;
-        margin-bottom: 30px;
-    }
-
-    #nav_menu
-    {
-        display: block;
-        float: right;
-        font-size: 30px;
-        margin-top: 20px;
-        margin-right: 10px;
-        float: right;
-    }
-
-    #buttons
-    {
-        clear: both;
-    }
-
-    .section-button
-    {
-        width: 90%;
-        margin: 10px;
-        padding: 20px 0;
-        padding-left: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 10px;
-        background-color: #ddbb00;
-        transition-duration: 0.5s;
-    }
-
-    .animation_title
-    {
-
-        margin-bottom: 20px;
-        display: block;
-    }
-
-    #animation_image
-    {
-        width: 90%;
-        height: auto;
-        text-align: center;
-
-        display: block;
-    }
-
-    #buttons
-    {
-        display: none;
-    }
 }

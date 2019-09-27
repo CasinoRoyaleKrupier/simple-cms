@@ -1,0 +1,25 @@
+@media(max-width: 1300px)
+{
+    .animation_title
+    {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    #animation_image
+    {
+        width: 600px;
+        height: auto;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #about_content, #screenshot_content, #download_content
+    {
+        margin: 50px;
+    }
+}

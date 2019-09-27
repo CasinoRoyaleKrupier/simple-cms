@@ -7,12 +7,29 @@
     position: fixed;
 }
 
-#nav_bar_buttons_section
+.nav_bar_button
 {
     width: 100%;
+    text-align: center;
 }
 
-#nav_bar_buttons_section a,
+#nav_panel a,
+#nav_panel a:link
+{
+    width: 100%;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+}
+
+#nav_panel a:hover
+{
+    color: #dd7600;
+    background-color: #414141;
+}
+
+/* #nav_bar_buttons_section a,
 #nav_bar_buttons_section a:link,
 #nav_bar_buttons_section a:visited,
 #nav_bar_buttons_section a:active
@@ -21,15 +38,11 @@
     color: #ffffff;
 }
 
-.nav_bar_button
-{
-    width: 100%;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.nav_bar_button:hover
+.nav_bar_buttons_section a:hover
 {
     background-color: #414141;
     color: #dd7600;
-}
+} */
+
+
+
