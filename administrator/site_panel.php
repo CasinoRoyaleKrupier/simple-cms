@@ -59,6 +59,19 @@
 
     <div id="container">
         <div id="content">
+        <div class="section">
+                <form action="post_welcome_content.php" method="post">
+                    <div class="section_left">
+                        <div class="section_name">Welcome content</div>
+                        <div class="section_submit">
+                            <input type="submit" value="Confirm">
+                        </div>
+                    </div>
+                    <div class="section_right">
+                        <textarea name="content" id=""><?php require_once "get_welcome_content.php"; echo $welcome_content; ?></textarea>
+                    </div>
+                </form>
+            </div>
             <div class="section">
                 <form action="post_section_01_content.php" method="post">
                     <div class="section_left">
@@ -72,7 +85,7 @@
                         </div>
                     </div>
                     <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_section_01_content.php"; echo $content; ?></textarea>
+                        <textarea name="content" id=""><?php require_once "get_section_01_content.php"; echo $content_sec_01; ?></textarea>
                     </div>
                 </form>
             </div>
@@ -89,7 +102,7 @@
                         </div>
                     </div>
                     <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_section_02_content.php"; echo $content; ?></textarea>
+                        <textarea name="content" id=""><?php require_once "get_section_02_content.php"; echo $content_sec_02; ?></textarea>
                     </div>
                 </form>
             </div>
@@ -106,7 +119,7 @@
                         </div>
                     </div>
                     <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_section_03_content.php"; echo $content; ?></textarea>
+                        <textarea name="content" id=""><?php require_once "get_section_03_content.php"; echo $content_sec_03; ?></textarea>
                     </div>
                 </form>
             </div>

@@ -12,8 +12,8 @@
         if ($result = $connection->query("SELECT * FROM section_01_content WHERE id = 1"))
         {
             $row = $result->fetch_assoc();
-            $title = $row['title'];
-            $content = $row['content'];
+            $title_sec_01 = $row['title'];
+            $content_sec_01 = $row['content'];
         }
 
         $result->close();

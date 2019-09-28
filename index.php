@@ -54,7 +54,12 @@
         }
     </style>
 
-    <title>systeminfo</title>
+    <title>
+        <?php
+            require_once "administrator/get_page_title.php";
+            echo $page_title;
+        ?>
+    </title>
 </head>
 <body>
     <div id="top_bar">
@@ -75,7 +80,14 @@
     </div>
 
     <div id="nav_section">
-        <div id="logo"><a href="index.php">systeminfo</a></div>
+        <div id="logo">
+            <a href="index.php">
+                <?php
+                    require_once "administrator/get_page_title.php";
+                    echo $page_title;
+                ?>
+            </a>
+        </div>
         <div id="nav_list_menu_button"><img src="images/nav-menu-button.svg"></div>
 
         <div id="nav_menu_buttons">
@@ -83,21 +95,21 @@
                 <img src="images/section_01_img.svg">
                 <?php
                     require_once "administrator/get_section_01_content.php";
-                    echo $title;
+                    echo $title_sec_01;
                 ?>
             </div>
             <div class="section-button" id="button_sec_02">
                 <img src="images/section_02_img.svg">
                 <?php
                     require_once "administrator/get_section_02_content.php";
-                    echo $title;
+                    echo $title_sec_02;
                 ?>
             </div>
             <div class="section-button" id="button_sec_03">
                 <img src="images/section_03_img.svg">
                 <?php
                     require_once "administrator/get_section_03_content.php";
-                    echo $title;
+                    echo $title_sec_03;
                 ?>
             </div>
         </div>
@@ -105,25 +117,27 @@
 
     <div id="container">
             <div id="welcone_content">
-                <span class="welcone_content_title">Example of program use</span>
-                <img src="images/animation.gif" id="welcone_content_image">
+                <?php
+                    require_once "administrator/get_welcome_content.php";
+                    echo $welcome_content;
+                ?>
             </div>
             <div id="section_01">
                 <?php
                     require_once "administrator/get_section_01_content.php";
-                    echo $content;
+                    echo $content_sec_01;
                 ?>
             </div>
             <div id="section_02">
                 <?php
                     require_once "administrator/get_section_02_content.php";
-                    echo $content;
+                    echo $content_sec_02;
                 ?>
             </div>
             <div id="section_03">
                 <?php
                     require_once "administrator/get_section_03_content.php";
-                    echo $content;
+                    echo $content_sec_03;
                 ?>
             </div>
     </div>

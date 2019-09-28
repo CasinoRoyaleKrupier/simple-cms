@@ -9,11 +9,10 @@
     }
     else
     {
-        if ($result = $connection->query("SELECT * FROM section_03_content WHERE id = 1"))
+        if ($result = $connection->query("SELECT * FROM page_title WHERE id = 1"))
         {
             $row = $result->fetch_assoc();
-            $title_sec_03 = $row['title'];
-            $content_sec_03 = $row['content'];
+            $page_title = $row['page_title'];
         }
 
         $result->close();
