@@ -81,19 +81,24 @@
         <div id="nav_menu_buttons">
             <div class="section-button" id="button_sec_01">
                 <img src="images/section_01_img.svg">
-                About program
+                <?php
+                    require_once "administrator/get_section_01_content.php";
+                    echo $title;
+                ?>
             </div>
             <div class="section-button" id="button_sec_02">
                 <img src="images/section_02_img.svg">
-                Screenshots
+                <?php
+                    require_once "administrator/get_section_02_content.php";
+                    echo $title;
+                ?>
             </div>
             <div class="section-button" id="button_sec_03">
                 <img src="images/section_03_img.svg">
-                Download
-            </div>
-            <div class="section-button" id="bug_tracer">
-                <img src="images/section_04_img.svg">
-                Bug tracer
+                <?php
+                    require_once "administrator/get_section_03_content.php";
+                    echo $title;
+                ?>
             </div>
         </div>
     </div>
@@ -106,24 +111,18 @@
             <div id="section_01">
                 <?php
                     require_once "administrator/get_section_01_content.php";
-
-                    echo "<h3>" . $title . "</h3><br>";
                     echo $content;
                 ?>
             </div>
             <div id="section_02">
                 <?php
                     require_once "administrator/get_section_02_content.php";
-
-                    echo "<h3>" . $title . "</h3><br>";
                     echo $content;
                 ?>
             </div>
             <div id="section_03">
                 <?php
                     require_once "administrator/get_section_03_content.php";
-
-                    echo "<h3>" . $title . "</h3><br>";
                     echo $content;
                 ?>
             </div>

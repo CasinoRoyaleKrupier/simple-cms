@@ -27,6 +27,6 @@ CREATE TABLE section_03_content (
 
 INSERT INTO administrators VALUES (1, 'admin', 'admin', 'admin@admin.admin');
 
-INSERT INTO section_01_content VALUES (1, 'TestTitle', 'TestContent');
-INSERT INTO section_02_content VALUES (1, 'TestTitle', 'TestContent');
-INSERT INTO section_03_content VALUES (1, 'TestTitle', 'TestContent');
+INSERT INTO section_01_content VALUES (1, 'Title', 'Content');
+INSERT INTO section_02_content VALUES (1, 'Title', 'Content');
+INSERT INTO section_03_content VALUES (1, 'Title', 'Content');

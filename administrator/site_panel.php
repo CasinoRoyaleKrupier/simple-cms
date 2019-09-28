@@ -62,7 +62,7 @@
             <div class="section">
                 <form action="post_section_01_content.php" method="post">
                     <div class="section_left">
-                        <div class="section_name">About site</div>
+                        <div class="section_name">Section 1</div>
                         <div class="section_title">
                             Title<br>
                             <input type="text" name="title" value="<?php require_once "get_section_01_content.php"; echo $title; ?>">
@@ -79,7 +79,7 @@
             <div class="section">
                 <form action="post_section_02_content.php" method="post">
                     <div class="section_left">
-                        <div class="section_name">Screenshots site</div>
+                        <div class="section_name">Section 2</div>
                         <div class="section_title">
                             Title<br>
                             <input type="text" name="title" value="<?php require_once "get_section_02_content.php"; echo $title; ?>">
@@ -96,7 +96,7 @@
             <div class="section">
                 <form action="post_section_03_content.php" method="post">
                     <div class="section_left">
-                        <div class="section_name">Download site</div>
+                        <div class="section_name">Section 3</div>
                         <div class="section_title">
                             Title<br>
                             <input type="text" name="title" value="<?php require_once "get_section_03_content.php"; echo $title; ?>">
