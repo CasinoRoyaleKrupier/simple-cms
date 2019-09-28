@@ -16,48 +16,48 @@
 $(document).ready(function()
 {
 
-    $("#about").click(function()
+    $("#button_sec_01").click(function()
     {
-        $("#animation").hide();
+        $("#welcone_content").hide();
 
-        $("#about_content").css("display", "block");
-        $("#about_content").animate({opacity: 1});
-        $("#screenshot_content").css("display", "none");
-        $("#screenshot_content").animate({opacity: 0});
-        $("#download_content").css("display", "none");
-        $("#download_content").animate({opacity: 0});
+        $("#section_01").css("display", "block");
+        $("#section_01").animate({opacity: 1});
+        $("#section_02").css("display", "none");
+        $("#section_02").animate({opacity: 0});
+        $("#section_03").css("display", "none");
+        $("#section_03").animate({opacity: 0});
 
         if ($(window).width() < 1000) {
             $("#nav_menu_buttons").css("display", "none");
         }
     });
 
-    $("#screenshots").click(function()
+    $("#button_sec_02").click(function()
     {
-        $("#animation").hide();
+        $("#welcone_content").hide();
 
-        $("#about_content").css("display", "none");
-        $("#about_content").animate({opacity: 0});
-        $("#screenshot_content").css("display", "block");
-        $("#screenshot_content").animate({opacity: 1});
-        $("#download_content").css("display", "none");
-        $("#download_content").animate({opacity: 0});
+        $("#section_01").css("display", "none");
+        $("#section_01").animate({opacity: 0});
+        $("#section_02").css("display", "block");
+        $("#section_02").animate({opacity: 1});
+        $("#section_03").css("display", "none");
+        $("#section_03").animate({opacity: 0});
 
         if ($(window).width() < 1000) {
             $("#nav_menu_buttons").css("display", "none");
         }
     });
 
-    $("#download").click(function()
+    $("#button_sec_03").click(function()
     {
-        $("#animation").hide();
+        $("#welcone_content").hide();
 
-        $("#about_content").css("display", "none");
-        $("#about_content").animate({opacity: 0});
-        $("#screenshot_content").css("display", "none");
-        $("#screenshot_content").animate({opacity: 0});
-        $("#download_content").css("display", "block");
-        $("#download_content").animate({opacity: 1});
+        $("#section_01").css("display", "none");
+        $("#section_01").animate({opacity: 0});
+        $("#section_02").css("display", "none");
+        $("#section_02").animate({opacity: 0});
+        $("#section_03").css("display", "block");
+        $("#section_03").animate({opacity: 1});
 
         if ($(window).width() < 1000) {
             $("#nav_menu_buttons").css("display", "none");

@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS systeminfo_cms CHARACTER SET utf8 COLLATE utf8_unicode_ci;
+CREATE DATABASE IF NOT EXISTS simple_cms CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
 CREATE TABLE administrators (
     id INTEGER PRIMARY KEY NOT NULL,
@@ -7,19 +7,19 @@ CREATE TABLE administrators (
     mail VARCHAR(30) NOT NULL
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
 
-CREATE TABLE about_content (
+CREATE TABLE section_01_content (
     id INTEGER PRIMARY KEY NOT NULL,
     title VARCHAR(50),
     content VARCHAR(1024)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
 
-CREATE TABLE screenshot_content (
+CREATE TABLE section_02_content (
     id INTEGER PRIMARY KEY NOT NULL,
     title VARCHAR(50),
     content VARCHAR(1024)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
 
-CREATE TABLE download_content (
+CREATE TABLE section_03_content (
     id INTEGER PRIMARY KEY NOT NULL,
     title VARCHAR(50),
     content VARCHAR(1024)
@@ -27,6 +27,6 @@ CREATE TABLE download_content (
 
 INSERT INTO administrators VALUES (1, 'admin', 'admin', 'admin@admin.admin');
 
-INSERT INTO about_content VALUES (1, 'ABOUT test database TEST', 'TestDatabaseMySql_TestDatabaseMySql_TestDatabaseMySql');
-INSERT INTO screenshot_content VALUES (1, 'SCREENSHOT test database TEST', 'TestDatabaseMySql_TestDatabaseMySql_TestDatabaseMySql');
-INSERT INTO download_content VALUES (1, 'DOWNLOAD test database TEST', 'TestDatabaseMySql_TestDatabaseMySql_TestDatabaseMySql');
+INSERT INTO section_01_content VALUES (1, 'TestTitle', 'TestContent');
+INSERT INTO section_02_content VALUES (1, 'TestTitle', 'TestContent');
+INSERT INTO section_03_content VALUES (1, 'TestTitle', 'TestContent');

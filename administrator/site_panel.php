@@ -60,53 +60,53 @@
     <div id="container">
         <div id="content">
             <div class="section">
-                <form action="post_about.php" method="post">
+                <form action="post_section_01_content.php" method="post">
                     <div class="section_left">
                         <div class="section_name">About site</div>
                         <div class="section_title">
                             Title<br>
-                            <input type="text" name="title" value="<?php require_once "get_about.php"; echo $title; ?>">
+                            <input type="text" name="title" value="<?php require_once "get_section_01_content.php"; echo $title; ?>">
                         </div>
                         <div class="section_submit">
                             <input type="submit" value="Confirm">
                         </div>
                     </div>
                     <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_about.php"; echo $content; ?></textarea>
+                        <textarea name="content" id=""><?php require_once "get_section_01_content.php"; echo $content; ?></textarea>
                     </div>
                 </form>
             </div>
             <div class="section">
-                <form action="post_screenshot.php" method="post">
+                <form action="post_section_02_content.php" method="post">
                     <div class="section_left">
                         <div class="section_name">Screenshots site</div>
                         <div class="section_title">
                             Title<br>
-                            <input type="text" name="title" value="<?php require_once "get_screenshot.php"; echo $title; ?>">
+                            <input type="text" name="title" value="<?php require_once "get_section_02_content.php"; echo $title; ?>">
                         </div>
                         <div class="section_submit">
                             <input type="submit" value="Confirm">
                         </div>
                     </div>
                     <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_screenshot.php"; echo $content; ?></textarea>
+                        <textarea name="content" id=""><?php require_once "get_section_02_content.php"; echo $content; ?></textarea>
                     </div>
                 </form>
             </div>
             <div class="section">
-                <form action="post_download.php" method="post">
+                <form action="post_section_03_content.php" method="post">
                     <div class="section_left">
                         <div class="section_name">Download site</div>
                         <div class="section_title">
                             Title<br>
-                            <input type="text" name="title" value="<?php require_once "get_download.php"; echo $title; ?>">
+                            <input type="text" name="title" value="<?php require_once "get_section_03_content.php"; echo $title; ?>">
                         </div>
                         <div class="section_submit">
                             <input type="submit" value="Confirm">
                         </div>
                     </div>
                     <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_download.php"; echo $content; ?></textarea>
+                        <textarea name="content" id=""><?php require_once "get_section_03_content.php"; echo $content; ?></textarea>
                     </div>
                 </form>
             </div>

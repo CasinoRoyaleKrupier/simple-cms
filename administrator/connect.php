@@ -3,6 +3,6 @@
     $host = "localhost";
     $db_user = "root";
     $db_password = "";
-    $db_name = "systeminfo_cms"
+    $db_name = "simple_cms"
 
 ?>

@@ -55,21 +55,21 @@
         transition-duration: 0.5s;
     }
 
-    #animation,
-    #about_content,
-    #screenshot_content,
-    #download_content
+    #welcone_content,
+    #section_01,
+    #section_02,
+    #section_03
     {
         margin-top: 150px;
     }
 
-    .animation_title
+    .welcone_content_title
     {
         margin-bottom: 20px;
         display: block;
     }
 
-    #animation_image
+    #welcone_content_image
     {
         width: 90%;
         height: auto;

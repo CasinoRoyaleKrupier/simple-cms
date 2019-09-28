@@ -94,7 +94,7 @@ a, a:link, a:visited
 }
 
 
-.animation_title
+.welcone_content_title
 {
     text-align: center;
     font-size: 20px;
@@ -106,7 +106,7 @@ a, a:link, a:visited
     display: block;
 }
 
-#animation_image
+#welcone_content_image
 {
     width: auto;
     height: auto;
@@ -116,7 +116,7 @@ a, a:link, a:visited
     display: block;
 }
 
-#about_content, #screenshot_content, #download_content
+#section_01, #section_02, #section_03
 {
     margin: 100px;
     display: none;

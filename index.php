@@ -79,49 +79,49 @@
         <div id="nav_list_menu_button"><img src="images/nav-menu-button.svg"></div>
 
         <div id="nav_menu_buttons">
-            <div class="section-button" id="about">
-                <img src="images/main_about_content.svg">
+            <div class="section-button" id="button_sec_01">
+                <img src="images/section_01_img.svg">
                 About program
             </div>
-            <div class="section-button" id="screenshots">
-                <img src="images/screenshot.svg">
+            <div class="section-button" id="button_sec_02">
+                <img src="images/section_02_img.svg">
                 Screenshots
             </div>
-            <div class="section-button" id="download">
-                <img src="images/download.svg">
+            <div class="section-button" id="button_sec_03">
+                <img src="images/section_03_img.svg">
                 Download
             </div>
             <div class="section-button" id="bug_tracer">
-                <img src="images/issuse.svg">
+                <img src="images/section_04_img.svg">
                 Bug tracer
             </div>
         </div>
     </div>
 
     <div id="container">
-            <div id="animation">
-                <span class="animation_title">Example of program use</span>
-                <img src="images/animation.gif" id="animation_image">
+            <div id="welcone_content">
+                <span class="welcone_content_title">Example of program use</span>
+                <img src="images/animation.gif" id="welcone_content_image">
             </div>
-            <div id="about_content">
+            <div id="section_01">
                 <?php
-                    require_once "administrator/get_about.php";
+                    require_once "administrator/get_section_01_content.php";
 
                     echo "<h3>" . $title . "</h3><br>";
                     echo $content;
                 ?>
             </div>
-            <div id="screenshot_content">
+            <div id="section_02">
                 <?php
-                    require_once "administrator/get_screenshot.php";
+                    require_once "administrator/get_section_02_content.php";
 
                     echo "<h3>" . $title . "</h3><br>";
                     echo $content;
                 ?>
             </div>
-            <div id="download_content">
+            <div id="section_03">
                 <?php
-                    require_once "administrator/get_download.php";
+                    require_once "administrator/get_section_03_content.php";
 
                     echo "<h3>" . $title . "</h3><br>";
                     echo $content;
