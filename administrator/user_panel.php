@@ -25,7 +25,7 @@
 
     <script src="../scripts/jquery-3.4.1.min.js"></script>
 
-    <title><?php echo $_SESSION['user'] . ""; ?> - site panel</title>
+    <title>Panel administration</title>
 </head>
 <body>
     <div id="top_bar">
@@ -60,66 +60,62 @@
     <div id="container">
         <div id="content">
             <div class="section">
-                <form action="post_welcome_content.php" method="post">
+                <form action="change_username.php" method="post">
                     <div class="section_left">
-                        <div class="section_name">Welcome content</div>
+                        <div class="section_name">Change username</div>
                         <div class="section_submit">
                             <input type="submit" value="Confirm">
                         </div>
                     </div>
-                    <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_welcome_content.php"; echo $welcome_content; ?></textarea>
+                    <div class="section_left">
+                        <div class="section_title">
+                            Old username<br>
+                            <input type="text" name="old_username" value="<?php echo $_SESSION['user']; ?>">
+                        </div>
+                        <div class="section_title">
+                            New username<br>
+                            <input type="text" name="new_username" value="">
+                        </div>
                     </div>
                 </form>
             </div>
             <div class="section">
-                <form action="post_section_01_content.php" method="post">
+                <form action="change_password.php" method="post">
                     <div class="section_left">
-                        <div class="section_name">Section 1</div>
-                        <div class="section_title">
-                            Title<br>
-                            <input type="text" name="title" value="<?php require_once "get_section_01_content.php"; echo $title_sec_01; ?>">
-                        </div>
+                        <div class="section_name">Change password</div>
                         <div class="section_submit">
                             <input type="submit" value="Confirm">
                         </div>
                     </div>
-                    <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_section_01_content.php"; echo $content_sec_01; ?></textarea>
+                    <div class="section_left">
+                        <div class="section_title">
+                            Old password<br>
+                            <input type="password" name="old_password" value="">
+                        </div>
+                        <div class="section_title">
+                            New password<br>
+                            <input type="password" name="new_password" value="">
+                        </div>
                     </div>
                 </form>
             </div>
             <div class="section">
-                <form action="post_section_02_content.php" method="post">
+                <form action="change_mail.php" method="post">
                     <div class="section_left">
-                        <div class="section_name">Section 2</div>
-                        <div class="section_title">
-                            Title<br>
-                            <input type="text" name="title" value="<?php require_once "get_section_02_content.php"; echo $title_sec_02; ?>">
-                        </div>
+                        <div class="section_name">Change e-mail</div>
                         <div class="section_submit">
                             <input type="submit" value="Confirm">
                         </div>
                     </div>
-                    <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_section_02_content.php"; echo $content_sec_02; ?></textarea>
-                    </div>
-                </form>
-            </div>
-            <div class="section">
-                <form action="post_section_03_content.php" method="post">
                     <div class="section_left">
-                        <div class="section_name">Section 3</div>
                         <div class="section_title">
-                            Title<br>
-                            <input type="text" name="title" value="<?php require_once "get_section_03_content.php"; echo $title_sec_03; ?>">
+                            Old e-mail<br>
+                            <input type="text" name="old_mail" value="<?php echo $_SESSION['email']; ?>">
                         </div>
-                        <div class="section_submit">
-                            <input type="submit" value="Confirm">
+                        <div class="section_title">
+                            New e-mail<br>
+                            <input type="text" name="new_mail" value="">
                         </div>
-                    </div>
-                    <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_section_03_content.php"; echo $content_sec_03; ?></textarea>
                     </div>
                 </form>
             </div>

@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="admin_styles/admin_panel.css">
     <link rel="stylesheet" href="admin_styles/top_bar.css">
     <link rel="stylesheet" href="admin_styles/nav_bar.css">
+    <link rel="stylesheet" href="admin_styles/sections.css">
 
     <script src="../scripts/jquery-3.4.1.min.js"></script>
 
@@ -49,7 +50,7 @@
             <a href="admin_panel.php">Main site</a>
         </div>
         <div class="nav_bar_button">
-            <a href="users_panel.php">Users</a>
+            <a href="user_panel.php">Users</a>
         </div>
         <div class="nav_bar_button">
             <a href="site_panel.php">Sites</a>
