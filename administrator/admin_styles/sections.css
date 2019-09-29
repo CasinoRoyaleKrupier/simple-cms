@@ -1,19 +1,20 @@
 .section
 {
-    height: 200px;
+    height: 230px;
     vertical-align: middle;
     box-sizing: border-box;
 }
 
 .section_left
 {
-    width: 20%;
+    width: 30%;
     float: left;
 }
 
 .section_name
 {
     width: 100%;
+    margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
 }
@@ -21,24 +22,25 @@
 .section_title
 {
     width: 100%;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .section_right
 {
-    width: 80%;
+    width: 70%;
     float: left;
 }
 
 .section textarea
 {
     width: 100%;
-    height: 180px;
+    height: 210px;
     font-size: 15px;
 }
 
 .section input[type=submit]
 {
-    margin: 20px;
+    margin: 20px 20px 20px 0;
     padding: 15px 10px;
+    float: left;
 }

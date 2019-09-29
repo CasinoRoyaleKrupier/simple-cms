@@ -19,6 +19,11 @@
         $old_password = $_POST['old_password'];
         $new_password = $_POST['new_password'];
 
+        if (($old_password == "") || ($new_password == ""))
+        {
+            header('Location: user_panel.php');
+        }
+
         $sql = "UPDATE `administrators` SET `pass` = '$new_password' WHERE `pass` = '$old_password';";
 
         if ( $connection->query($sql) != true )

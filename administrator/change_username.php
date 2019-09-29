@@ -19,6 +19,11 @@
         $old_username = $_POST['old_username'];
         $new_username = $_POST['new_username'];
 
+        if (($old_username == "") || ($new_username == ""))
+        {
+            header('Location: user_panel.php');
+        }
+
         $sql = "UPDATE `administrators` SET `username` = '$new_username' WHERE `username` = '$old_username';";
 
         if ( $connection->query($sql) != true )

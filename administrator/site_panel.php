@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="admin_styles/top_bar.css">
     <link rel="stylesheet" href="admin_styles/nav_bar.css">
     <link rel="stylesheet" href="admin_styles/sections.css">
+    <link rel="stylesheet" href="admin_styles/inputs.css">
 
     <script src="../scripts/jquery-3.4.1.min.js"></script>
 
@@ -63,9 +64,7 @@
                 <form action="post_welcome_content.php" method="post">
                     <div class="section_left">
                         <div class="section_name">Welcome content</div>
-                        <div class="section_submit">
-                            <input type="submit" value="Confirm">
-                        </div>
+                        <input type="submit" value="Confirm">
                     </div>
                     <div class="section_right">
                         <textarea name="content" id=""><?php require_once "get_welcome_content.php"; echo $welcome_content; ?></textarea>
@@ -80,9 +79,7 @@
                             Title<br>
                             <input type="text" name="title" value="<?php require_once "get_section_01_content.php"; echo $title_sec_01; ?>">
                         </div>
-                        <div class="section_submit">
-                            <input type="submit" value="Confirm">
-                        </div>
+                        <input type="submit" value="Confirm">
                     </div>
                     <div class="section_right">
                         <textarea name="content" id=""><?php require_once "get_section_01_content.php"; echo $content_sec_01; ?></textarea>
@@ -97,9 +94,7 @@
                             Title<br>
                             <input type="text" name="title" value="<?php require_once "get_section_02_content.php"; echo $title_sec_02; ?>">
                         </div>
-                        <div class="section_submit">
-                            <input type="submit" value="Confirm">
-                        </div>
+                        <input type="submit" value="Confirm">
                     </div>
                     <div class="section_right">
                         <textarea name="content" id=""><?php require_once "get_section_02_content.php"; echo $content_sec_02; ?></textarea>
@@ -114,9 +109,7 @@
                             Title<br>
                             <input type="text" name="title" value="<?php require_once "get_section_03_content.php"; echo $title_sec_03; ?>">
                         </div>
-                        <div class="section_submit">
-                            <input type="submit" value="Confirm">
-                        </div>
+                        <input type="submit" value="Confirm">
                     </div>
                     <div class="section_right">
                         <textarea name="content" id=""><?php require_once "get_section_03_content.php"; echo $content_sec_03; ?></textarea>

@@ -19,6 +19,11 @@
         $old_mail = $_POST['old_mail'];
         $new_mail = $_POST['new_mail'];
 
+        if (($old_mail == "") || ($new_mail == ""))
+        {
+            header('Location: user_panel.php');
+        }
+
         $sql = "UPDATE `administrators` SET `mail` = '$new_mail' WHERE `mail` = '$old_mail';";
 
         if ( $connection->query($sql) != true )
