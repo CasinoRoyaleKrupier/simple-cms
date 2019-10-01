@@ -32,6 +32,6 @@
         }
 
         $connection->close();
-        header('Location: logout.php');
+        //header('Location: logout.php');
     }
 ?>
