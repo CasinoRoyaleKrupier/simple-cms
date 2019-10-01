@@ -75,9 +75,7 @@
                 <form action="post_section_01_content.php" method="post">
                     <div class="section_left">
                         <div class="section_name">Section 1</div>
-                        <div class="section_title">
-                            <input type="text" name="title" value="<?php require_once "get_section_01_content.php"; echo $title_sec_01; ?>">
-                        </div>
+                        <input type="text" name="title" value="<?php require_once "get_section_01_content.php"; echo $title_sec_01; ?>">
                         <input type="submit" value="Confirm">
                     </div>
                     <div class="section_right">
@@ -89,9 +87,7 @@
                 <form action="post_section_02_content.php" method="post">
                     <div class="section_left">
                         <div class="section_name">Section 2</div>
-                        <div class="section_title">
-                            <input type="text" name="title" value="<?php require_once "get_section_02_content.php"; echo $title_sec_02; ?>">
-                        </div>
+                        <input type="text" name="title" value="<?php require_once "get_section_02_content.php"; echo $title_sec_02; ?>">
                         <input type="submit" value="Confirm">
                     </div>
                     <div class="section_right">
@@ -103,13 +99,11 @@
                 <form action="post_section_03_content.php" method="post">
                     <div class="section_left">
                         <div class="section_name">Section 3</div>
-                        <div class="section_title">
-                            <input type="text" name="title" value="<?php require_once "get_section_03_content.php"; echo $title_sec_03; ?>">
-                        </div>
+                        <input type="text" name="title" value="<?php require_once "get_section_03_content.php"; echo $title_sec_03; ?>">
                         <input type="submit" value="Confirm">
                     </div>
                     <div class="section_right">
-                        <textarea name="content" id=""><?php require_once "get_section_03_content.php"; echo $content_sec_03; ?></textarea>
+                    <textarea name="content" id=""><?php require_once "get_section_03_content.php"; echo $content_sec_03; ?></textarea>
                     </div>
                 </form>
             </div>
