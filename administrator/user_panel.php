@@ -69,14 +69,8 @@
                         </div>
                     </div>
                     <div class="section_left">
-                        <div class="section_title">
-                            Old username<br>
-                            <input type="text" name="old_username" value="">
-                        </div>
-                        <div class="section_title">
-                            New username<br>
-                            <input type="text" name="new_username" value="">
-                        </div>
+                        <input type="text" name="old_username" value="" placeholder="Old username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Old username'">
+                        <input type="text" name="new_username" value="" placeholder="New username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'New username'">
                     </div>
                 </form>
             </div>
@@ -89,14 +83,8 @@
                         </div>
                     </div>
                     <div class="section_left">
-                        <div class="section_title">
-                            Old password<br>
-                            <input type="password" name="old_password" value="">
-                        </div>
-                        <div class="section_title">
-                            New password<br>
-                            <input type="password" name="new_password" value="">
-                        </div>
+                        <input type="password" name="old_password" value="" placeholder="Old password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Old password'">
+                        <input type="password" name="new_password" value="" placeholder="New password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'New password'">
                     </div>
                 </form>
             </div>
@@ -109,14 +97,8 @@
                         </div>
                     </div>
                     <div class="section_left">
-                        <div class="section_title">
-                            Old e-mail<br>
-                            <input type="text" name="old_mail" value="">
-                        </div>
-                        <div class="section_title">
-                            New e-mail<br>
-                            <input type="text" name="new_mail" value="">
-                        </div>
+                        <input type="email" name="old_mail" value="" placeholder="Old e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Old e-mail'">
+                        <input type="email" name="new_mail" value="" placeholder="New e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'New e-mail'">
                     </div>
                 </form>
             </div>
