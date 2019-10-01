@@ -60,48 +60,42 @@
 
     <div id="container">
         <div id="content">
-            <div class="section">
-                <form action="change_username.php" method="post">
-                    <div class="section_left">
-                        <div class="section_name">Change username</div>
-                        <div class="section_submit">
-                            <input type="submit" value="Confirm">
-                        </div>
+            <form action="change_username.php" method="post">
+                <div class="section_name">Change username<hr></div>
+                <div class="section_left">
+                    <div class="section_submit">
+                        <input type="submit" value="Confirm">
                     </div>
-                    <div class="section_left">
-                        <input type="text" name="old_username" value="" placeholder="Old username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Old username'">
-                        <input type="text" name="new_username" value="" placeholder="New username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'New username'">
+                </div>
+                <div class="section_left">
+                    <input type="text" name="old_username" value="" placeholder="Old username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Old username'">
+                    <input type="text" name="new_username" value="" placeholder="New username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'New username'">
+                </div>
+            </form>
+            <form action="change_password.php" method="post">
+                <div class="section_name">Change password<hr></div>
+                <div class="section_left">
+                    <div class="section_submit">
+                        <input type="submit" value="Confirm">
                     </div>
-                </form>
-            </div>
-            <div class="section">
-                <form action="change_password.php" method="post">
-                    <div class="section_left">
-                        <div class="section_name">Change password</div>
-                        <div class="section_submit">
-                            <input type="submit" value="Confirm">
-                        </div>
+                </div>
+                <div class="section_left">
+                    <input type="password" name="old_password" value="" placeholder="Old password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Old password'">
+                    <input type="password" name="new_password" value="" placeholder="New password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'New password'">
+                </div>
+            </form>
+            <form action="change_mail.php" method="post">
+                <div class="section_name">Change e-mail<hr></div>
+                <div class="section_left">
+                    <div class="section_submit">
+                        <input type="submit" value="Confirm">
                     </div>
-                    <div class="section_left">
-                        <input type="password" name="old_password" value="" placeholder="Old password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Old password'">
-                        <input type="password" name="new_password" value="" placeholder="New password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'New password'">
-                    </div>
-                </form>
-            </div>
-            <div class="section">
-                <form action="change_mail.php" method="post">
-                    <div class="section_left">
-                        <div class="section_name">Change e-mail</div>
-                        <div class="section_submit">
-                            <input type="submit" value="Confirm">
-                        </div>
-                    </div>
-                    <div class="section_left">
-                        <input type="email" name="old_mail" value="" placeholder="Old e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Old e-mail'">
-                        <input type="email" name="new_mail" value="" placeholder="New e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'New e-mail'">
-                    </div>
-                </form>
-            </div>
+                </div>
+                <div class="section_left">
+                    <input type="email" name="old_mail" value="" placeholder="Old e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Old e-mail'">
+                    <input type="email" name="new_mail" value="" placeholder="New e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'New e-mail'">
+                </div>
+            </form>
         </div>
     </div>
 </body>

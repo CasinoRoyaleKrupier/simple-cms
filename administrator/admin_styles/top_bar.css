@@ -13,9 +13,11 @@
 #top_bar a,
 #top_bar a:link
 {
-    width: 100px;
-    padding: 10px 0;
+    width: 130px;
+    padding: 10px 0px;
     display: block;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
@@ -23,8 +25,8 @@
 
 #top_bar a:hover
 {
-    color: #dd7600;
-    background-color: #414141;
+    color: #ffffff;
+    background-color: #dd7600;
     font-weight: bold;
 }
 
