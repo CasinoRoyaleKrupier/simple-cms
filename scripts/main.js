@@ -60,6 +60,9 @@ $(document).ready(function()
         if (window.innerWidth <= 1000)
         {
             $("#nav_menu_buttons").slideToggle();
+
+            $("#nav_section").css("border-bottom-left-radius", "10px");
+            $("#nav_section").css("border-bottom-right-radius", "10px");
         }
     });
 });
