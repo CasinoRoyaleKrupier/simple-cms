@@ -1,5 +1,18 @@
 {
     "terminal.integrated.fontSize": 13,
     "trailing-spaces.trimOnSave": true,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "sqltools.connections": [
+        {
+            "askForPassword": false,
+            "database": "simple_cms",
+            "dialect": "MySQL",
+            "isActive": false,
+            "isConnected": false,
+            "name": "simple_cms",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
 }
