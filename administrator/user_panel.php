@@ -71,7 +71,7 @@
                     <div class="section_left">
                         <div class="section_title">
                             Old username<br>
-                            <input type="text" name="old_username" value="<?php echo $_SESSION['user']; ?>">
+                            <input type="text" name="old_username" value="">
                         </div>
                         <div class="section_title">
                             New username<br>
@@ -111,7 +111,7 @@
                     <div class="section_left">
                         <div class="section_title">
                             Old e-mail<br>
-                            <input type="text" name="old_mail" value="<?php echo $_SESSION['email']; ?>">
+                            <input type="text" name="old_mail" value="">
                         </div>
                         <div class="section_title">
                             New e-mail<br>
