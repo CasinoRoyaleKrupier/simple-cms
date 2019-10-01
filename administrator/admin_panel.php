@@ -51,7 +51,7 @@
             <a href="admin_panel.php">Main site</a>
         </div>
         <div class="nav_bar_button">
-            <a href="user_panel.php">Users</a>
+            <a href="user_panel.php">User panel</a>
         </div>
         <div class="nav_bar_button">
             <a href="site_panel.php">Sites</a>
