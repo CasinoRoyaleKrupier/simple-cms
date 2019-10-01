@@ -22,6 +22,7 @@
         if (($old_username == "") || ($new_username == ""))
         {
             header('Location: user_panel.php');
+            exit();
         }
 
         $sql = "UPDATE `administrators` SET `username` = '$new_username' WHERE `username` = '$old_username';";

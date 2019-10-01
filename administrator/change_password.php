@@ -22,6 +22,7 @@
         if (($old_password == "") || ($new_password == ""))
         {
             header('Location: user_panel.php');
+            exit();
         }
 
         $sql = "UPDATE `administrators` SET `pass` = '$new_password' WHERE `pass` = '$old_password';";
@@ -32,6 +33,6 @@
         }
 
         $connection->close();
-        //header('Location: logout.php');
+        header('Location: logout.php');
     }
 ?>

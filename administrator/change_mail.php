@@ -22,6 +22,7 @@
         if (($old_mail == "") || ($new_mail == ""))
         {
             header('Location: user_panel.php');
+            exit();
         }
 
         $sql = "UPDATE `administrators` SET `mail` = '$new_mail' WHERE `mail` = '$old_mail';";
