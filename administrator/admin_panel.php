@@ -26,7 +26,7 @@
 
     <script src="../scripts/jquery-3.4.1.min.js"></script>
 
-    <title>Panel administration</title>
+    <title><?php require_once "get_page_title.php"; echo $page_title; ?> - panel administration</title>
 </head>
 <body>
     <div id="top_bar">
@@ -60,11 +60,19 @@
 
     <div id="container">
         <div id="content">
-            <?php require_once "connect.php"; ?>
+            <!-- <?php require_once "connect.php"; ?>
 
             Logged user: <?php echo $_SESSION['user']; ?><br><br>
 
-            Database name: <?php echo $db_name ?><br>
+            Database name: <?php echo $db_name ?><br> -->
+
+            <form action="post_page_title.php" method="post">
+                <div class="section_name">Website<hr></div>
+                <div class="section_left">
+                    <input type="text" name="page_name" value="<?php require_once "get_page_title.php"; echo $page_title; ?>">
+                    <input type="submit" value="Confirm">
+                </div>
+            </form>
         </div>
     </div>
 </body>

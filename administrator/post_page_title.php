@@ -16,10 +16,9 @@
     }
     else
     {
-        $title = $_POST['title'];
-        $content = $_POST['content'];
+        $page_name = $_POST['page_name'];
 
-        $sql = "UPDATE `page_title` SET page_title = '$title' WHERE id = 1;";
+        $sql = "UPDATE `page_title` SET page_title = '$page_name' WHERE id = 1;";
 
         if ( $connection->query($sql) != true )
         {
@@ -27,6 +26,6 @@
         }
 
         $connection->close();
-        header('Location: site_panel.php');
+        header('Location: admin_panel.php');
     }
 ?>
