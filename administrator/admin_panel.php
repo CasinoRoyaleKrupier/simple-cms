@@ -40,7 +40,7 @@
             <a href="logout.php">Log out</a>
         </div>
         <div class="top_bar_button right">
-            <a href="#">
+            <a href="user_panel.php">
                 <?php echo $_SESSION['user'] . ""; ?>
             </a>
         </div>
@@ -51,10 +51,13 @@
             <a href="admin_panel.php">Main site</a>
         </div>
         <div class="nav_bar_button">
+            <a href="site_panel.php">Sites</a>
+        </div>
+        <div class="nav_bar_button">
             <a href="user_panel.php">User panel</a>
         </div>
         <div class="nav_bar_button">
-            <a href="site_panel.php">Sites</a>
+            <a href="add_user_panel.php">Add user</a>
         </div>
     </div>
 

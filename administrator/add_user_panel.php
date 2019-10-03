@@ -26,7 +26,7 @@
 
     <script src="../scripts/jquery-3.4.1.min.js"></script>
 
-    <title><?php echo $_SESSION['user'] . ""; ?> - site panel</title>
+    <title>Panel administration</title>
 </head>
 <body>
     <div id="top_bar">
@@ -63,44 +63,31 @@
 
     <div id="container">
         <div id="content">
-            <form action="post_welcome_content.php" method="post">
-                <div class="section_name">Welcome content<hr></div>
+            <form action="post_add_new_user.php" method="post">
+                <div class="section_name">Add new user<hr></div>
                 <div class="section_left">
-                    <input type="submit" value="Confirm">
+                    <input type="text" name="username" value="" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+                    <input type="text" name="confirm_username" value="" placeholder="Confirm username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm username'">
                 </div>
-                <div class="section_right">
-                    <textarea name="content" id=""><?php require_once "get_welcome_content.php"; echo $welcome_content; ?></textarea>
+                <div class="section_left">
+                    <input type="password" name="password" value="" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+                    <input type="password" name="confirm_password" value="" placeholder="Confirm password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm password'">
+                </div>
+                <div class="section_left">
+                    <input type="email" name="e-mail" value="" placeholder="E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'E-mail'">
+                    <input type="email" name="confirm_e-mail" value="" placeholder="Confirm e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm e-mail'">
+                </div>
+                <div class="section_submit">
+                    <input type="submit" value="Confirm">
+                    <?php
+                        if (isset($_SESSION['add_user_error'])) {
+                            echo '<span style="color: red; font-weight: bold;">' . $_SESSION['add_user_error'] . '</span>';
+                        }
+                    ?>
                 </div>
             </form>
-            <form action="post_section_01_content.php" method="post">
-                <div class="section_name">Section 1<hr></div>
-                <div class="section_left">
-                    <input type="text" name="title" value="<?php require_once "get_section_01_content.php"; echo $title_sec_01; ?>">
-                    <input type="submit" value="Confirm">
-                </div>
-                <div class="section_right">
-                    <textarea name="content" id=""><?php require_once "get_section_01_content.php"; echo $content_sec_01; ?></textarea>
-                </div>
-            </form>
-            <form action="post_section_02_content.php" method="post">
-                <div class="section_name">Section 2<hr></div>
-                <div class="section_left">
-                    <input type="text" name="title" value="<?php require_once "get_section_02_content.php"; echo $title_sec_02; ?>">
-                    <input type="submit" value="Confirm">
-                </div>
-                <div class="section_right">
-                    <textarea name="content" id=""><?php require_once "get_section_02_content.php"; echo $content_sec_02; ?></textarea>
-                </div>
-            </form>
-            <form action="post_section_03_content.php" method="post">
-                <div class="section_name">Section 3<hr></div>
-                <div class="section_left">
-                    <input type="text" name="title" value="<?php require_once "get_section_03_content.php"; echo $title_sec_03; ?>">
-                    <input type="submit" value="Confirm">
-                </div>
-                <div class="section_right">
-                <textarea name="content" id=""><?php require_once "get_section_03_content.php"; echo $content_sec_03; ?></textarea>
-                </div>
+            <form action="post_delete_user.php" method="post">
+                <div class="section_name">Delete user<hr></div>
             </form>
         </div>
     </div>

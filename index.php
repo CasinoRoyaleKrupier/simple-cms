@@ -73,7 +73,7 @@
             <a href="administrator/logout.php">Log out</a>
         </div>
         <div class="top_bar_button right">
-            <a href="#">
+            <a href="administrator/user_panel.php">
                 <?php echo $_SESSION['user'] . ""; ?>
             </a>
         </div>

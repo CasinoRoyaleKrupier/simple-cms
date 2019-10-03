@@ -6,9 +6,18 @@
 
 .section_left
 {
-    width: 200px;
+    width: 250px;
     height: 100%;
+    margin-bottom: 10px;
     float: left;
+}
+
+.section_right
+{
+    width: calc(100% - 250px);
+    height: 100%;
+    margin-bottom: 10px;
+    float: right;
 }
 
 .section_name
@@ -18,29 +27,13 @@
     font-size: 20px;
     font-weight: bold;
 }
-.section_right
-{
-    width: calc(100% - 250px);
-    height: 100%;
-    float: right;
-}
 
 .section_title
 {
     width: 100%;
 }
-/*
-.section input[type=submit]
-{
-    margin: 20px 20px 20px 0;
-    padding: 15px 10px;
-    float: left;
-}
 
-.section input[type=text],
-.section input[type=password],
-.section input[type=email]
+.section_submit
 {
-    width: 90%;
-    margin: 5px 0;
-} */
+    clear: both;
+}
