@@ -31,7 +31,7 @@
             $_SESSION['add_user_error'] = "Incorrect login details";
             exit();
         }
-        elseif ($username == "" || $password == "" || $email == "")
+        elseif (empty($username) || empty($password) || empty($email) )
         {
             header('Location: add_user_panel.php');
             $_SESSION['add_user_error'] = "Login details are incomplete";
@@ -43,10 +43,10 @@
         if ( $connection->query($sql) != true )
         {
             echo "Error: " . $connection->connect_errno;
+        }
 
-            if (isset($_SESSION['add_user_error'])) {
-                unset($_SESSION['add_user_error']);
-            }
+        if (isset($_SESSION['add_user_error'])) {
+            unset($_SESSION['add_user_error']);
         }
 
         $connection->close();

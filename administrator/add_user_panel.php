@@ -78,7 +78,7 @@
                     <input type="email" name="confirm_e-mail" value="" placeholder="Confirm e-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirm e-mail'">
                 </div>
                 <div class="section_submit">
-                    <input type="submit" value="Confirm">
+                    <input type="submit" value="Create new user">
                     <?php
                         if (isset($_SESSION['add_user_error'])) {
                             echo '<span style="color: red; font-weight: bold;">' . $_SESSION['add_user_error'] . '</span>';
@@ -88,6 +88,17 @@
             </form>
             <form action="post_delete_user.php" method="post">
                 <div class="section_name">Delete user<hr></div>
+                <div class="section_left">
+                    <input type="text" name="username" placeholder="Username" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Username'">
+                </div>
+                <div class="section_submit">
+                    <input type="submit" value="Delete user">
+                    <?php
+                        if (isset($_SESSION['delete_user_error'])) {
+                            echo '<span style="color: red; font-weight: bold;">' . $_SESSION['delete_user_error'] . '</span>';
+                        }
+                    ?>
+                </div>
             </form>
         </div>
     </div>
