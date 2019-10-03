@@ -80,8 +80,13 @@
                 <div class="section_submit">
                     <input type="submit" value="Create new user">
                     <?php
-                        if (isset($_SESSION['add_user_error'])) {
+                        if (isset($_SESSION['add_user_error']))
+                        {
                             echo '<span style="color: red; font-weight: bold;">' . $_SESSION['add_user_error'] . '</span>';
+                        }
+                        elseif (isset($_SESSION['add_user_passed']))
+                        {
+                            echo '<span style="color: green; font-weight: bold;">' . $_SESSION['add_user_passed'] . '</span>';
                         }
                     ?>
                 </div>
@@ -94,8 +99,13 @@
                 <div class="section_submit">
                     <input type="submit" value="Delete user">
                     <?php
-                        if (isset($_SESSION['delete_user_error'])) {
+                        if (isset($_SESSION['delete_user_error']))
+                        {
                             echo '<span style="color: red; font-weight: bold;">' . $_SESSION['delete_user_error'] . '</span>';
+                        }
+                        elseif (isset($_SESSION['delete_user_passed']))
+                        {
+                            echo '<span style="color: green; font-weight: bold;">' . $_SESSION['delete_user_passed'] . '</span>';
                         }
                     ?>
                 </div>

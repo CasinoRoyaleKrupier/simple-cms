@@ -24,8 +24,8 @@
             header('Location: user_panel.php');
             exit();
         }
-
-        $sql = "UPDATE `administrators` SET `pass` = '$new_password' WHERE `pass` = '$old_password';";
+        $hash_pass = password_hash($password, PASSWORD_DEFAULT);
+        $sql = "UPDATE `administrators` SET `pass` = '$hash_pass' WHERE `pass` = '$old_password';";
 
         if ( $connection->query($sql) != true )
         {

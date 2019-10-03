@@ -7,11 +7,18 @@
         exit();
     }
 
+    if (isset($_SESSION['add_user_passed']))
+        unset($_SESSION['add_user_passed']);
+
+    if (isset($_SESSION['add_user_error']))
+        unset($_SESSION['add_user_error']);
+
     $username = $_POST['username'];
     $confirm_username = $_POST['confirm_username'];
 
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
+    $hash_pass = password_hash($password, PASSWORD_DEFAULT);
 
     $email = $_POST['e-mail'];
     $confirm_email = $_POST['confirm_e-mail'];
@@ -28,7 +35,6 @@
         $_SESSION['add_user_error'] = "Login details are incomplete";
         exit();
     }
-    echo "men";
 
 
     require_once "connect.php";
@@ -55,7 +61,7 @@
             $_SESSION['add_user_error'] = "User already exists";
         }
 
-        //Check password
+        //Check email
 
         $result = $connection->query("SELECT id FROM administrators WHERE mail = '$email'");
 
@@ -70,13 +76,9 @@
 
         if ($is_OK == true)
         {
-            if ($connection->query("INSERT INTO administrators VALUES (NULL, '$username', '$password', '$email');"))
+            if ($connection->query("INSERT INTO administrators VALUES (NULL, '$username', '$hash_pass', '$email');"))
             {
-                $_SESSION['user_passed'] = true;
-
-                if (isset($_SESSION['add_user_error'])) {
-                    unset($_SESSION['add_user_error']);
-                }
+                $_SESSION['add_user_passed'] = "Successfully added user";
             }
             else
             {
@@ -84,7 +86,7 @@
             }
         }
 
-        header('Location: add_user_panel.php');
         $connection->close();
+        header('Location: add_user_panel.php');
     }
 ?>

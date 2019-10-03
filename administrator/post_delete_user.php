@@ -7,6 +7,23 @@
         exit();
     }
 
+    if (isset($_SESSION['delete_user_passed']))
+        unset($_SESSION['delete_user_passed']);
+
+    if (isset($_SESSION['delete_user_error']))
+        unset($_SESSION['delete_user_error']);
+
+    $username = $_POST['username'];
+
+    if ($username == $_SESSION['user'])
+    {
+        $_SESSION['delete_user_error'] = "You can not delete the current user";
+        header('Location: add_user_panel.php');
+        exit();
+    }
+
+
+
     require_once "connect.php";
 
     $connection = @new mysqli($host, $db_user, $db_password, $db_name);
@@ -16,24 +33,48 @@
     }
     else
     {
-        $username = $_POST['username'];
+        $is_OK = true;
 
-        if ($username == $_SESSION['user'])
+        //Check username
+
+        $result = $connection->query("SELECT id FROM administrators WHERE username = '$username'");
+
+        if (!$result) throw new Exception($connection->error);
+
+        $count_usernames = $result->num_rows;
+        if($count_usernames < 1)
         {
-            $_SESSION['delete_user_error'] = "You can not delete the current user";
-            header('Location: add_user_panel.php');
-            exit();
+            $is_OK = false;
+            $_SESSION['delete_user_error'] = "No user in the database";
         }
 
-        $sql = "DELETE FROM `administrators` WHERE `username` = '$username'";
-        if ( $connection->query($sql) != true )
+        if ($is_OK == true)
         {
-            echo "Error: " . $connection->connect_errno;
+            if ($connection->query("DELETE FROM `administrators` WHERE `username` = '$username';"))
+            {
+                $_SESSION['delete_user_passed'] = "Successfully deleted user";
+            }
+            else
+            {
+                $_SESSION['delete_user_error'] = "No user in the database";
+            }
         }
 
-        if (isset($_SESSION['delete_user_error'])) {
-            unset($_SESSION['delete_user_error']);
-        }
+
+
+
+
+
+
+        // $sql = "DELETE FROM `administrators` WHERE `username` = '$username'";
+        // if ( $connection->query($sql) != true )
+        // {
+        //     echo "Error: " . $connection->connect_errno;
+        // }
+
+        // if (isset($_SESSION['delete_user_error'])) {
+        //     unset($_SESSION['delete_user_error']);
+        // }
 
         $connection->close();
         header('Location: add_user_panel.php');
