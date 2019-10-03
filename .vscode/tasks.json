@@ -6,7 +6,11 @@
         {
             "label": "Open in Chrome",
             "type": "shell",
-            "command": "google-chrome-stable index.html"
+            "command": "google-chrome-stable http://localhost/simple_cms/administrator",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
         }
     ]
 }
