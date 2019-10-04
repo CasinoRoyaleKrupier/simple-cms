@@ -59,6 +59,9 @@
         <div class="nav_bar_button">
             <a href="add_user_panel.php">Add user</a>
         </div>
+        <div class="nav_bar_button">
+            <a href="#">Database set.</a>
+        </div>
     </div>
 
     <div id="container">
