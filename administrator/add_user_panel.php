@@ -56,7 +56,7 @@
         <div class="nav_bar_button">
             <a href="user_panel.php">User panel</a>
         </div>
-        <div class="nav_bar_button">
+        <div class="nav_bar_button" style="background-color: #525252;">
             <a href="add_user_panel.php">Add user</a>
         </div>
         <div class="nav_bar_button">

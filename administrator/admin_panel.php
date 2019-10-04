@@ -47,7 +47,7 @@
     </div>
 
     <div id="nav_panel">
-    <div class="nav_bar_button">
+    <div class="nav_bar_button" style="background-color: #525252;">
             <a href="admin_panel.php">Main site</a>
         </div>
         <div class="nav_bar_button">

@@ -50,7 +50,7 @@
     <div class="nav_bar_button">
             <a href="admin_panel.php">Main site</a>
         </div>
-        <div class="nav_bar_button">
+        <div class="nav_bar_button" style="background-color: #525252;">
             <a href="site_panel.php">Sites</a>
         </div>
         <div class="nav_bar_button">
