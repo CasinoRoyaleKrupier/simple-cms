@@ -15,25 +15,25 @@ CREATE TABLE page_title (
 
 CREATE TABLE welcome_content (
     id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    content VARCHAR(1024)
+    content VARCHAR(10240)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
 
 CREATE TABLE section_01_content (
     id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
     title VARCHAR(50),
-    content VARCHAR(1024)
+    content VARCHAR(10240)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
 
 CREATE TABLE section_02_content (
     id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
     title VARCHAR(50),
-    content VARCHAR(1024)
+    content VARCHAR(10240)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
 
 CREATE TABLE section_03_content (
     id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
     title VARCHAR(50),
-    content VARCHAR(1024)
+    content VARCHAR(10240)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
 
 INSERT INTO administrators (username, pass, mail) VALUES ('admin', 'admin', 'admin@admin.admin');
