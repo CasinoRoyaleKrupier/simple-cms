@@ -4,13 +4,7 @@ a, a:link, a:visited, a:focus
     color: #ffffff;
 }
 
-#nav_panel a, #nav_panel a:link
+a:hover
 {
-    width: 100%;
-    padding: 10px 0;
-    text-decoration: none;
-    color: #ffffff;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    display: block;
+    color: #000000;
 }
