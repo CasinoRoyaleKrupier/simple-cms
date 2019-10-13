@@ -1,0 +1,56 @@
+#nav_horizontal_panel
+{
+    width: 100%;
+    height: 70px;
+    background-color: #3d6e99;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 10px 50px 23px rgba(64,64,64,0.5);
+    -moz-box-shadow: 0px 10px 50px 23px rgba(64,64,64,0.5);
+    box-shadow: 0px 10px 50px 23px rgba(64,64,64,0.5);
+    position: fixed;
+}
+
+#nav_vertical_panel
+{
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #3d6e99;
+    color: #ffffff;
+    position: fixed;
+    display: none;
+    -webkit-box-shadow: 15px 0px 50px 23px rgba(64,64,64,0.5);
+    -moz-box-shadow: 15px 0px 50px 23px rgba(64,64,64,0.5);
+    box-shadow: 15px 0px 50px 23px rgba(64,64,64,0.5);
+}
+
+.nav_bar_button
+{
+    width: 100%;
+    text-align: center;
+    float: left;
+    padding: 10px 0;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+}
+
+.nav_bar_button:hover
+{
+    color: #ffffff;
+    background-color: #dcdcdc;
+    font-weight: bold;
+}
+
+#nav_show_menu_button, #nav_hide_menu_button
+{
+
+    float: left;
+    margin: 8px;
+}
+
+#nav_show_menu_button img, #nav_hide_menu_button img
+{
+    height: 50px;
+    padding: 0;
+}

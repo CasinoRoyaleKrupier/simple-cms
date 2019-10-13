@@ -1,7 +1,7 @@
-$(document).ready(function()
+$(document).ready( () =>
 {
 
-    $("#button_sec_01").click(function()
+    $("#button_sec_01").click( () =>
     {
         $("#welcone_content").hide();
 
@@ -14,12 +14,14 @@ $(document).ready(function()
         $("#section_03").css("display", "none");
         $("#section_03").animate({opacity: 0});
 
-        if ($(window).width() < 1000) {
-            $("#nav_menu_buttons").css("display", "none");
+        if($('#nav_vertical_panel').css('display') == "block")
+        {
+            $("#nav_vertical_panel").slideUp();
+            $("#screen_dimming").fadeOut();
         }
     });
 
-    $("#button_sec_02").click(function()
+    $("#button_sec_02").click( () =>
     {
         $("#welcone_content").hide();
 
@@ -32,12 +34,14 @@ $(document).ready(function()
         $("#section_03").css("display", "none");
         $("#section_03").animate({opacity: 0});
 
-        if ($(window).width() < 1000) {
-            $("#nav_menu_buttons").css("display", "none");
+        if($('#nav_vertical_panel').css('display') == "block")
+        {
+            $("#nav_vertical_panel").slideUp();
+            $("#screen_dimming").fadeOut();
         }
     });
 
-    $("#button_sec_03").click(function()
+    $("#button_sec_03").click( () =>
     {
         $("#welcone_content").hide();
 
@@ -50,19 +54,22 @@ $(document).ready(function()
         $("#section_03").css("display", "block");
         $("#section_03").animate({opacity: 1});
 
-        if ($(window).width() < 1000) {
-            $("#nav_menu_buttons").css("display", "none");
+        if($('#nav_vertical_panel').css('display') == "block")
+        {
+            $("#nav_vertical_panel").slideUp();
+            $("#screen_dimming").fadeOut();
         }
     });
 
-    $("#nav_list_menu_button").click(function ()
+    $("#nav_show_menu_button").click( () =>
     {
-        if (window.innerWidth <= 1000)
-        {
-            $("#nav_menu_buttons").slideToggle();
+        $("#nav_vertical_panel").slideDown();
+        $("#screen_dimming").fadeIn();
+    });
 
-            $("#nav_section").css("border-bottom-left-radius", "10px");
-            $("#nav_section").css("border-bottom-right-radius", "10px");
-        }
+    $("#nav_hide_menu_button").click( () =>
+    {
+        $("#nav_vertical_panel").slideUp();
+        $("#screen_dimming").fadeOut();
     });
 });
