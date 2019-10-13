@@ -4,9 +4,12 @@
     height: 70px;
     background-color: #3d6e99;
     box-sizing: border-box;
-    -webkit-box-shadow: 0px 10px 50px 23px rgba(64,64,64,0.5);
+    /* -webkit-box-shadow: 0px 10px 50px 23px rgba(64,64,64,0.5);
     -moz-box-shadow: 0px 10px 50px 23px rgba(64,64,64,0.5);
-    box-shadow: 0px 10px 50px 23px rgba(64,64,64,0.5);
+    box-shadow: 0px 10px 50px 23px rgba(64,64,64,0.5); */
+    box-shadow: 0px 100px 61px -100px rgba(255,255,255,0.75) inset, 0px 10px 50px 23px rgba(64,64,64,0.5);
+    -webkit-box-shadow: 0px 100px 61px -100px rgba(255,255,255,0.75) inset, 0px 10px 50px 23px rgba(64,64,64,0.5);
+    -moz-box-shadow: 0px 100px 61px -100px rgba(255,255,255,0.75) inset, 0px 10px 50px 23px rgba(64,64,64,0.5);
     position: fixed;
 }
 
@@ -19,9 +22,12 @@
     color: #ffffff;
     position: fixed;
     display: none;
-    -webkit-box-shadow: 15px 0px 50px 23px rgba(64,64,64,0.5);
+    box-shadow: 0px 100px 61px -100px rgba(255,255,255,0.75) inset, 0px 10px 50px 23px rgba(64,64,64,0.5);
+    -webkit-box-shadow: 0px 100px 61px -100px rgba(255,255,255,0.75) inset, 0px 10px 50px 23px rgba(64,64,64,0.5);
+    -moz-box-shadow: 0px 100px 61px -100px rgba(255,255,255,0.75) inset, 0px 10px 50px 23px rgba(64,64,64,0.5);
+    /* -webkit-box-shadow: 15px 0px 50px 23px rgba(64,64,64,0.5);
     -moz-box-shadow: 15px 0px 50px 23px rgba(64,64,64,0.5);
-    box-shadow: 15px 0px 50px 23px rgba(64,64,64,0.5);
+    box-shadow: 15px 0px 50px 23px rgba(64,64,64,0.5); */
 }
 
 .nav_bar_button

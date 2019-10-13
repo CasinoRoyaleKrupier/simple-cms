@@ -15,7 +15,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
-    <!-- <link rel="stylesheet" href="styles/scrollbar.css"> -->
+    <link rel="stylesheet" href="styles/scrollbar.css">
     <link rel="stylesheet" href="styles/max_width_1300.css">
     <link rel="stylesheet" href="styles/max_width_1000.css">
     <link rel="stylesheet" href="administrator/admin_styles/top_bar.css">
