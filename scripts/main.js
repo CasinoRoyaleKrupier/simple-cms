@@ -1,6 +1,7 @@
 window.onload = delay_show_element();
+window.onscroll = () => { slide_panel() };
 
-function delay_show_element(element)
+function delay_show_element()
 {
     let delayInMilliseconds = 500;
     setTimeout(function() {
@@ -14,6 +15,17 @@ function delay_show_element(element)
             }
         );
     }, 1000);
+}
+
+function slide_panel()
+{
+    if ($(window).scrollTop() > 150) {
+        $("#slide_horizontal_panel").css("top", "0px");
+    }
+    else
+    {
+        $("#slide_horizontal_panel").css("top", "-80px");
+    }
 }
 
 function scroll_to(selector) {
@@ -60,7 +72,7 @@ $(document).ready( () =>
         }
     });
 
-    $("#show_vertical_panel").click( () =>
+    $(".show_vertical_panel").click( () =>
     {
         $("#nav_vertical_panel").slideDown();
         $("#screen_dimming").fadeIn();
