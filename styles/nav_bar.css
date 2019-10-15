@@ -133,7 +133,7 @@
 
 @media(max-width: 1200px)
 {
-    .nav_button
+    .nav_button_light, .nav_button_dark
     {
         display: none;
     }
