@@ -1,5 +1,11 @@
-window.onload = delay_show_element();
-window.onscroll = () => { slide_panel() };
+window.addEventListener("load", () =>
+{
+    delay_show_element()
+});
+window.onscroll = () =>
+{
+    slide_panel()
+};
 
 function delay_show_element()
 {
