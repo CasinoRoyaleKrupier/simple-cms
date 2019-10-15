@@ -24,8 +24,6 @@
     <link rel="stylesheet" href="admin_styles/sections.css">
     <link rel="stylesheet" href="admin_styles/inputs.css">
 
-    <script src="../scripts/jquery-3.4.1.min.js"></script>
-
     <title><?php require_once "get_page_title.php"; echo $page_title; ?> - panel administration</title>
 </head>
 <body>
