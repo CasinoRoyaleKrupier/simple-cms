@@ -13,11 +13,11 @@ body
     font-family: 'Roboto', sans-serif;
 }
 
-#container
+/* #container
 {
     width: 100%;
     height: 100%;
-}
+} */
 
 .left
 {
@@ -49,7 +49,7 @@ body
     text-align: justify;
 }
 
-.container_section
+section
 {
     width: 100%;
     min-height: 100%;
@@ -84,7 +84,7 @@ body
     background-attachment: fixed;
 }
 
-.content
+article
 {
     width: 100%;
 }

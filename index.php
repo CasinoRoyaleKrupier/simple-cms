@@ -32,115 +32,115 @@
 </head>
 <body>
 
-    <div id="container">
-        <div id="screen_dimming"></div>
-        <div class="container_section bg_00">
-            <div id="nav_horizontal_panel">
-                <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_light.svg">
-                <div class="nav_button_light left" onclick="scroll_to('#sec_01');">
-                    <?php
-                        require_once "administrator/get_section_01_content.php";
-                        echo $title_sec_01;
-                    ?>
-                </div>
-                <div class="nav_button_light left" onclick="scroll_to('#sec_02');">
-                        <?php
-                            require_once "administrator/get_section_02_content.php";
-                            echo $title_sec_02;
-                        ?>
-                </div>
-                <div class="nav_button_light left" onclick="scroll_to('#sec_03');">
-                    <?php
-                        require_once "administrator/get_section_03_content.php";
-                        echo $title_sec_03;
-                    ?>
-                </div>
-                <div id="nav_logo" class="right" onclick="location.href = 'index.php'">
-                    <?php
-                        require_once "administrator/get_page_title.php";
-                        echo $page_title;
-                    ?>
-                </div>
-                <?php
-                    if ( isset($_SESSION['logged']) )
-                    {
-                        echo '<div class="nav_button_light right" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
-                        echo '<div class="nav_button_light right" onclick="location.href = `administrator/logout.php`">Logout</div>';
-                    }
-                ?>
-            </div>
-            <div class="content">
-                <div class="welcome_text text_center">
-                    <?php
-                        require_once "administrator/get_welcome_content.php";
-                        echo $welcome_content;
-                    ?>
-                </div>
-            </div>
-        </div>
+    <div id="screen_dimming"></div>
 
-        <div class="separator">
-            <div class="separator_title" id="sec_01">
+    <section class="bg_00">
+        <nav id="nav_horizontal_panel">
+            <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_light.svg">
+            <div class="nav_button_light left" onclick="scroll_to('#sec_01');">
                 <?php
                     require_once "administrator/get_section_01_content.php";
                     echo $title_sec_01;
                 ?>
             </div>
-        </div>
-
-        <div class="container_section bg_01">
-            <div class="content">
-                <div class="content_text text_just">
-                    <?php
-                        require_once "administrator/get_section_01_content.php";
-                        echo $content_sec_01;
-                    ?>
-                </div>
-            </div>
-        </div>
-
-        <div class="separator" id="sec_02">
-            <div class="separator_title">
-                <?php
-                    require_once "administrator/get_section_02_content.php";
-                    echo $title_sec_02;
-                ?>
-            </div>
-        </div>
-
-        <div class="container_section bg_02">
-            <div class="content">
-                <div class="content_text text_just">
+            <div class="nav_button_light left" onclick="scroll_to('#sec_02');">
                     <?php
                         require_once "administrator/get_section_02_content.php";
-                        echo $content_sec_02;
+                        echo $title_sec_02;
                     ?>
-                </div>
             </div>
-        </div>
-
-        <div class="separator" id="sec_03">
-            <div class="separator_title">
+            <div class="nav_button_light left" onclick="scroll_to('#sec_03');">
                 <?php
                     require_once "administrator/get_section_03_content.php";
                     echo $title_sec_03;
                 ?>
             </div>
-        </div>
-
-        <div class="container_section bg_03">
-            <div class="content">
-                <div class="content_text text_just">
-                    <?php
-                        require_once "administrator/get_section_03_content.php";
-                        echo $content_sec_03;
-                    ?>
-                </div>
+            <div id="nav_logo" class="right" onclick="location.href = 'index.php'">
+                <?php
+                    require_once "administrator/get_page_title.php";
+                    echo $page_title;
+                ?>
             </div>
+            <?php
+                if ( isset($_SESSION['logged']) )
+                {
+                    echo '<div class="nav_button_light right" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
+                    echo '<div class="nav_button_light right" onclick="location.href = `administrator/logout.php`">Logout</div>';
+                }
+            ?>
+        </nav>
+        <article>
+            <div class="welcome_text text_center">
+                <?php
+                    require_once "administrator/get_welcome_content.php";
+                    echo $welcome_content;
+                ?>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator">
+        <div class="separator_title" id="sec_01">
+            <?php
+                require_once "administrator/get_section_01_content.php";
+                echo $title_sec_01;
+            ?>
         </div>
     </div>
 
-    <div id="slide_horizontal_panel">
+    <section class="bg_01">
+        <article>
+            <div class="content_text text_just">
+                <?php
+                    require_once "administrator/get_section_01_content.php";
+                    echo $content_sec_01;
+                ?>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator" id="sec_02">
+        <div class="separator_title">
+            <?php
+                require_once "administrator/get_section_02_content.php";
+                echo $title_sec_02;
+            ?>
+        </div>
+    </div>
+
+    <section class="bg_02">
+        <article>
+            <div class="content_text text_just">
+                <?php
+                    require_once "administrator/get_section_02_content.php";
+                    echo $content_sec_02;
+                ?>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator" id="sec_03">
+        <div class="separator_title">
+            <?php
+                require_once "administrator/get_section_03_content.php";
+                echo $title_sec_03;
+            ?>
+        </div>
+    </div>
+
+    <section class="bg_03">
+        <article>
+            <div class="content_text text_just">
+                <?php
+                    require_once "administrator/get_section_03_content.php";
+                    echo $content_sec_03;
+                ?>
+            </div>
+        </div>
+    </section>
+
+
+    <nav id="slide_horizontal_panel">
         <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_dark.svg">
         <div class="nav_button_dark left" onclick="scroll_to('#sec_01');">
             <?php
@@ -173,9 +173,9 @@
                 echo '<div class="nav_button_dark right" onclick="location.href = `administrator/logout.php`">Logout</div>';
             }
         ?>
-    </div>
+    </nav>
 
-    <div id="nav_vertical_panel">
+    <nav id="nav_vertical_panel">
         <img id="hide_vertical_panel" class="slide_menu_button" src="images/slide_menu_light.svg">
         <div class="nav_vertical_button" id="button_sec_01">
             <?php
@@ -195,8 +195,7 @@
                 echo $title_sec_03;
             ?>
         </div>
-    </div>
-
+    </nav>
 
     <script src="scripts/main.js"></script>
 </body>
