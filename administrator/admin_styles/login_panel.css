@@ -1,7 +1,7 @@
 body
 {
     /* Background pattern from Toptal Subtle Patterns */
-    background: url(../../images/login_panel.png);
+    background: url(../images/login_panel.png);
     background-attachment: fixed;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;

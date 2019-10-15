@@ -6,10 +6,22 @@ function delay_show_element(element)
     setTimeout(function() {
         $(".welcome_text").fadeIn();
     }, delayInMilliseconds);
+
+    setTimeout(function() {
+        $("#nav_horizontal_panel").animate(
+            {
+                opacity: 1
+            }
+        );
+    }, 1000);
 }
 
 function scroll_to(selector) {
-    $('html,body').animate({scrollTop: $(selector).offset().top}, 1000);
+    $('html,body').animate(
+        {
+            scrollTop: $(selector).offset().top
+        }, 1000);
+
     return false;
 }
 
@@ -17,6 +29,8 @@ $(document).ready( () =>
 {
     $("#button_sec_01").click( () =>
     {
+        scroll_to('#sec_01');
+
         if($('#nav_vertical_panel').css('display') == "block")
         {
             $("#nav_vertical_panel").slideUp();
@@ -26,6 +40,8 @@ $(document).ready( () =>
 
     $("#button_sec_02").click( () =>
     {
+        scroll_to('#sec_02');
+
         if($('#nav_vertical_panel').css('display') == "block")
         {
             $("#nav_vertical_panel").slideUp();
@@ -35,6 +51,8 @@ $(document).ready( () =>
 
     $("#button_sec_03").click( () =>
     {
+        scroll_to('#sec_03');
+
         if($('#nav_vertical_panel').css('display') == "block")
         {
             $("#nav_vertical_panel").slideUp();
