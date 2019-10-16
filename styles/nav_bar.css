@@ -57,19 +57,19 @@ nav#slide_horizontal_panel
     color: #fff;
 }
 
-.nav_button_light
+.nav_button
 {
-    width: 100px;
     height: 20px;
     margin: 20px 5px;
     padding: 10px 40px;
     font-size: 15px;
+    font-weight: bold;
     text-align: center;
     border-radius: 100px;
     transition: all 0.5s ease-in-out;
 }
 
-.nav_button_light hr
+.nav_button hr
 {
     width: 10px;
     margin-left: auto;
@@ -77,34 +77,15 @@ nav#slide_horizontal_panel
     transition: all 0.5s ease-in-out;
 }
 
-div.nav_button_light:hover hr
+div.nav_button:hover hr
 {
-    width: 50px;
+    width: 100%;
     transition: all 0.5s ease-in-out;
 }
 
-.nav_button_light:hover
+.nav_button:hover
 {
     margin: 15px 5px;
-    /* background-color: #ffffff;
-    color: #000000; */
-}
-
-.nav_button_dark
-{
-    height: 20px;
-    margin: 20px 5px;
-    padding: 10px 40px;
-    font-size: 15px;
-    text-align: center;
-    border-radius: 100px;
-    transition: 0.5s;
-}
-
-.nav_button_dark:hover
-{
-    background-color: #202020;
-    color: #fff;
 }
 
 #nav_logo
@@ -152,7 +133,7 @@ div.nav_button_light:hover hr
 
 @media(max-width: 1200px)
 {
-    .nav_button_light, .nav_button_dark
+    .nav_button
     {
         display: none;
     }
