@@ -29,9 +29,10 @@ footer
 
 .miedia_links_item
 {
-    padding: 20px;
+    padding: 15px;
     font-size: 30px;
     text-align: center;
+    transition: all 0.5s ease-in-out;
 }
 
 .miedia_links_item img
@@ -52,6 +53,12 @@ footer
 div.miedia_links_item:hover hr
 {
     width: 25%;
+    transition: all 0.5s ease-in-out;
+}
+
+.miedia_links_item:hover
+{
+    margin-top: -5px;
     transition: all 0.5s ease-in-out;
 }
 

@@ -152,50 +152,22 @@
             </div>
         </div>
 
-        <!-- <div id="media_separator"><hr></div> -->
-        <!-- <div id="media"> -->
-            <!-- <div class="footer_button">
-                <a href="#">
-                    <img src="images/social_media/facebook-brands.svg">
-                    <hr>
-                </a>
+        <div id="media_links">
+            <div class="miedia_links_item">
+                <img src="images/social_media/facebook-brands.svg">
+                <hr>
             </div>
-            <div class="footer_button">
-                <a href="#">
-                    <img src="images/social_media/twitter-brands.svg">
-                    <hr>
-                </a>
+            <div class="miedia_links_item">
+                <img src="images/social_media/twitter-brands.svg">
+                <hr>
             </div>
-            <div class="footer_button">
-                <a href="#">
-                    <img src="images/social_media/linkedin-brands.svg">
-                    <hr>
-                </a>
+            <div class="miedia_links_item">
+                <img src="images/social_media/linkedin-brands.svg">
+                <hr>
             </div>
-            <div class="footer_button">
-                <a href="#">
-                    <img src="images/social_media/github-brands.svg">
-                    <hr>
-                </a>
-            </div> -->
-
-            <div id="media_links">
-                <div class="miedia_links_item">
-                    <img src="images/social_media/facebook-brands.svg">
-                    <hr>
-                </div>
-                <div class="miedia_links_item">
-                    <img src="images/social_media/twitter-brands.svg">
-                    <hr>
-                </div>
-                <div class="miedia_links_item">
-                    <img src="images/social_media/linkedin-brands.svg">
-                    <hr>
-                </div>
-                <div class="miedia_links_item">
-                    <img src="images/social_media/github-brands.svg">
-                    <hr>
-                </div>
+            <div class="miedia_links_item">
+                <img src="images/social_media/github-brands.svg">
+                <hr>
             </div>
         </div>
     </footer>
