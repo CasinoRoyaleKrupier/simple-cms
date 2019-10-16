@@ -42,18 +42,21 @@
                     require_once "administrator/get_section_01_content.php";
                     echo $title_sec_01;
                 ?>
+                <hr>
             </div>
             <div class="nav_button_light left" onclick="scroll_to('#sec_02');">
-                    <?php
-                        require_once "administrator/get_section_02_content.php";
-                        echo $title_sec_02;
-                    ?>
+                <?php
+                    require_once "administrator/get_section_02_content.php";
+                    echo $title_sec_02;
+                ?>
+                <hr>
             </div>
             <div class="nav_button_light left" onclick="scroll_to('#sec_03');">
                 <?php
                     require_once "administrator/get_section_03_content.php";
                     echo $title_sec_03;
                 ?>
+                <hr>
             </div>
             <div id="nav_logo" class="right" onclick="location.href = 'index.php'">
                 <?php
@@ -142,11 +145,18 @@
 
     <nav id="slide_horizontal_panel">
         <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_dark.svg">
+        <div id="slide_nav_logo" class="right" onclick="location.href = 'index.php'">
+            <?php
+                require_once "administrator/get_page_title.php";
+                echo $page_title;
+            ?>
+        </div>
         <div class="nav_button_dark left" onclick="scroll_to('#sec_01');">
             <?php
                 require_once "administrator/get_section_01_content.php";
                 echo $title_sec_01;
             ?>
+            <hr>
         </div>
         <div class="nav_button_dark left" onclick="scroll_to('#sec_02');">
                 <?php
@@ -160,12 +170,6 @@
                 echo $title_sec_03;
             ?>
         </div>
-        <div id="slide_nav_logo" class="right" onclick="location.href = 'index.php'">
-            <?php
-                require_once "administrator/get_page_title.php";
-                echo $page_title;
-            ?>
-        </div>
         <?php
             if ( isset($_SESSION['logged']) )
             {
@@ -176,7 +180,13 @@
     </nav>
 
     <nav id="nav_vertical_panel">
-        <img id="hide_vertical_panel" class="slide_menu_button" src="images/slide_menu_light.svg">
+        <img id="hide_vertical_panel" class="slide_menu_button" src="images/up_arrow_dark.svg">
+        <div id="slide_nav_logo" class="right" onclick="location.href = 'index.php'">
+            <?php
+                require_once "administrator/get_page_title.php";
+                echo $page_title;
+            ?>
+        </div>
         <div class="nav_vertical_button" id="button_sec_01">
             <?php
                 require_once "administrator/get_section_01_content.php";

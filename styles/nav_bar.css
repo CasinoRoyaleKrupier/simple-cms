@@ -2,24 +2,23 @@ nav#nav_horizontal_panel
 {
     width: 100%;
     height: 80px;
+    box-sizing: border-box;
     opacity: 0;
 }
 
 nav#nav_vertical_panel
 {
     top: 0;
-    width: 200px;
-    height: 100%;
-    background-color: #404040;
-    color: #ffffff;
+    width: calc(100% - 20px);
+    height: calc(100% - 10px);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
     position: fixed;
     display: none;
-    box-shadow: 0px 100px 61px -100px #000 inset;
-    -webkit-box-shadow: 0px 100px 61px -100px #000 inset;
-    -moz-box-shadow: 0px 100px 61px -100px #000 inset;
-    /* box-shadow: 0px 100px 61px -100px #000 inset, 0px 10px 50px 23px #000;
-    -webkit-box-shadow: 0px 100px 61px -100px #000 inset, 0px 10px 50px 23px #000;
-    -moz-box-shadow: 0px 100px 61px -100px #000 inset, 0px 10px 50px 23px #000; */
 }
 
 nav#slide_horizontal_panel
@@ -39,36 +38,56 @@ nav#slide_horizontal_panel
 
 .nav_vertical_button
 {
-    width: 100%;
+    width: 150px;
+    height: 20px;
+    margin: 20px auto 5px auto;
+    padding: 10px 40px;
+    font-size: 15px;
     text-align: center;
-    float: left;
-    padding: 10px 0;
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
+    border-radius: 100px;
+    border: 2px solid #000000;
+    transition: 0.5s;
+    clear: both;
 }
 
 .nav_vertical_button:hover
 {
-    color: #000000;
-    background-color: #dcdcdc;
-    font-weight: bold;
+    width: 70%;
+    background-color: #202020;
+    color: #fff;
 }
 
 .nav_button_light
 {
+    width: 100px;
     height: 20px;
     margin: 20px 5px;
     padding: 10px 40px;
     font-size: 15px;
+    text-align: center;
     border-radius: 100px;
-    transition: 0.5s;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav_button_light hr
+{
+    width: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+div.nav_button_light:hover hr
+{
+    width: 50px;
+    transition: all 0.5s ease-in-out;
 }
 
 .nav_button_light:hover
 {
-    background-color: #ffffff;
-    color: #000000;
+    margin: 15px 5px;
+    /* background-color: #ffffff;
+    color: #000000; */
 }
 
 .nav_button_dark
@@ -77,6 +96,7 @@ nav#slide_horizontal_panel
     margin: 20px 5px;
     padding: 10px 40px;
     font-size: 15px;
+    text-align: center;
     border-radius: 100px;
     transition: 0.5s;
 }
