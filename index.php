@@ -15,11 +15,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
-    <!-- <link rel="stylesheet" href="styles/scrollbar.css"> -->
     <link rel="stylesheet" href="administrator/admin_styles/top_bar.css">
     <link rel="stylesheet" href="styles/links.css">
     <link rel="stylesheet" href="styles/nav_bar.css">
     <link rel="stylesheet" href="styles/separator.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
     <script src="scripts/jquery-3.4.1.min.js"></script>
 
@@ -142,6 +142,67 @@
         </div>
     </section>
 
+    <footer>
+        <div class="footer_content">
+            <div class="footer_row">
+                Street address:
+            </div>
+            <div class="footer_row">
+                Phone number:
+            </div>
+        </div>
+
+        <!-- <div id="media_separator"><hr></div> -->
+        <!-- <div id="media"> -->
+            <!-- <div class="footer_button">
+                <a href="#">
+                    <img src="images/social_media/facebook-brands.svg">
+                    <hr>
+                </a>
+            </div>
+            <div class="footer_button">
+                <a href="#">
+                    <img src="images/social_media/twitter-brands.svg">
+                    <hr>
+                </a>
+            </div>
+            <div class="footer_button">
+                <a href="#">
+                    <img src="images/social_media/linkedin-brands.svg">
+                    <hr>
+                </a>
+            </div>
+            <div class="footer_button">
+                <a href="#">
+                    <img src="images/social_media/github-brands.svg">
+                    <hr>
+                </a>
+            </div> -->
+
+            <div id="media_links">
+                <div class="miedia_links_item">
+                    <img src="images/social_media/facebook-brands.svg">
+                    <hr>
+                </div>
+                <div class="miedia_links_item">
+                    <img src="images/social_media/twitter-brands.svg">
+                    <hr>
+                </div>
+                <div class="miedia_links_item">
+                    <img src="images/social_media/linkedin-brands.svg">
+                    <hr>
+                </div>
+                <div class="miedia_links_item">
+                    <img src="images/social_media/github-brands.svg">
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
 
     <nav id="slide_horizontal_panel">
         <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_dark.svg">
@@ -182,7 +243,7 @@
     </nav>
 
     <nav id="nav_vertical_panel">
-        <img id="hide_vertical_panel" class="slide_menu_button" src="images/up_arrow_dark.svg">
+        <img id="hide_vertical_panel" class="slide_menu_button" src="images/slide_menu_dark.svg">
         <div id="slide_nav_logo" class="right" onclick="location.href = 'index.php'">
             <?php
                 require_once "administrator/get_page_title.php";

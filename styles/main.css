@@ -29,6 +29,11 @@ body
     float: right;
 }
 
+.clear_b
+{
+    clear: both;
+}
+
 .text_left
 {
     text-align: left;
