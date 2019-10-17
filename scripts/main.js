@@ -7,21 +7,21 @@ window.onscroll = () =>
     slide_panel()
 };
 
-function delay_show_element()
+const delay_show_element = () =>
 {
     let delayInMilliseconds = 500;
     setTimeout( () =>
     {
         $(".welcome_text").fadeIn();
-
-        setTimeout( () => {
-            $("#nav_horizontal_panel").css("top", "0px");
-        }, 500);
-
     }, delayInMilliseconds);
+
+    setTimeout( () =>
+    {
+        $("#nav_horizontal_panel").css("top", "0px");
+    }, 1000);
 }
 
-function slide_panel()
+const slide_panel = () =>
 {
     if ($(window).scrollTop() > 150) {
         $("#slide_horizontal_panel").css("top", "0px");
@@ -32,7 +32,8 @@ function slide_panel()
     }
 }
 
-function scroll_to(selector) {
+const scroll_to = (selector) =>
+{
     $('html,body').animate(
         {
             scrollTop: $(selector).offset().top
@@ -47,6 +48,7 @@ ScrollReveal().reveal('.separator_title', {
     useDelay: 'onload',
     reset: true
 });
+
 ScrollReveal().reveal('section', {
     distance: '50px',
     delay: 500,
