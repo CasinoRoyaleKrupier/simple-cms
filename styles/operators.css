@@ -1,0 +1,62 @@
+.bg_00
+{
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(../images/bg_00.png);
+    background-attachment: fixed;
+}
+
+.bg_01
+{
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(../images/bg_01.png);
+    background-attachment: fixed;
+}
+
+.bg_02
+{
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(../images/bg_02.png);
+    background-attachment: fixed;
+}
+
+.bg_03
+{
+    /* Background pattern from Toptal Subtle Patterns */
+    background-image: url(../images/bg_03.png);
+    background-attachment: fixed;
+}
+
+.left
+{
+    float: left;
+}
+
+.right
+{
+    float: right;
+}
+
+.clear_b
+{
+    clear: both;
+}
+
+.text_left
+{
+    text-align: left;
+}
+
+.text_right
+{
+    text-align: right;
+}
+
+.text_center
+{
+    text-align: center;
+}
+
+.text_just
+{
+    text-align: justify;
+}

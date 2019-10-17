@@ -20,8 +20,10 @@
     <link rel="stylesheet" href="styles/nav_bar.css">
     <link rel="stylesheet" href="styles/separator.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/operators.css">
 
     <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <title>
         <?php
@@ -34,7 +36,7 @@
 
     <div id="screen_dimming"></div>
 
-    <section class="bg_00">
+    <header class="bg_00">
         <nav id="nav_horizontal_panel">
             <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_light.svg">
             <div class="nav_button left" onclick="scroll_to('#sec_01');">
@@ -80,7 +82,7 @@
                 ?>
             </div>
         </div>
-    </section>
+    </header>
 
     <div class="separator">
         <div class="separator_title" id="sec_01">
@@ -152,6 +154,7 @@
             </div>
         </div>
 
+        <hr>
         <div id="media_links">
             <div class="miedia_links_item">
                 <img src="images/social_media/facebook-brands.svg">

@@ -15,11 +15,7 @@ function delay_show_element()
     }, delayInMilliseconds);
 
     setTimeout(function() {
-        $("#nav_horizontal_panel").animate(
-            {
-                opacity: 1
-            }
-        );
+        $("#nav_horizontal_panel").css("top", "0px");
     }, 1000);
 }
 
@@ -42,6 +38,19 @@ function scroll_to(selector) {
 
     return false;
 }
+
+ScrollReveal().reveal('.separator_title', {
+    distance: '50px',
+    delay: 700,
+    useDelay: 'onload',
+    reset: true
+});
+ScrollReveal().reveal('section', {
+    distance: '50px',
+    delay: 500,
+    useDelay: 'onload',
+    reset: true
+});
 
 $(document).ready( () =>
 {
