@@ -10,13 +10,15 @@ window.onscroll = () =>
 function delay_show_element()
 {
     let delayInMilliseconds = 500;
-    setTimeout(function() {
+    setTimeout( () =>
+    {
         $(".welcome_text").fadeIn();
-    }, delayInMilliseconds);
 
-    setTimeout(function() {
-        $("#nav_horizontal_panel").css("top", "0px");
-    }, 1000);
+        setTimeout( () => {
+            $("#nav_horizontal_panel").css("top", "0px");
+        }, 500);
+
+    }, delayInMilliseconds);
 }
 
 function slide_panel()
