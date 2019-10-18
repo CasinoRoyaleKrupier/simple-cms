@@ -1,62 +1,11 @@
-.bg_00
-{
-    /* Background pattern from Toptal Subtle Patterns */
-    background-image: url(../images/bg_00.png);
-    background-attachment: fixed;
-}
-
-.bg_01
-{
-    /* Background pattern from Toptal Subtle Patterns */
-    background-image: url(../images/bg_01.png);
-    background-attachment: fixed;
-}
-
-.bg_02
-{
-    /* Background pattern from Toptal Subtle Patterns */
-    background-image: url(../images/bg_02.png);
-    background-attachment: fixed;
-}
-
-.bg_03
-{
-    /* Background pattern from Toptal Subtle Patterns */
-    background-image: url(../images/bg_03.png);
-    background-attachment: fixed;
-}
-
-.left
-{
-    float: left;
-}
-
-.right
-{
-    float: right;
-}
-
-.clear_b
-{
-    clear: both;
-}
-
-.text_left
-{
-    text-align: left;
-}
-
-.text_right
-{
-    text-align: right;
-}
-
-.text_center
-{
-    text-align: center;
-}
-
-.text_just
-{
-    text-align: justify;
-}
+.bg_00          { background: linear-gradient(35deg, hsl(256, 61%, 45%) 12%, hsl(257, 100%, 72%) 71%); }
+.bg_01          { background: linear-gradient(35deg, hsl(0, 61%, 45%) 12%, hsl(0, 34%, 58%) 71%); }
+.bg_02          { background: linear-gradient(35deg, hsl(36, 61%, 45%) 12%, hsl(37, 100%, 72%) 71%); }
+.bg_03          { background: linear-gradient(35deg, hsl(256, 61%, 45%) 12%, hsl(257, 100%, 72%) 71%); }
+.left           { float: left; }
+.right          { float: right; }
+.clear_b        { clear: both; }
+.text_left      { text-align: left; }
+.text_right     { text-align: right; }
+.text_center    { text-align: center; }
+.text_just      { text-align: justify; }

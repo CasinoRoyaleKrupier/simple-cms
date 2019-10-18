@@ -14,10 +14,7 @@ footer
     float: left;
 }
 
-.footer_row
-{
-    margin-bottom: 40px;
-}
+.footer_row { margin-bottom: 40px; }
 
 #media_links
 {
@@ -30,17 +27,14 @@ footer
 {
     width: 40px;
     height: 50px;
-    padding: 15px;
+    padding: 15px 0;
     margin: 0 auto;
     font-size: 30px;
     text-align: center;
     transition: all 0.5s ease-in-out;
 }
 
-.miedia_links_item img
-{
-    width: 30px;
-}
+.miedia_links_item img { width: 30px; }
 
 .miedia_links_item hr
 {
@@ -71,4 +65,14 @@ div.miedia_links_item:hover hr
     bottom: 80px;
     clear: both;
     position: absolute;
+}
+
+@media(max-width: 1200px)
+{
+    #media_links
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 10px;
+    }
 }

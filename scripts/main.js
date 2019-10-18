@@ -1,10 +1,12 @@
 window.addEventListener("load", () =>
 {
-    delay_show_element()
+    delay_show_element();
 });
+
+var prevScrollpos = window.pageYOffset;
 window.onscroll = () =>
 {
-    slide_panel()
+    slide_panel();
 };
 
 const delay_show_element = () =>
@@ -23,12 +25,22 @@ const delay_show_element = () =>
 
 const slide_panel = () =>
 {
-    if ($(window).scrollTop() > 150) {
-        $("#slide_horizontal_panel").css("top", "0px");
+    if ($(window).scrollTop() > 150)
+    {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos)
+        {
+            $("#slide_horizontal_panel").css("top", "0px");
+        }
+        else
+        {
+            $("#slide_horizontal_panel").css("top", "-90px");
+        }
+        prevScrollpos = currentScrollPos;
     }
     else
     {
-        $("#slide_horizontal_panel").css("top", "-80px");
+        $("#slide_horizontal_panel").css("top", "-90px");
     }
 }
 

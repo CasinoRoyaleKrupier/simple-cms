@@ -16,7 +16,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="administrator/admin_styles/top_bar.css">
-    <link rel="stylesheet" href="styles/links.css">
     <link rel="stylesheet" href="styles/nav_bar.css">
     <link rel="stylesheet" href="styles/separator.css">
     <link rel="stylesheet" href="styles/footer.css">
@@ -32,9 +31,7 @@
         ?>
     </title>
 </head>
-<body>
-
-    <div id="screen_dimming"></div>
+<body><div id="screen_dimming"></div>
 
     <header class="bg_00">
         <nav id="nav_horizontal_panel">
@@ -90,10 +87,10 @@
                 require_once "administrator/get_section_01_content.php";
                 echo $title_sec_01;
             ?>
-        </div>
+        </div> <hr>
     </div>
 
-    <section class="bg_01">
+    <section>
         <article>
             <div class="content_text text_just">
                 <?php
@@ -110,10 +107,10 @@
                 require_once "administrator/get_section_02_content.php";
                 echo $title_sec_02;
             ?>
-        </div>
+        </div> <hr>
     </div>
 
-    <section class="bg_02">
+    <section>
         <article>
             <div class="content_text text_just">
                 <?php
@@ -130,10 +127,10 @@
                 require_once "administrator/get_section_03_content.php";
                 echo $title_sec_03;
             ?>
-        </div>
+        </div> <hr>
     </div>
 
-    <section class="bg_03">
+    <section>
         <article>
             <div class="content_text text_just">
                 <?php
@@ -141,7 +138,7 @@
                     echo $content_sec_03;
                 ?>
             </div>
-        </div>
+        </section>
     </section>
 
     <footer>
@@ -157,26 +154,31 @@
         <hr>
         <div id="media_links">
             <div class="miedia_links_item">
-                <img src="images/social_media/facebook-brands.svg">
-                <hr>
+                <a href="#">
+                    <img src="images/social_media/facebook-brands.svg">
+                    <hr>
+                </a>
             </div>
             <div class="miedia_links_item">
-                <img src="images/social_media/twitter-brands.svg">
-                <hr>
+                <a href="#">
+                    <img src="images/social_media/twitter-brands.svg">
+                    <hr>
+                </a>
             </div>
             <div class="miedia_links_item">
-                <img src="images/social_media/linkedin-brands.svg">
-                <hr>
+                <a href="#">
+                    <img src="images/social_media/linkedin-brands.svg">
+                    <hr>
+                </a>
             </div>
             <div class="miedia_links_item">
-                <img src="images/social_media/github-brands.svg">
-                <hr>
+                <a href="https://github.com/CasinoRoyaleKrupier/simple-cms">
+                    <img src="images/social_media/github-brands.svg">
+                    <hr>
+                </a>
             </div>
         </div>
     </footer>
-
-
-
 
 
     <nav id="slide_horizontal_panel">

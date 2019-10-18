@@ -17,10 +17,7 @@
 
 @media(max-width: 1200px)
 {
-    .separator
-    {
-        height: 200px;
-    }
+    .separator { height: 200px; }
 
     .separator_title
     {
