@@ -36,26 +36,23 @@
     <header class="bg_00">
         <nav id="nav_horizontal_panel">
             <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_light.svg">
-            <div class="nav_button left" onclick="scroll_to('#sec_01');">
+            <div class="nav_button button_animation left" onclick="scroll_to('#sec_01');">
                 <?php
                     require_once "administrator/get_section_01_content.php";
                     echo $title_sec_01;
                 ?>
-                <hr>
             </div>
-            <div class="nav_button left" onclick="scroll_to('#sec_02');">
+            <div class="nav_button button_animation left" onclick="scroll_to('#sec_02');">
                 <?php
                     require_once "administrator/get_section_02_content.php";
                     echo $title_sec_02;
                 ?>
-                <hr>
             </div>
-            <div class="nav_button left" onclick="scroll_to('#sec_03');">
+            <div class="nav_button button_animation left" onclick="scroll_to('#sec_03');">
                 <?php
                     require_once "administrator/get_section_03_content.php";
                     echo $title_sec_03;
                 ?>
-                <hr>
             </div>
             <div id="nav_logo" class="right" onclick="location.href = 'index.php'">
                 <?php
@@ -66,8 +63,8 @@
             <?php
                 if ( isset($_SESSION['logged']) )
                 {
-                    echo '<div class="nav_button right" onclick="location.href = `administrator/admin_panel.php`">Admin panel<hr></div>';
-                    echo '<div class="nav_button right" onclick="location.href = `administrator/logout.php`">Logout<hr></div>';
+                    echo '<div class="nav_button button_animation right" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
+                    echo '<div class="nav_button button_animation right" onclick="location.href = `administrator/logout.php`">Logout</div>';
                 }
             ?>
         </nav>
@@ -127,7 +124,8 @@
                 require_once "administrator/get_section_03_content.php";
                 echo $title_sec_03;
             ?>
-        </div> <hr>
+        </div>
+        <hr>
     </div>
 
     <section>
@@ -142,6 +140,7 @@
     </section>
 
     <footer>
+        <hr>
         <div class="footer_content">
             <div class="footer_row">
                 Street address:
@@ -189,32 +188,29 @@
                 echo $page_title;
             ?>
         </div>
-        <div class="nav_button left" onclick="scroll_to('#sec_01');">
+        <div class="nav_button button_animation left" onclick="scroll_to('#sec_01');">
             <?php
                 require_once "administrator/get_section_01_content.php";
                 echo $title_sec_01;
             ?>
-            <hr>
         </div>
-        <div class="nav_button left" onclick="scroll_to('#sec_02');">
+        <div class="nav_button button_animation left" onclick="scroll_to('#sec_02');">
             <?php
                 require_once "administrator/get_section_02_content.php";
                 echo $title_sec_02;
             ?>
-            <hr>
         </div>
-        <div class="nav_button left" onclick="scroll_to('#sec_03');">
+        <div class="nav_button button_animation left" onclick="scroll_to('#sec_03');">
             <?php
                 require_once "administrator/get_section_03_content.php";
                 echo $title_sec_03;
             ?>
-            <hr>
         </div>
         <?php
             if ( isset($_SESSION['logged']) )
             {
-                echo '<div class="nav_button right" onclick="location.href = `administrator/admin_panel.php`">Admin panel<hr></div>';
-                echo '<div class="nav_button right" onclick="location.href = `administrator/logout.php`">Logout<hr></div>';
+                echo '<div class="nav_button button_animation right" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
+                echo '<div class="nav_button button_animation right" onclick="location.href = `administrator/logout.php`">Logout</div>';
             }
         ?>
     </nav>

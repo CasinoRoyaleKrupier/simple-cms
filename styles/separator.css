@@ -15,7 +15,7 @@
     margin-left: 100px;
 }
 
-@media(max-width: 1200px)
+@media(max-width: 1000px)
 {
     .separator { height: 200px; }
 

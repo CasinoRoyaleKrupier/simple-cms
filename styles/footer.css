@@ -67,7 +67,7 @@ div.miedia_links_item:hover hr
     position: absolute;
 }
 
-@media(max-width: 1200px)
+@media(max-width: 1000px)
 {
     #media_links
     {
