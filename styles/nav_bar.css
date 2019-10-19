@@ -78,6 +78,14 @@ nav#nav_vertical_panel
     transition: all 500ms ease-in-out;
 }
 
+footer .nav_button
+{
+    width: 30px;
+    height: 30px;
+    font-size: 0;
+    margin: 30px auto;
+}
+
 #nav_vertical_panel .nav_button
 {
     width: 100px;
@@ -101,7 +109,7 @@ nav#nav_vertical_panel
 .nav_button::after
 {
     content: "";
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     width: 10px;
     height: 1px;
     bottom: 0px;
@@ -113,10 +121,9 @@ nav#nav_vertical_panel
     transition: 0.5s ease-in-out;
 }
 
-#slide_horizontal_panel .nav_button::after,
-#nav_vertical_panel .nav_button::after
+#nav_horizontal_panel .nav_button::after
 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 234, 234);
 }
 
 .nav_button:hover::after
@@ -157,7 +164,7 @@ nav#nav_vertical_panel
 .page_name::after
 {
     content: "";
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     width: 10px;
     height: 1px;
     bottom: 0px;
@@ -169,10 +176,9 @@ nav#nav_vertical_panel
     transition: 0.5s ease-in-out;
 }
 
-#slide_horizontal_panel .page_name::after,
-#nav_vertical_panel .page_name::after
+#nav_horizontal_panel .page_name::after
 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
 }
 
 .page_name:hover::after
@@ -191,7 +197,7 @@ nav#nav_vertical_panel
 @media(max-width: 1000px)
 {
     .nav_button { display: none; }
-    #nav_vertical_panel .nav_button { display: block; }
+    #nav_vertical_panel .nav_button, footer .nav_button { display: block; }
 
     .slide_menu_button
     {

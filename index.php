@@ -152,28 +152,24 @@
 
         <hr>
         <div id="media_links">
-            <div class="miedia_links_item">
+            <div class="nav_button left">
                 <a href="#">
                     <img src="images/social_media/facebook-brands.svg">
-                    <hr>
                 </a>
             </div>
-            <div class="miedia_links_item">
+            <div class="nav_button left">
                 <a href="#">
                     <img src="images/social_media/twitter-brands.svg">
-                    <hr>
                 </a>
             </div>
-            <div class="miedia_links_item">
+            <div class="nav_button left">
                 <a href="#">
                     <img src="images/social_media/linkedin-brands.svg">
-                    <hr>
                 </a>
             </div>
-            <div class="miedia_links_item">
+            <div class="nav_button left">
                 <a href="https://github.com/CasinoRoyaleKrupier/simple-cms">
                     <img src="images/social_media/github-brands.svg">
-                    <hr>
                 </a>
             </div>
         </div>
