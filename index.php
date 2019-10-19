@@ -69,7 +69,7 @@
             ?>
         </nav>
         <article>
-            <div class="welcome_text text_center">
+            <div class="header_content text_center">
                 <?php
                     require_once "administrator/get_welcome_content.php";
                     echo $welcome_content;
