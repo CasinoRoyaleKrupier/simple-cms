@@ -6,7 +6,6 @@ nav#nav_horizontal_panel
     box-sizing: border-box;
     transition: 0.5s;
     position: absolute;
-    /* background: red; */
 }
 
 nav#slide_horizontal_panel

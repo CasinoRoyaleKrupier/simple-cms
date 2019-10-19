@@ -1,7 +1,7 @@
 .bg_00          { background: linear-gradient(35deg, hsl(210, 100%, 50%) 12%, hsl(210, 100%, 74%) 71%); }
 .bg_01          { background: linear-gradient(35deg, hsl(110, 100%, 50%) 12%, hsl(110, 100%, 74%) 71%); }
 .bg_02          { background: linear-gradient(35deg, hsl(10, 100%, 50%) 12%, hsl(10, 100%, 74%) 71%); }
-.bg_03          { background: linear-gradient(35deg, hsl(370, 100%, 50%) 12%, hsl(370, 100%, 74%) 71%); }
+.bg_03          { background: linear-gradient(35deg, hsl(290, 100%, 50%) 12%, hsl(290, 100%, 74%) 71%); }
 .left           { float: left; }
 .right          { float: right; }
 .clear_b        { clear: both; }
