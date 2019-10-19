@@ -1,55 +1,32 @@
-window.addEventListener("load", () =>
-{
-    delay_show_element();
-});
-
-var prevScrollpos = window.pageYOffset;
-window.onscroll = () =>
-{
-    slide_panel();
-};
+window.addEventListener("load", () => delay_show_element() );
+window.addEventListener("scroll", () => slide_panel() );
 
 const delay_show_element = () =>
 {
-    let delayInMilliseconds = 500;
-    setTimeout( () =>
-    {
-        $(".welcome_text").fadeIn();
-    }, delayInMilliseconds);
-
-    setTimeout( () =>
-    {
-        $("#nav_horizontal_panel").css("top", "0px");
-    }, 1000);
+    setTimeout( () => $(".welcome_text").fadeIn(), 500);
+    setTimeout( () => $("#nav_horizontal_panel").css("top", "0px"), 1000);
 }
 
+let prevScrollpos = window.pageYOffset;
 const slide_panel = () =>
 {
     if ($(window).scrollTop() > 150)
     {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos)
-        {
-            $("#slide_horizontal_panel").css("top", "0px");
-        }
-        else
-        {
-            $("#slide_horizontal_panel").css("top", "-90px");
-        }
+        const currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) $("#slide_horizontal_panel").css("top", "0px");
+        else                                  $("#slide_horizontal_panel").css("top", "-90px");
+
         prevScrollpos = currentScrollPos;
     }
-    else
-    {
-        $("#slide_horizontal_panel").css("top", "-90px");
-    }
+    else $("#slide_horizontal_panel").css("top", "-90px");
 }
 
 const scroll_to = (selector) =>
 {
     $('html,body').animate(
-        {
-            scrollTop: $(selector).offset().top
-        }, 1000);
+    {
+        scrollTop: $(selector).offset().top
+    }, 1000);
 
     return false;
 }
