@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="styles/separator.css">
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/operators.css">
+    <link rel="stylesheet" href="styles/button.css">
+    <link rel="stylesheet" href="styles/page_name.css">
+    <link rel="stylesheet" href="styles/header.css">
 
     <script src="scripts/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
@@ -36,19 +39,19 @@
     <header class="bg_00">
         <nav id="nav_horizontal_panel">
             <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_light.svg">
-            <div class="nav_button left" onclick="scroll_to('#sec_01');">
+            <div class="button left" onclick="scroll_to('#sec_01');">
                 <?php
                     require_once "administrator/get_section_01_content.php";
                     echo $title_sec_01;
                 ?>
             </div>
-            <div class="nav_button left" onclick="scroll_to('#sec_02');">
+            <div class="button left" onclick="scroll_to('#sec_02');">
                 <?php
                     require_once "administrator/get_section_02_content.php";
                     echo $title_sec_02;
                 ?>
             </div>
-            <div class="nav_button left" onclick="scroll_to('#sec_03');">
+            <div class="button left" onclick="scroll_to('#sec_03');">
                 <?php
                     require_once "administrator/get_section_03_content.php";
                     echo $title_sec_03;
@@ -63,18 +66,38 @@
             <?php
                 if ( isset($_SESSION['logged']) )
                 {
-                    echo '<div class="nav_button right" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
-                    echo '<div class="nav_button right" onclick="location.href = `administrator/logout.php`">Logout</div>';
+                    echo '<div class="button right" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
+                    echo '<div class="button right" onclick="location.href = `administrator/logout.php`">Logout</div>';
                 }
             ?>
         </nav>
         <article>
             <div class="header_content text_center">
-                <?php
-                    require_once "administrator/get_welcome_content.php";
-                    echo $welcome_content;
-                ?>
+                <div id="content_item">
+                    <?php
+                        require_once "administrator/get_welcome_content.php";
+                        echo $welcome_content;
+                    ?>
+                </div>
+                <div id="content_item">
+                    <?php
+                        require_once "administrator/get_welcome_content.php";
+                        echo $welcome_content;
+                    ?>
+                </div>
+                <div id="content_item">
+                    <?php
+                        require_once "administrator/get_welcome_content.php";
+                        echo $welcome_content;
+                    ?>
+                </div>
             </div>
+        </div>
+        <div id="previous_content" class="button_left_arrow left">
+            <img src="images/icons/left-arrow-light.svg">
+        </div>
+        <div id="next_content" class="button_right_arrow right">
+            <img src="images/icons/right-arrow-light.svg">
         </div>
     </header>
 
@@ -104,7 +127,8 @@
                 require_once "administrator/get_section_02_content.php";
                 echo $title_sec_02;
             ?>
-        </div> <hr>
+        </div>
+        <hr>
     </div>
 
     <section>
@@ -152,24 +176,24 @@
 
         <hr>
         <div id="media_links">
-            <div class="nav_button left">
+            <div class="button left">
                 <a href="#">
-                    <img src="images/social_media/facebook-brands.svg">
+                    <img src="images/social_media/facebook.svg">
                 </a>
             </div>
-            <div class="nav_button left">
+            <div class="button left">
                 <a href="#">
-                    <img src="images/social_media/twitter-brands.svg">
+                    <img src="images/social_media/twitter.svg">
                 </a>
             </div>
-            <div class="nav_button left">
+            <div class="button left">
                 <a href="#">
-                    <img src="images/social_media/linkedin-brands.svg">
+                    <img src="images/social_media/linkedin.svg">
                 </a>
             </div>
-            <div class="nav_button left">
+            <div class="button left">
                 <a href="https://github.com/CasinoRoyaleKrupier/simple-cms">
-                    <img src="images/social_media/github-brands.svg">
+                    <img src="images/social_media/github.svg">
                 </a>
             </div>
         </div>
@@ -184,19 +208,19 @@
                 echo $page_title;
             ?>
         </div>
-        <div class="nav_button left" onclick="scroll_to('#sec_01');">
+        <div class="button left" onclick="scroll_to('#sec_01');">
             <?php
                 require_once "administrator/get_section_01_content.php";
                 echo $title_sec_01;
             ?>
         </div>
-        <div class="nav_button left" onclick="scroll_to('#sec_02');">
+        <div class="button left" onclick="scroll_to('#sec_02');">
             <?php
                 require_once "administrator/get_section_02_content.php";
                 echo $title_sec_02;
             ?>
         </div>
-        <div class="nav_button left" onclick="scroll_to('#sec_03');">
+        <div class="button left" onclick="scroll_to('#sec_03');">
             <?php
                 require_once "administrator/get_section_03_content.php";
                 echo $title_sec_03;
@@ -205,8 +229,8 @@
         <?php
             if ( isset($_SESSION['logged']) )
             {
-                echo '<div class="nav_button right" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
-                echo '<div class="nav_button right" onclick="location.href = `administrator/logout.php`">Logout</div>';
+                echo '<div class="button right" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
+                echo '<div class="button right" onclick="location.href = `administrator/logout.php`">Logout</div>';
             }
         ?>
     </nav>
@@ -219,19 +243,19 @@
                 echo $page_title;
             ?>
         </div>
-        <div class="nav_button" style="margin-top: 80px" id="button_sec_01">
+        <div class="button" style="margin-top: 80px" id="button_sec_01">
             <?php
                 require_once "administrator/get_section_01_content.php";
                 echo $title_sec_01;
             ?>
         </div>
-        <div class="nav_button" id="button_sec_02">
+        <div class="button" id="button_sec_02">
             <?php
                 require_once "administrator/get_section_02_content.php";
                 echo $title_sec_02;
             ?>
         </div>
-        <div class="nav_button" id="button_sec_03">
+        <div class="button" id="button_sec_03">
             <?php
                 require_once "administrator/get_section_03_content.php";
                 echo $title_sec_03;

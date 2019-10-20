@@ -21,6 +21,13 @@ const slide_panel = () =>
     else $("#slide_horizontal_panel").css("top", "-90px");
 }
 
+const indicator_animation = () =>
+{
+    if ($(".header_content").css("left") == '0') {
+        $(".header_content").animate( {transform: 'translateY(-10px)'}, 500 );
+    }
+}
+
 const scroll_to = (selector) =>
 {
     $('html,body').animate(
@@ -90,5 +97,55 @@ $(document).ready( () =>
     {
         $("#nav_vertical_panel").slideUp();
         $("#screen_dimming").fadeOut();
+    });
+
+    $("#next_content").click( () =>
+    {
+        $(".header_content").animate( {left: '-=100%'}, 500 );
+
+        if ($(".header_content").css("left") > '0') {
+            $(".header_content").animate( {left: '-100%'}, 500 );
+        }
+        else if ($(".header_content").css("left") > '-200%') {
+            $(".header_content").animate( {left: '-200%'}, 500 );
+        }
+    });
+
+    $("#previous_content").click( () =>
+    {
+        $(".header_content").animate( {left: '+=100%'}, 500 );
+
+        if ($(".header_content").css("left") > '0') {
+            $(".header_content").animate( {left: '0'}, 500 );
+        }
+        else if ($(".header_content").css("left") > '-200%') {
+            $(".header_content").animate( {left: '-100%'}, 500 );
+        }
+    });
+
+    $("body").keydown( (key) =>
+    {
+        // Left arrow key
+        if(key.keyCode == 37) {
+            $(".header_content").animate( {left: '+=100%'}, 500 );
+
+            if ($(".header_content").css("left") > '0') {
+                $(".header_content").animate( {left: '0'}, 500 );
+            }
+            else if ($(".header_content").css("left") > '-200%') {
+                $(".header_content").animate( {left: '-100%'}, 500 );
+            }
+        }
+        // Right arrow key
+        else if(key.keyCode == 39) {
+            $(".header_content").animate( {left: '-=100%'}, 500 );
+
+            if ($(".header_content").css("left") > '0') {
+                $(".header_content").animate( {left: '-100%'}, 500 );
+            }
+            else if ($(".header_content").css("left") > '-200%') {
+                $(".header_content").animate( {left: '-200%'}, 500 );
+            }
+        }
     });
 });
