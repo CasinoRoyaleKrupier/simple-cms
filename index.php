@@ -73,23 +73,26 @@
         </nav>
         <article>
             <div class="header_content text_center">
-                <div id="content_item">
-                    <?php
+                <div class="content_item_1">
+                    <!-- <?php
                         require_once "administrator/get_welcome_content.php";
                         echo $welcome_content;
-                    ?>
+                    ?> -->
+                    1
                 </div>
-                <div id="content_item">
-                    <?php
+                <div class="content_item_2">
+                    <!-- <?php
                         require_once "administrator/get_welcome_content.php";
                         echo $welcome_content;
-                    ?>
+                    ?> -->
+                    2
                 </div>
-                <div id="content_item">
-                    <?php
+                <div class="content_item_3">
+                    <!-- <?php
                         require_once "administrator/get_welcome_content.php";
                         echo $welcome_content;
-                    ?>
+                    ?> -->
+                    3
                 </div>
             </div>
         </div>

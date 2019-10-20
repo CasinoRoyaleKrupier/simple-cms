@@ -52,6 +52,65 @@ ScrollReveal().reveal('section', {
     reset: true
 });
 
+
+
+
+
+
+
+
+const next_header_content = () =>
+{
+    const tab_class = ['.content_item_1', '.content_item_2', '.content_item_3'];
+
+    for (let index = 0; index < tab_class.length; index++) {
+        if ( $(".content_item_1").css("opacity") == "1" && tab_class[index] == '.content_item_1' ) {
+            $(".header_content").animate( {left: "-=100%"}, 500);
+            $(".content_item_1").animate( {opacity: "0"}, 500 );
+            $(".content_item_2").animate( {opacity: "1"}, 500 );
+
+        }
+        else if ( $(".content_item_2").css("opacity") == "1" && tab_class[index] == '.content_item_2' ) {
+            $(".header_content").animate( {left: "-=100%"}, 500);
+            $(".content_item_2").animate( {opacity: "0"}, 500 );
+            $(".content_item_3").animate( {opacity: "1"}, 500 );
+
+        }
+        else if ( $(".content_item_3").css("opacity") == "1" && tab_class[index] == '.content_item_3' ) {
+            $(".header_content").animate( {left: "-=10%"}, 200);
+            $(".header_content").animate( {left: "-200%"}, 500);
+            $(".content_item_2").animate( {opacity: "0"}, 500 );
+            $(".content_item_3").animate( {opacity: "1"}, 500 );
+        }
+
+    }
+}
+
+const previous_header_content = () =>
+{
+    const tab_class = ['.content_item_1', '.content_item_2', '.content_item_3'];
+
+    for (let index = 0; index < tab_class.length; index++) {
+        if ( $(".content_item_3").css("opacity") == "1" && tab_class[index] == '.content_item_3' ) {
+            $(".header_content").animate( {left: "+=100%"}, 500);
+            $(".content_item_2").animate( {opacity: "1"}, 500 );
+            $(".content_item_3").animate( {opacity: "0"}, 500 );
+        }
+        else if ( $(".content_item_2").css("opacity") == "1" && tab_class[index] == '.content_item_2' ) {
+            $(".header_content").animate( {left: "+=100%"}, 500);
+            $(".content_item_1").animate( {opacity: "1"}, 500 );
+            $(".content_item_2").animate( {opacity: "0"}, 500 );
+        }
+        else if ( $(".content_item_1").css("opacity") == "1" && tab_class[index] == '.content_item_1' ) {
+            $(".header_content").animate( {left: "+=10%"}, 200);
+            $(".header_content").animate( {left: "0"}, 500);
+            $(".content_item_1").animate( {opacity: "1"}, 500 );
+            $(".content_item_2").animate( {opacity: "0"}, 500 );
+        }
+
+    }
+}
+
 $(document).ready( () =>
 {
     $("#button_sec_01").click( () =>
@@ -101,51 +160,17 @@ $(document).ready( () =>
 
     $("#next_content").click( () =>
     {
-        $(".header_content").animate( {left: '-=100%'}, 500 );
-
-        if ($(".header_content").css("left") > '0') {
-            $(".header_content").animate( {left: '-100%'}, 500 );
-        }
-        else if ($(".header_content").css("left") > '-200%') {
-            $(".header_content").animate( {left: '-200%'}, 500 );
-        }
+        next_header_content();
     });
 
     $("#previous_content").click( () =>
     {
-        $(".header_content").animate( {left: '+=100%'}, 500 );
-
-        if ($(".header_content").css("left") > '0') {
-            $(".header_content").animate( {left: '0'}, 500 );
-        }
-        else if ($(".header_content").css("left") > '-200%') {
-            $(".header_content").animate( {left: '-100%'}, 500 );
-        }
+        previous_header_content();
     });
 
     $("body").keydown( (key) =>
     {
-        // Left arrow key
-        if(key.keyCode == 37) {
-            $(".header_content").animate( {left: '+=100%'}, 500 );
-
-            if ($(".header_content").css("left") > '0') {
-                $(".header_content").animate( {left: '0'}, 500 );
-            }
-            else if ($(".header_content").css("left") > '-200%') {
-                $(".header_content").animate( {left: '-100%'}, 500 );
-            }
-        }
-        // Right arrow key
-        else if(key.keyCode == 39) {
-            $(".header_content").animate( {left: '-=100%'}, 500 );
-
-            if ($(".header_content").css("left") > '0') {
-                $(".header_content").animate( {left: '-100%'}, 500 );
-            }
-            else if ($(".header_content").css("left") > '-200%') {
-                $(".header_content").animate( {left: '-200%'}, 500 );
-            }
-        }
+        if(key.keyCode == 37) previous_header_content(); // Left arrow key
+        else if(key.keyCode == 39) next_header_content();// Right arrow key
     });
 });

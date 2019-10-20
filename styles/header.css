@@ -18,10 +18,21 @@ header
     top: 0;
     right: 0;
     bottom: 0;
-    left: -100%;
+    left: 0;
     opacity: 0;
     display: grid;
     grid-template-columns: 100% 100% 100%;
+}
+
+.content_item_1
+{
+    opacity: 1;
+}
+
+.content_item_2,
+.content_item_3
+{
+    opacity: 0;
 }
 
 .button_left_arrow
