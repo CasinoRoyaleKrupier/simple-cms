@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="styles/page_name.css">
     <link rel="stylesheet" href="styles/header.css">
 
-    <script src="scripts/jquery-3.4.1.min.js"></script>
+    <script src="scripts/lib/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <title>
@@ -74,25 +74,22 @@
         <article>
             <div class="header_content text_center">
                 <div class="content_item_1">
-                    <!-- <?php
+                    <?php
                         require_once "administrator/get_welcome_content.php";
                         echo $welcome_content;
-                    ?> -->
-                    1
+                    ?>
                 </div>
                 <div class="content_item_2">
-                    <!-- <?php
+                    <?php
                         require_once "administrator/get_welcome_content.php";
                         echo $welcome_content;
-                    ?> -->
-                    2
+                    ?>
                 </div>
                 <div class="content_item_3">
-                    <!-- <?php
+                    <?php
                         require_once "administrator/get_welcome_content.php";
                         echo $welcome_content;
-                    ?> -->
-                    3
+                    ?>
                 </div>
             </div>
         </div>
@@ -266,6 +263,9 @@
         </div>
     </nav>
 
-    <script src="scripts/main.js"></script>
+    <script src="scripts/jquery_functions.js"></script>
+    <script src="scripts/others_functions.js"></script>
+    <script src="scripts/header_functions.js"></script>
+    <script src="scripts/scroll_reveal.js"></script>
 </body>
 </html>
