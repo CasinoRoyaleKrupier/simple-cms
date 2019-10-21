@@ -5,6 +5,10 @@ const delay_show_element = () =>
 {
     setTimeout( () => $(".header_content").animate( {opacity: 1}, 500 ), 500);
     setTimeout( () => $("#nav_horizontal_panel").css("top", "0px"), 1000);
+    setTimeout( () => {
+        $(".button_left_arrow").animate( {left: 0}, 500 ),
+        $(".button_right_arrow").animate( {right: 0}, 500 )
+    }, 500);
 }
 
 let prevScrollpos = window.pageYOffset;

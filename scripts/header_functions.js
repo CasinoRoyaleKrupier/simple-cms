@@ -7,13 +7,11 @@ const next_header_content = () =>
             $(".header_content").animate( {left: "-=100%"}, 500);
             $(".content_item_1").animate( {opacity: "0"}, 500 );
             $(".content_item_2").animate( {opacity: "1"}, 500 );
-
         }
         else if ( $(".content_item_2").css("opacity") == "1" && tab_class[index] == '.content_item_2' ) {
             $(".header_content").animate( {left: "-=100%"}, 500);
             $(".content_item_2").animate( {opacity: "0"}, 500 );
             $(".content_item_3").animate( {opacity: "1"}, 500 );
-
         }
         else if ( $(".content_item_3").css("opacity") == "1" && tab_class[index] == '.content_item_3' ) {
             $(".header_content").animate( {left: "-=10%"}, 200);
@@ -21,7 +19,6 @@ const next_header_content = () =>
             $(".content_item_2").animate( {opacity: "0"}, 500 );
             $(".content_item_3").animate( {opacity: "1"}, 500 );
         }
-
     }
 }
 
@@ -46,6 +43,5 @@ const previous_header_content = () =>
             $(".content_item_1").animate( {opacity: "1"}, 500 );
             $(".content_item_2").animate( {opacity: "0"}, 500 );
         }
-
     }
 }

@@ -47,9 +47,6 @@ nav#nav_vertical_panel
 
 @media(max-width: 1000px)
 {
-    .button { display: none; }
-    #nav_vertical_panel .button, footer .button { display: block; }
-
     .slide_menu_button
     {
         width: 50px;

@@ -4,9 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Open in Chrome",
+            "label": "Start XAMPP",
             "type": "shell",
-            "command": "google-chrome-stable http://localhost/simple_cms/administrator",
+            "command": "sudo /opt/lampp/lampp start",
             "group": {
                 "kind": "build",
                 "isDefault": true

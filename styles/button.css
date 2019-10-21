@@ -69,3 +69,13 @@ footer .button
 {
     background-color: hsl(210, 100%, 74%);
 }
+
+@media(max-width: 1000px)
+{
+    .button { display: none; }
+    #nav_vertical_panel .button, footer .button { display: block; }
+    #nav_vertical_panel .button
+    {
+        margin: 40px auto;
+    }
+}
