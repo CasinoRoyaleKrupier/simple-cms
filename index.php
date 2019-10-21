@@ -75,20 +75,20 @@
             <div class="header_content text_center">
                 <div class="content_item_1">
                     <?php
-                        require_once "administrator/get_welcome_content.php";
-                        echo $welcome_content;
+                        require_once "administrator/get_header_content.php";
+                        echo $header_content_1;
                     ?>
                 </div>
                 <div class="content_item_2">
                     <?php
-                        require_once "administrator/get_welcome_content.php";
-                        echo $welcome_content;
+                        require_once "administrator/get_header_content.php";
+                        echo $header_content_2;
                     ?>
                 </div>
                 <div class="content_item_3">
                     <?php
-                        require_once "administrator/get_welcome_content.php";
-                        echo $welcome_content;
+                        require_once "administrator/get_header_content.php";
+                        echo $header_content_3;
                     ?>
                 </div>
             </div>

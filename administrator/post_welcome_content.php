@@ -19,7 +19,7 @@
         $title = $_POST['title'];
         $content = $_POST['content'];
 
-        $sql = "UPDATE `welcome_content` SET content = '$content' WHERE id = 1;";
+        $sql = "UPDATE `header_content` SET content = '$content' WHERE id = 1;";
 
         if ( $connection->query($sql) != true )
         {

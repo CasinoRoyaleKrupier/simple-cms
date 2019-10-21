@@ -21,14 +21,11 @@
     padding: 10px 0;
     text-decoration: none;
     color: #ffffff;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
     display: block;
 }
 
 #nav_panel a:hover
 {
     color: #ffffff;
-    background-color: #dd7600;
-    font-weight: bold;
+    background-color: #52525270;
 }

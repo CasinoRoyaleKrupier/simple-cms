@@ -45,7 +45,7 @@
     </div>
 
     <div id="nav_panel">
-    <div class="nav_bar_button" style="background-color: #525252;">
+    <div class="nav_bar_button" style="background-color: #dd7600;">
             <a href="admin_panel.php">Main site</a>
         </div>
         <div class="nav_bar_button">
@@ -58,7 +58,7 @@
             <a href="add_user_panel.php">Add user</a>
         </div>
         <div class="nav_bar_button">
-            <a href="#">Database set.</a>
+            <a href="#">SQL query</a>
         </div>
     </div>
 

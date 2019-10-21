@@ -13,7 +13,7 @@ CREATE TABLE page_title (
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
 
 
-CREATE TABLE welcome_content (
+CREATE TABLE header_content (
     id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
     content VARCHAR(10240)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
@@ -39,7 +39,10 @@ CREATE TABLE section_03_content (
 INSERT INTO administrators (username, pass, mail) VALUES ('admin', 'admin', 'admin@admin.admin');
 INSERT INTO page_title (page_title) VALUES ('simple_cms');
 
-INSERT INTO welcome_content (content) VALUES ('This is welcome content');
+INSERT INTO header_content (content) VALUES ('This is header content panel 1');
+INSERT INTO header_content (content) VALUES ('This is header content panel 2');
+INSERT INTO header_content (content) VALUES ('This is header content panel 3');
+
 INSERT INTO section_01_content (title, content) VALUES ('Title sec 1', 'Content section 1');
 INSERT INTO section_02_content (title, content) VALUES ('Title sec 2', 'Content section 2');
 INSERT INTO section_03_content (title, content) VALUES ('Title sec 3', 'Content section 3');

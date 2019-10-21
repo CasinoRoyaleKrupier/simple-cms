@@ -48,7 +48,7 @@
     <div class="nav_bar_button">
             <a href="admin_panel.php">Main site</a>
         </div>
-        <div class="nav_bar_button" style="background-color: #525252;">
+        <div class="nav_bar_button" style="background-color: #dd7600;">
             <a href="site_panel.php">Sites</a>
         </div>
         <div class="nav_bar_button">
@@ -58,19 +58,24 @@
             <a href="add_user_panel.php">Add user</a>
         </div>
         <div class="nav_bar_button">
-            <a href="#">Database set.</a>
+            <a href="#">SQL query</a>
         </div>
     </div>
 
     <div id="container">
         <div id="content">
-            <form action="post_welcome_content.php" method="post">
-                <div class="section_name">Welcome content<hr></div>
+            <form action="post_header_content.php" method="post">
+                <div class="section_name">Header content<hr></div>
                 <div class="section_left">
                     <input type="submit" value="Confirm">
                 </div>
                 <div class="section_right">
-                    <textarea name="content" id=""><?php require_once "get_welcome_content.php"; echo $welcome_content; ?></textarea>
+                    Panel 1
+                    <textarea style="height: 100px; margin-bottom: 15px" name="content" id=""><?php require_once "get_header_content.php"; echo $header_content_1; ?></textarea>
+                    Panel 2
+                    <textarea style="height: 100px; margin-bottom: 15px" name="content" id=""><?php require_once "get_header_content.php"; echo $header_content_2; ?></textarea>
+                    Panel 3
+                    <textarea style="height: 100px;" name="content" id=""><?php require_once "get_header_content.php"; echo $header_content_3; ?></textarea>
                 </div>
             </form>
             <form action="post_section_01_content.php" method="post">
