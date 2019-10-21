@@ -36,7 +36,7 @@ CREATE TABLE section_03_content (
     content VARCHAR(10240)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
 
-INSERT INTO administrators (username, pass, mail) VALUES ('admin', 'admin', 'admin@admin.admin');
+INSERT INTO administrators (username, pass, mail) VALUES ('admin', '$2y$10$uxUYIArCKlSDCp7SsnALsuo2rSXhhFMmaokrZqOrjY8e.FA59B8Xe', 'admin@admin.admin');
 INSERT INTO page_title (page_title) VALUES ('simple_cms');
 
 INSERT INTO header_content (content) VALUES ('This is header content panel 1');
