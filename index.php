@@ -261,6 +261,13 @@
                 echo $title_sec_03;
             ?>
         </div>
+        <?php
+            if ( isset($_SESSION['logged']) )
+            {
+                echo '<div class="button" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
+                echo '<div class="button" onclick="location.href = `administrator/logout.php`">Logout</div>';
+            }
+        ?>
     </nav>
 
     <script src="scripts/jquery_functions.js"></script>
