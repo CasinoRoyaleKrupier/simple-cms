@@ -52,6 +52,9 @@
             <a href="site_panel.php">Sites</a>
         </div>
         <div class="nav_bar_button">
+            <a href="css_panel.php">CSS styles</a>
+        </div>
+        <div class="nav_bar_button">
             <a href="user_panel.php">User panel</a>
         </div>
         <div class="nav_bar_button">
@@ -67,22 +70,22 @@
             <form action="post_header_content.php" method="post">
                 <div class="section_name">Header content<hr></div>
                 <div class="section_left">
-                    <input type="submit" value="Confirm">
+                    <input type="submit" value="Save">
                 </div>
                 <div class="section_right">
                     Panel 1
-                    <textarea style="height: 100px; margin-bottom: 15px" name="content" id=""><?php require_once "get_header_content.php"; echo $header_content_1; ?></textarea>
+                    <textarea style="height: 100px; margin-bottom: 15px" name="header_content_1" id=""><?php require_once "get_header_content.php"; echo $header_content_1; ?></textarea>
                     Panel 2
-                    <textarea style="height: 100px; margin-bottom: 15px" name="content" id=""><?php require_once "get_header_content.php"; echo $header_content_2; ?></textarea>
+                    <textarea style="height: 100px; margin-bottom: 15px" name="header_content_2" id=""><?php require_once "get_header_content.php"; echo $header_content_2; ?></textarea>
                     Panel 3
-                    <textarea style="height: 100px;" name="content" id=""><?php require_once "get_header_content.php"; echo $header_content_3; ?></textarea>
+                    <textarea style="height: 100px;" name="header_content_3" id=""><?php require_once "get_header_content.php"; echo $header_content_3; ?></textarea>
                 </div>
             </form>
             <form action="post_section_01_content.php" method="post">
                 <div class="section_name">Section 1<hr></div>
                 <div class="section_left">
                     <input type="text" name="title" value="<?php require_once "get_section_01_content.php"; echo $title_sec_01; ?>">
-                    <input type="submit" value="Confirm">
+                    <input type="submit" value="Save">
                 </div>
                 <div class="section_right">
                     <textarea name="content" id=""><?php require_once "get_section_01_content.php"; echo $content_sec_01; ?></textarea>
@@ -92,7 +95,7 @@
                 <div class="section_name">Section 2<hr></div>
                 <div class="section_left">
                     <input type="text" name="title" value="<?php require_once "get_section_02_content.php"; echo $title_sec_02; ?>">
-                    <input type="submit" value="Confirm">
+                    <input type="submit" value="Save">
                 </div>
                 <div class="section_right">
                     <textarea name="content" id=""><?php require_once "get_section_02_content.php"; echo $content_sec_02; ?></textarea>
@@ -102,7 +105,7 @@
                 <div class="section_name">Section 3<hr></div>
                 <div class="section_left">
                     <input type="text" name="title" value="<?php require_once "get_section_03_content.php"; echo $title_sec_03; ?>">
-                    <input type="submit" value="Confirm">
+                    <input type="submit" value="Save">
                 </div>
                 <div class="section_right">
                 <textarea name="content" id=""><?php require_once "get_section_03_content.php"; echo $content_sec_03; ?></textarea>

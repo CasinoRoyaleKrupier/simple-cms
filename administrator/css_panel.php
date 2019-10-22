@@ -45,13 +45,13 @@
     </div>
 
     <div id="nav_panel">
-    <div class="nav_bar_button" style="background-color: #dd7600;">
+    <div class="nav_bar_button">
             <a href="admin_panel.php">Main site</a>
         </div>
         <div class="nav_bar_button">
             <a href="site_panel.php">Sites</a>
         </div>
-        <div class="nav_bar_button">
+        <div class="nav_bar_button" style="background-color: #dd7600;">
             <a href="css_panel.php">CSS styles</a>
         </div>
         <div class="nav_bar_button">
@@ -73,11 +73,13 @@
 
             Database name: <?php echo $db_name ?><br> -->
 
-            <form action="post_page_title.php" method="post">
-                <div class="section_name">Website<hr></div>
+            <form action="post_css_styles.php" method="post">
+                <div class="section_name">Additional CSS<hr></div>
                 <div class="section_left">
-                    <input type="text" name="page_name" value="<?php require_once "get_page_title.php"; echo $page_title; ?>">
-                    <input type="submit" value="Confirm">
+                    <input type="submit" value="Save">
+                </div>
+                <div class="section_right">
+                    <textarea name="style"><?php require_once "get_css_styles.php"; echo $style; ?></textarea>
                 </div>
             </form>
         </div>

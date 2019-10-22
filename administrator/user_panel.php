@@ -51,6 +51,9 @@
         <div class="nav_bar_button">
             <a href="site_panel.php">Sites</a>
         </div>
+        <div class="nav_bar_button">
+            <a href="css_panel.php">CSS styles</a>
+        </div>
         <div class="nav_bar_button" style="background-color: #dd7600;">
             <a href="user_panel.php">User panel</a>
         </div>

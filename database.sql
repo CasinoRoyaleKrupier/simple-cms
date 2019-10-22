@@ -12,6 +12,11 @@ CREATE TABLE page_title (
     page_title VARCHAR(50)
 ) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
 
+CREATE TABLE css_styles (
+    id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    style VARCHAR(4096)
+) DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci ENGINE=InnoDB AUTO_INCREMENT=1;
+
 
 CREATE TABLE header_content (
     id INTEGER PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -38,6 +43,8 @@ CREATE TABLE section_03_content (
 
 INSERT INTO administrators (username, pass, mail) VALUES ('admin', '$2y$10$uxUYIArCKlSDCp7SsnALsuo2rSXhhFMmaokrZqOrjY8e.FA59B8Xe', 'admin@admin.admin');
 INSERT INTO page_title (page_title) VALUES ('simple_cms');
+
+INSERT INTO css_styles (style) VALUES ('/* Empty style */');
 
 INSERT INTO header_content (content) VALUES ('This is header content panel 1');
 INSERT INTO header_content (content) VALUES ('This is header content panel 2');

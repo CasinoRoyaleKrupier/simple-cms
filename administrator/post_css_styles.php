@@ -16,10 +16,9 @@
     }
     else
     {
-        $title = $_POST['title'];
-        $content = $_POST['content'];
+        $style = $_POST['style'];
 
-        $sql = "UPDATE `header_content` SET content = '$content' WHERE id = 1;";
+        $sql = "UPDATE `css_styles` SET style = '$style' WHERE id = 1;";
 
         if ( $connection->query($sql) != true )
         {
@@ -27,6 +26,6 @@
         }
 
         $connection->close();
-        header('Location: site_panel.php');
+        header('Location: css_panel.php');
     }
 ?>
