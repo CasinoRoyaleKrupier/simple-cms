@@ -8,7 +8,7 @@ const delay_show_element = () =>
     setTimeout( () => {
         $(".button_left_arrow").animate( {left: 0}, 500 ),
         $(".button_right_arrow").animate( {right: 0}, 500 )
-    }, 500);
+    }, 1000);
 }
 
 let prevScrollpos = window.pageYOffset;
