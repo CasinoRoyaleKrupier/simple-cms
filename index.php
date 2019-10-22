@@ -27,6 +27,10 @@
     <script src="scripts/lib/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
+    <style>
+        <?php require_once "administrator/get_css_styles.php"; echo $style; ?>
+    </style>
+
     <title>
         <?php
             require_once "administrator/get_page_title.php";
