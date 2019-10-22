@@ -36,7 +36,7 @@ footer .button
 #slide_horizontal_panel .button:hover,
 #nav_vertical_panel .button:hover
 {
-    color: hsl(210, 100%, 74%);
+    color: var(--buttons-hover-color);
 }
 
 .button::after
@@ -67,7 +67,7 @@ footer .button
 #slide_horizontal_panel .button:hover::after,
 #nav_vertical_panel .button:hover::after
 {
-    background-color: hsl(210, 100%, 74%);
+    background-color: var(--buttons-hover-color);
 }
 
 @media(max-width: 1000px)

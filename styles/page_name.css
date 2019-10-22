@@ -19,7 +19,7 @@
 #slide_horizontal_panel .page_name:hover,
 #nav_vertical_panel .page_name:hover
 {
-    color: hsl(210, 100%, 74%);
+    color: var(--page-name-hover-color);
 }
 
 .page_name::after
@@ -50,5 +50,5 @@
 #slide_horizontal_panel .page_name:hover::after,
 #nav_vertical_panel .page_name:hover::after
 {
-    background-color: hsl(210, 100%, 74%);
+    background-color: var(--page-name-hover-color);
 }
