@@ -7,6 +7,8 @@ header
     position: relative;
 }
 
+header article { opacity: 0; }
+
 .header_content
 {
     width: calc(100% - 100px);
