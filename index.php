@@ -24,14 +24,12 @@
     <link rel="stylesheet" href="styles/page_name.css">
     <link rel="stylesheet" href="styles/header.css">
 
-    <!-- <script src="scripts/lib/jquery-3.4.1.min.js"></script> -->
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="styles/user_custom_style.php">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-    <style>
-        <?php require_once "administrator/get_css_styles.php"; echo $style; ?>
-    </style>
 
     <title>
         <?php
