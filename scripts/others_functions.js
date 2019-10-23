@@ -3,7 +3,7 @@ window.addEventListener("scroll", () => slide_panel() );
 
 const delay_show_element = () =>
 {
-    setTimeout( () => $(".header_content").animate( {opacity: 1}, 500 ), 500);
+    setTimeout( () => $("#header_content").animate( {opacity: 1}, 500 ), 500);
     setTimeout( () => $("#nav_horizontal_panel").css("top", "0px"), 1000);
     setTimeout( () => {
         $(".button_left_arrow").animate( {left: 0}, 500 ),
