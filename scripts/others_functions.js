@@ -31,13 +31,3 @@ const indicator_animation = () =>
         $(".header_content").animate( {transform: 'translateY(-10px)'}, 500 );
     }
 }
-
-const scroll_to = (selector) =>
-{
-    $('html,body').animate(
-    {
-        scrollTop: $(selector).offset().top
-    }, 1000);
-
-    return false;
-}

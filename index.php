@@ -26,7 +26,7 @@
 
     <!-- <script src="scripts/lib/jquery-3.4.1.min.js"></script> -->
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <style>
@@ -46,25 +46,25 @@
     <header class="bg_00">
         <nav id="nav_horizontal_panel">
             <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_light.svg">
-            <div class="button left" onclick="scroll_to('#sec_01');">
+            <div class="button left to_sec_1">
                 <?php
                     require_once "administrator/get_section_01_content.php";
                     echo $title_sec_01;
                 ?>
             </div>
-            <div class="button left" onclick="scroll_to('#sec_02');">
+            <div class="button left to_sec_2">
                 <?php
                     require_once "administrator/get_section_02_content.php";
                     echo $title_sec_02;
                 ?>
             </div>
-            <div class="button left" onclick="scroll_to('#sec_03');">
+            <div class="button left to_sec_3">
                 <?php
                     require_once "administrator/get_section_03_content.php";
                     echo $title_sec_03;
                 ?>
             </div>
-            <div class="page_name right" onclick="location.href = 'index.php'">
+            <div class="page_name right page_reload">
                 <?php
                     require_once "administrator/get_page_title.php";
                     echo $page_title;
@@ -73,33 +73,31 @@
             <?php
                 if ( isset($_SESSION['logged']) )
                 {
-                    echo '<div class="button right" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
-                    echo '<div class="button right" onclick="location.href = `administrator/logout.php`">Logout</div>';
+                    echo '<div class="button right to_admin_panel">Admin panel</div>';
+                    echo '<div class="button right to_logout">Logout</div>';
                 }
             ?>
         </nav>
         <article>
-        <div id="header_content">
-            <div class="header_item_1">
+            <div class="header_content header_item_1">
                 <?php
                     require_once "administrator/get_header_content.php";
                     echo $header_content_1;
                 ?>
             </div>
-            <div class="header_item_2">
+            <div class="header_content header_item_2">
                 <?php
                     require_once "administrator/get_header_content.php";
                     echo $header_content_2;
                 ?>
             </div>
-            <div class="header_item_3">
+            <div class="header_content header_item_3">
                 <?php
                     require_once "administrator/get_header_content.php";
                     echo $header_content_3;
                 ?>
             </div>
-        </div>
-        </div>
+        </article>
         <div id="previous_content" class="button_left_arrow left">
             <img src="images/icons/left-arrow-light.svg">
         </div>
@@ -125,7 +123,7 @@
                     echo $content_sec_01;
                 ?>
             </div>
-        </div>
+        </article>
     </section>
 
     <div class="separator" id="sec_02">
@@ -146,7 +144,7 @@
                     echo $content_sec_02;
                 ?>
             </div>
-        </div>
+        </article>
     </section>
 
     <div class="separator" id="sec_03">
@@ -167,7 +165,7 @@
                     echo $content_sec_03;
                 ?>
             </div>
-        </section>
+            </article>
     </section>
 
     <footer>
@@ -209,25 +207,25 @@
 
     <nav id="slide_horizontal_panel">
         <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_dark.svg">
-        <div class="page_name right" onclick="location.href = 'index.php'">
+        <div class="page_name right page_reload">
             <?php
                 require_once "administrator/get_page_title.php";
                 echo $page_title;
             ?>
         </div>
-        <div class="button left" onclick="scroll_to('#sec_01');">
+        <div class="button left to_sec_1">
             <?php
                 require_once "administrator/get_section_01_content.php";
                 echo $title_sec_01;
             ?>
         </div>
-        <div class="button left" onclick="scroll_to('#sec_02');">
+        <div class="button left to_sec_2">
             <?php
                 require_once "administrator/get_section_02_content.php";
                 echo $title_sec_02;
             ?>
         </div>
-        <div class="button left" onclick="scroll_to('#sec_03');">
+        <div class="button left to_sec_3">
             <?php
                 require_once "administrator/get_section_03_content.php";
                 echo $title_sec_03;
@@ -236,15 +234,15 @@
         <?php
             if ( isset($_SESSION['logged']) )
             {
-                echo '<div class="button right" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
-                echo '<div class="button right" onclick="location.href = `administrator/logout.php`">Logout</div>';
+                echo '<div class="button right to_admin_panel">Admin panel</div>';
+                echo '<div class="button right to_logout">Logout</div>';
             }
         ?>
     </nav>
 
     <nav id="nav_vertical_panel">
         <img id="hide_vertical_panel" class="slide_menu_button" src="images/slide_menu_dark.svg">
-        <div class="page_name right" onclick="location.href = 'index.php'">
+        <div class="page_name right page_reload">
             <?php
                 require_once "administrator/get_page_title.php";
                 echo $page_title;
@@ -271,8 +269,8 @@
         <?php
             if ( isset($_SESSION['logged']) )
             {
-                echo '<div class="button" onclick="location.href = `administrator/admin_panel.php`">Admin panel</div>';
-                echo '<div class="button" onclick="location.href = `administrator/logout.php`">Logout</div>';
+                echo '<div class="button to_admin_panel">Admin panel</div>';
+                echo '<div class="button to_logout">Logout</div>';
             }
         ?>
     </nav>
@@ -281,5 +279,6 @@
     <script src="scripts/others_functions.js"></script>
     <script src="scripts/header_functions.js"></script>
     <script src="scripts/scroll_reveal.js"></script>
+    <script src="scripts/scroll_to_selector.js"></script>
 </body>
 </html>
