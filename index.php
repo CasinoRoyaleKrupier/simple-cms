@@ -96,10 +96,10 @@
                 ?>
             </div>
         </article>
-        <div id="previous_content" class="button_left_arrow left">
+        <div id="previous_content">
             <img src="images/icons/left-arrow-light.svg">
         </div>
-        <div id="next_content" class="button_right_arrow right">
+        <div id="next_content">
             <img src="images/icons/right-arrow-light.svg">
         </div>
     </header>
