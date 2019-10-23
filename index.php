@@ -40,7 +40,8 @@
         ?>
     </title>
 </head>
-<body><div id="screen_dimming"></div>
+<body>
+    <div id="screen_dimming"></div>
 
     <header class="bg_00">
         <nav id="nav_horizontal_panel">
