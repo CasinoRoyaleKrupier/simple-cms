@@ -25,8 +25,8 @@
 <body>
     <div id="container">
         <form action="authorization.php" method="post">
-            <input type="text" name="login" placeholder="Login" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Login'">
-            <input type="password" name="password" placeholder="Password" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Password'">
+            <input type="text" name="login" placeholder="Login">
+            <input type="password" name="password" placeholder="Password">
 
             <input type="submit" value="Sing In">
         </form>
@@ -40,5 +40,6 @@
 
         <a href="../index.php">Return to the side</a>
     </div>
+    <script src="scripts/login_listeners.js"></script>
 </body>
 </html>
