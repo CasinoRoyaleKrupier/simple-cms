@@ -24,7 +24,9 @@
     <link rel="stylesheet" href="styles/page_name.css">
     <link rel="stylesheet" href="styles/header.css">
 
-    <script src="scripts/lib/jquery-3.4.1.min.js"></script>
+    <!-- <script src="scripts/lib/jquery-3.4.1.min.js"></script> -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <style>
@@ -76,26 +78,26 @@
             ?>
         </nav>
         <article>
-            <div class="header_content text_center">
-                <div class="content_item_1">
-                    <?php
-                        require_once "administrator/get_header_content.php";
-                        echo $header_content_1;
-                    ?>
-                </div>
-                <div class="content_item_2">
-                    <?php
-                        require_once "administrator/get_header_content.php";
-                        echo $header_content_2;
-                    ?>
-                </div>
-                <div class="content_item_3">
-                    <?php
-                        require_once "administrator/get_header_content.php";
-                        echo $header_content_3;
-                    ?>
-                </div>
+        <div id="header_content">
+            <div class="header_item_1">
+                <?php
+                    require_once "administrator/get_header_content.php";
+                    echo $header_content_1;
+                ?>
             </div>
+            <div class="header_item_2">
+                <?php
+                    require_once "administrator/get_header_content.php";
+                    echo $header_content_2;
+                ?>
+            </div>
+            <div class="header_item_3">
+                <?php
+                    require_once "administrator/get_header_content.php";
+                    echo $header_content_3;
+                ?>
+            </div>
+        </div>
         </div>
         <div id="previous_content" class="button_left_arrow left">
             <img src="images/icons/left-arrow-light.svg">
