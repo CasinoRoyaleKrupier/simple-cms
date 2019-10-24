@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="styles/button.css">
     <link rel="stylesheet" href="styles/page_name.css">
     <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/clock.css">
 
     <link rel="stylesheet" href="styles/user_custom_style.php">
 
@@ -95,13 +96,14 @@
                     echo $header_content_3;
                 ?>
             </div>
+
+            <div id="previous_content">
+                <img src="images/icons/left-arrow-light.svg">
+            </div>
+            <div id="next_content">
+                <img src="images/icons/right-arrow-light.svg">
+            </div>
         </article>
-        <div id="previous_content">
-            <img src="images/icons/left-arrow-light.svg">
-        </div>
-        <div id="next_content">
-            <img src="images/icons/right-arrow-light.svg">
-        </div>
     </header>
 
     <div class="separator">
@@ -278,5 +280,6 @@
     <script src="scripts/header_functions.js"></script>
     <script src="scripts/scroll_reveal.js"></script>
     <script src="scripts/scroll_to_selector.js"></script>
+    <script src="scripts/clock.js"></script>
 </body>
 </html>
