@@ -1,7 +1,6 @@
 {
     "terminal.integrated.fontSize": 13,
     "trailing-spaces.trimOnSave": true,
-    "editor.wordWrap": "on",
     "sqltools.connections": [
         {
             "askForPassword": false,

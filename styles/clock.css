@@ -1,10 +1,10 @@
 :root
 {
     --clock-face-bg: #fff;
-    --clock-seconds: #000;
-    --clock-minutes: #909090;
-    --clock-hours: #872421;
-    --clock-circle: #606060;
+    --clock-seconds: hsl(10, 100%, 50%);
+    --clock-minutes: hsl(230, 90%, 45%);
+    --clock-hours: hsl(230, 90%, 45%);
+    --clock-circle: #303030;
 }
 
 #analog_clock
@@ -18,6 +18,9 @@
 	left: 0;
 	right: 0;
 	margin: auto;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 	position: absolute;
 }
 
@@ -36,25 +39,61 @@
     z-index: 1;
 }
 
+.face_line
+{
+  width: 1px;
+  height: 290px;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+  position: absolute;
+  background-color: #000;
+}
+
+.deg_30 { transform: rotate(30deg); }
+.deg_60 { transform: rotate(60deg); }
+.deg_90 { transform: rotate(90deg); }
+.deg_120 { transform: rotate(120deg); }
+.deg_150 { transform: rotate(150deg); }
+
+.clock_face_bg
+{
+	width: 270px;
+	height: 270px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	border-radius: 135px;
+	background-color: var(--clock-face-bg);
+	position: absolute;
+}
+
 #analog_clock .second_indicator
 {
-	width: 8px;
-	height: 140px;
-	background-color: var(--clock-seconds);
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 140px solid var(--clock-seconds);
 	top: 10px;
 	left: 0;
 	right: 0;
 	margin: auto;
-	border-radius: 10px;
 	position: absolute;
-  animation-duration: 60s;
+  	animation-duration: 60s;
 }
 
 #analog_clock .minute_indicator
 {
-	width: 8px;
-	height: 110px;
-	background-color: var(--clock-minutes);
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 110px solid var(--clock-minutes);
 	top: 40px;
 	left: 0;
 	right: 0;
@@ -66,9 +105,11 @@
 
 #analog_clock .hour_indicator
 {
-	width: 8px;
-	height: 80px;
-	background-color: var(--clock-hours);
+	width: 0;
+	height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 80px solid var(--clock-hours);
 	top: 70px;
 	left: 0;
 	right: 0;
@@ -90,4 +131,14 @@
 {
   from { transform: rotate(0deg) }
   to { transform: rotate(360deg) }
+}
+
+@media(max-width: 1000px)
+{
+	#analog_clock { transform: scale(.5); }
+}
+
+@media(max-width: 420px)
+{
+	#analog_clock { transform: scale(.2); }
 }
