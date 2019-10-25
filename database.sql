@@ -50,6 +50,6 @@ INSERT INTO header_content (content) VALUES ('This is header content panel 1');
 INSERT INTO header_content (content) VALUES ('This is header content panel 2');
 INSERT INTO header_content (content) VALUES ('This is header content panel 3');
 
-INSERT INTO section_01_content (title, content) VALUES ('Title sec 1', 'Content section 1');
-INSERT INTO section_02_content (title, content) VALUES ('Title sec 2', 'Content section 2');
-INSERT INTO section_03_content (title, content) VALUES ('Title sec 3', 'Content section 3');
+INSERT INTO section_01_content (title, content) VALUES ('Title sec 1', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque accusamus placeat omnis dignissimos odit temporibus rerum ipsum doloribus id aperiam nesciunt sequi, doloremque necessitatibus soluta inventore debitis! Atque, obcaecati maxime.');
+INSERT INTO section_02_content (title, content) VALUES ('Title sec 2', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque accusamus placeat omnis dignissimos odit temporibus rerum ipsum doloribus id aperiam nesciunt sequi, doloremque necessitatibus soluta inventore debitis! Atque, obcaecati maxime.');
+INSERT INTO section_03_content (title, content) VALUES ('Title sec 3', 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque accusamus placeat omnis dignissimos odit temporibus rerum ipsum doloribus id aperiam nesciunt sequi, doloremque necessitatibus soluta inventore debitis! Atque, obcaecati maxime.');

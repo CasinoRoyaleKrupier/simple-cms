@@ -50,8 +50,8 @@ header article {
     transition: opacity .2s ease-in-out,  transform .1s ease-in-out;
 }
 
-#previous_content { left: 0; margin: auto auto auto 10px; }
-#next_content { right: 0; margin: auto 10px auto auto; }
+#previous_content { left: -50px; margin: auto auto auto 10px; }
+#next_content { right: -50px; margin: auto 10px auto auto; }
 #previous_content:hover, #next_content:hover { will-change: transform; }
 
 #previous_content::after, #next_content::after
