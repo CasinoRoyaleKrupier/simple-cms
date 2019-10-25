@@ -8,7 +8,7 @@ const page_reload = document.querySelectorAll(".page_reload");
 to_admin_panel.forEach( (tag_element) => { tag_element.addEventListener("click", () => location.href = 'administrator/site_panel.php'); });
 to_logout.forEach( (tag_element) => { tag_element.addEventListener("click", () => location.href = 'administrator/logout.php'); });
 scroll_to_sec_1.forEach( (tag_element) => { tag_element.addEventListener("click", () => scroll_to('#sec_01')); });
-scroll_to_sec_3.forEach( (tag_element) => { tag_element.addEventListener("click", () => scroll_to('#sec_02')); });
+scroll_to_sec_2.forEach( (tag_element) => { tag_element.addEventListener("click", () => scroll_to('#sec_02')); });
 scroll_to_sec_3.forEach( (tag_element) => { tag_element.addEventListener("click", () => scroll_to('#sec_03')); });
 page_reload.forEach( (tag_element) => { tag_element.addEventListener("click", () => location.reload()) });
 
