@@ -28,12 +28,5 @@
     font-weight: bold;
 }
 
-.section_title
-{
-    width: 100%;
-}
-
-.section_submit
-{
-    clear: both;
-}
+.section_title { width: 100%; }
+.section_submit { clear: both; }

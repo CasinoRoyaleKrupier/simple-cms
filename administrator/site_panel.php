@@ -74,11 +74,11 @@
                 </div>
                 <div class="section_right">
                     Panel 1
-                    <textarea style="height: 100px; margin-bottom: 15px" name="header_content_1" id=""><?php require_once "get_header_content.php"; echo $header_content_1; ?></textarea>
+                    <textarea style="margin-bottom: 15px" name="header_content_1" id=""><?php require_once "get_header_content.php"; echo $header_content_1; ?></textarea>
                     Panel 2
-                    <textarea style="height: 100px; margin-bottom: 15px" name="header_content_2" id=""><?php require_once "get_header_content.php"; echo $header_content_2; ?></textarea>
+                    <textarea style="margin-bottom: 15px" name="header_content_2" id=""><?php require_once "get_header_content.php"; echo $header_content_2; ?></textarea>
                     Panel 3
-                    <textarea style="height: 100px;" name="header_content_3" id=""><?php require_once "get_header_content.php"; echo $header_content_3; ?></textarea>
+                    <textarea  name="header_content_3" id=""><?php require_once "get_header_content.php"; echo $header_content_3; ?></textarea>
                 </div>
             </form>
             <form action="post_section_01_content.php" method="post">

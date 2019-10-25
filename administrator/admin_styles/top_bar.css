@@ -17,8 +17,6 @@
     width: 130px;
     padding: 10px 0px;
     display: block;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     text-align: center;
     text-decoration: none;
     color: #ffffff;
@@ -30,17 +28,6 @@
     background-color: #52525270;
 }
 
-.top_bar_button
-{
-    box-sizing: border-box;
-}
-
-.left
-{
-    float: left;
-}
-
-.right
-{
-    float: right;
-}
+.top_bar_button { box-sizing: border-box; }
+.left { float: left; }
+.right { float: right; }
