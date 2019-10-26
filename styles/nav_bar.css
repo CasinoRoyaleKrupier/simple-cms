@@ -55,5 +55,53 @@ nav#nav_vertical_panel
         margin: 15px;
         float: left;
         display: block;
+        position: relative;
+    }
+
+    .menu_button
+    {
+        width: 40px;
+        height: 3px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        background-color: #ffffff;
+    }
+
+    .menu_button::before
+    {
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        transform: translateY(-10px);
+        background-color: #ffffff;
+    }
+
+    .menu_button::after
+    {
+        content: "";
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        position: absolute;
+        transform: translateY(10px);
+        background-color: #ffffff;
+    }
+
+    #slide_horizontal_panel .menu_button,
+    #slide_horizontal_panel .menu_button::before,
+    #slide_horizontal_panel .menu_button::after,
+    #nav_vertical_panel .menu_button
+    {
+        background-color: #000000;
     }
 }

@@ -43,7 +43,11 @@
 
     <header class="bg_00">
         <nav id="nav_horizontal_panel">
-            <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_light.svg">
+            <div class="slide_menu_button show_vertical_panel">
+                <div class="menu_button"></div>
+            </div>
+
+            <!-- <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_light.svg"> -->
             <div class="button left to_sec_1">
                 <?php
                     require_once "administrator/get_section_01_content.php";
@@ -205,7 +209,10 @@
 
 
     <nav id="slide_horizontal_panel">
-        <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_dark.svg">
+        <div class="slide_menu_button show_vertical_panel">
+            <div class="menu_button"></div>
+        </div>
+        <!-- <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_dark.svg"> -->
         <div class="page_name right page_reload">
             <?php
                 require_once "administrator/get_page_title.php";
@@ -240,7 +247,10 @@
     </nav>
 
     <nav id="nav_vertical_panel">
-        <img id="hide_vertical_panel" class="slide_menu_button" src="images/slide_menu_dark.svg">
+        <div class="slide_menu_button hide_vertical_panel">
+            <div class="menu_button"></div>
+        </div>
+        <!-- <img id="hide_vertical_panel" class="slide_menu_button" src="images/slide_menu_dark.svg"> -->
         <div class="page_name right page_reload">
             <?php
                 require_once "administrator/get_page_title.php";

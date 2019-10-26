@@ -39,7 +39,7 @@ $(document).ready( () =>
         $("#screen_dimming").fadeIn();
     });
 
-    $("#hide_vertical_panel").click( () =>
+    $(".hide_vertical_panel").click( () =>
     {
         $("#nav_vertical_panel").slideUp();
         $("#screen_dimming").fadeOut();
