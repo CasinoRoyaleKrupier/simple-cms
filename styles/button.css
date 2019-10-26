@@ -78,4 +78,9 @@ footer .button
     {
         margin: 40px auto;
     }
+
+    #nav_vertical_panel #button_sec_01
+    {
+        margin-top: 80px;
+    }
 }

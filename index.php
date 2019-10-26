@@ -247,7 +247,7 @@
                 echo $page_title;
             ?>
         </div>
-        <div class="button" style="margin-top: 80px" id="button_sec_01">
+        <div class="button" id="button_sec_01">
             <?php
                 require_once "administrator/get_section_01_content.php";
                 echo $title_sec_01;

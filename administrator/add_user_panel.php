@@ -60,9 +60,6 @@
         <div class="nav_bar_button" style="background-color: #dd7600;">
             <a href="add_user_panel.php">Add user</a>
         </div>
-        <div class="nav_bar_button">
-            <a href="#">SQL query</a>
-        </div>
     </div>
 
     <div id="container">
