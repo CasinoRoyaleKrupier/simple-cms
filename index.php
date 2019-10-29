@@ -13,7 +13,7 @@
 
     <link rel="icon" href="images/favicon.png" sizes="16x16" type="image/png">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="administrator/admin_styles/top_bar.css">
     <link rel="stylesheet" href="styles/nav_bar.css">
@@ -27,8 +27,8 @@
 
     <link rel="stylesheet" href="styles/user_custom_style.php">
 
-    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script async src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
     <title>
