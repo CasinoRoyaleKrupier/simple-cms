@@ -6,6 +6,7 @@ nav#nav_horizontal_panel
     box-sizing: border-box;
     transition: 0.5s;
     position: absolute;
+    z-index: 2;
 }
 
 nav#slide_horizontal_panel
@@ -24,6 +25,7 @@ nav#slide_horizontal_panel
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     transition: 0.5s;
     position: fixed;
+    z-index: 3;
 }
 
 nav#nav_vertical_panel

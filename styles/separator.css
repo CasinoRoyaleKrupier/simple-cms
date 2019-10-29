@@ -1,18 +1,25 @@
 .separator
 {
-    background-color: #f7f7f7;
     width: 100%;
     height: 400px;
+    position: relative;
 }
 
 .separator_title
 {
+    width: 100%;
     height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 60px;
+    right: 0;
+    margin: auto;
+    position: absolute;
     color: #000;
     font-size: 95px;
     font-weight: bolder;
-    padding-top: 300px;
-    margin-left: 100px;
+    /* padding-top: 300px;
+    margin-left: 100px; */
 }
 
 @media(max-width: 1000px)
@@ -21,11 +28,11 @@
 
     .separator_title
     {
-        height: 100px;
+        width: 100%;
+        height: 50px;
+        left: 20px;
         color: #000;
-        font-size: 95px;
+        font-size: 50px;
         font-weight: bolder;
-        padding-top: 100px;
-        margin-left: 20px;
     }
 }

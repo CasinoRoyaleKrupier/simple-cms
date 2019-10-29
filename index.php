@@ -46,8 +46,6 @@
             <div class="slide_menu_button show_vertical_panel">
                 <div class="menu_button"></div>
             </div>
-
-            <!-- <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_light.svg"> -->
             <div class="button left to_sec_1">
                 <?php
                     require_once "administrator/get_section_01_content.php";
@@ -115,7 +113,7 @@
                 require_once "administrator/get_section_01_content.php";
                 echo $title_sec_01;
             ?>
-        </div> <hr>
+        </div>
     </div>
 
     <section>
@@ -136,7 +134,6 @@
                 echo $title_sec_02;
             ?>
         </div>
-        <hr>
     </div>
 
     <section>
@@ -157,7 +154,6 @@
                 echo $title_sec_03;
             ?>
         </div>
-        <hr>
     </div>
 
     <section>
@@ -212,7 +208,6 @@
         <div class="slide_menu_button show_vertical_panel">
             <div class="menu_button"></div>
         </div>
-        <!-- <img class="slide_menu_button show_vertical_panel" src="images/slide_menu_dark.svg"> -->
         <div class="page_name right page_reload">
             <?php
                 require_once "administrator/get_page_title.php";
@@ -250,7 +245,6 @@
         <div class="slide_menu_button hide_vertical_panel">
             <div class="menu_button"></div>
         </div>
-        <!-- <img id="hide_vertical_panel" class="slide_menu_button" src="images/slide_menu_dark.svg"> -->
         <div class="page_name right page_reload">
             <?php
                 require_once "administrator/get_page_title.php";
