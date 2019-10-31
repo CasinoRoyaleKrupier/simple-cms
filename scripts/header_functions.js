@@ -3,9 +3,21 @@ const next_transform = document.querySelector("#next_content");
 
 prev_transform.addEventListener("mousedown", () => prev_transform.style.transform = "translateX(-5px)");
 prev_transform.addEventListener("mouseup", () => prev_transform.style.transform = "translateX(0)");
+prev_transform.addEventListener("click", () => previous_header_content());
+window.addEventListener("keydown", event => {
+    if (event.isComposing || event.keyCode === 37) {
+        previous_header_content();
+    }
+});
 
 next_transform.addEventListener("mousedown", () => next_transform.style.transform = "translateX(5px)");
 next_transform.addEventListener("mouseup", () => next_transform.style.transform = "translateX(0)");
+next_transform.addEventListener("click", () => next_header_content());
+window.addEventListener("keydown", event => {
+    if (event.isComposing || event.keyCode === 39) {
+        next_header_content();
+    }
+});
 
 const next_header_content = () =>
 {

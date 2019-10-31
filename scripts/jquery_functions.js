@@ -44,20 +44,4 @@ $(document).ready( () =>
         $("#nav_vertical_panel").slideUp();
         $("#screen_dimming").fadeOut();
     });
-
-    $("#next_content").click( () =>
-    {
-        next_header_content();
-    });
-
-    $("#previous_content").click( () =>
-    {
-        previous_header_content();
-    });
-
-    $("body").keydown( (key) =>
-    {
-        if(key.keyCode == 37) previous_header_content(); // Left arrow key
-        else if(key.keyCode == 39) next_header_content();// Right arrow key
-    });
 });
