@@ -18,6 +18,7 @@
     {
         $old_password = $_POST['old_password'];
         $new_password = $_POST['new_password'];
+        $user = $_SESSION['user'];
 
         if (($old_password == "") || ($new_password == ""))
         {
@@ -25,7 +26,7 @@
             exit();
         }
         $hash_pass = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "UPDATE `administrators` SET `administrators`.`pass` = '$hash_pass' WHERE `administrators`.`pass` = '$old_password' AND `administrators`.`username` = '$_SESSION['user']';";
+        $sql = "UPDATE `administrators` SET `administrators`.`pass` = '$hash_pass' WHERE `administrators`.`pass` = '$old_password' AND `administrators`.`username` = '$user';";
 
         if ( $connection->query($sql) != true )
         {
