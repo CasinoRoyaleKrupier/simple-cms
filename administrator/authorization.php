@@ -28,7 +28,7 @@
             {
                 $row = $result->fetch_assoc();
 
-                $is_verify = password_verify($password, $row['pass'])
+                $is_verify = password_verify($password, $row['pass']);
                 if ($is_verify)
                 {
                     $_SESSION['logged'] = true;
