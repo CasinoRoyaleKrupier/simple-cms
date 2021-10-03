@@ -29,7 +29,7 @@
                 $row = $result->fetch_assoc();
 
                 $hash_pass = password_hash($password, PASSWORD_DEFAULT);
-                if ($hash_pass == $row['pass']))
+                if ($hash_pass == $row['pass'])
                 //if (password_verify($password, $row['pass']))
                 {
                     $_SESSION['logged'] = true;
