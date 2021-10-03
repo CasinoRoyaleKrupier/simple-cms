@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="admin_styles/sections.css">
     <link rel="stylesheet" href="admin_styles/inputs.css">
 
-    <title><?php require_once "get_page_title.php"; echo $page_title; ?> - panel administration</title>
+    <title><?php require_once "get_page_title.php"; echo $page_title; ?> - CSS panel</title>
 </head>
 <body>
     <div id="top_bar">
