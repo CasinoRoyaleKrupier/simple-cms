@@ -21,13 +21,16 @@
 
         $login = htmlentities($login, ENT_QUOTES, "UTF-8");
 
-        if ( $result = $connection->query(sprintf("SELECT * FROM administrators WHERE username = '%s'", mysqli_real_escape_string($connection, $login))))
+        if ( $result = $connection->query(sprintf("SELECT * FROM `administrators` WHERE `username` = '%s'", mysqli_real_escape_string($connection, $login))))
         {
             $user_count = $result->num_rows;
             if ($user_count > 0)
             {
                 $row = $result->fetch_assoc();
-                if (password_verify($password, $row['pass']))
+
+                $hash_pass = password_hash($password, PASSWORD_DEFAULT);
+                if ($hash_pass == $row['pass']))
+                //if (password_verify($password, $row['pass']))
                 {
                     $_SESSION['logged'] = true;
 
