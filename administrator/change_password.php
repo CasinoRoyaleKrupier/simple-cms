@@ -26,7 +26,7 @@
             exit();
         }
         $hash_pass = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "UPDATE `administrators` SET `administrators`.`pass` = '$hash_pass' WHERE WHERE `administrators`.`username` = '$user';";
+        $sql = "UPDATE `administrators` SET `administrators`.`pass` = '$hash_pass' WHERE `administrators`.`username` = '$user';";
 
         if ( $connection->query($sql) != true )
         {
