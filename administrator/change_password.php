@@ -22,6 +22,7 @@
 
         if (($old_password == "") || ($new_password == ""))
         {
+            $connection->close();
             header('Location: user_panel.php');
             exit();
         }
@@ -36,7 +37,11 @@
 
         }
         else
+        {
+            $connection->close();
             header('Location: user_panel.php');
+            exit();
+        }
 
         $connection->close();
         header('Location: logout.php');
