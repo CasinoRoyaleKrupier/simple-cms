@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="admin_styles/login_panel.css">
 
-    <title>Document</title>
+    <title><?php require_once "get_page_title.php"; echo $page_title; ?> - admin login</title>
 </head>
 <body>
     <div id="container">

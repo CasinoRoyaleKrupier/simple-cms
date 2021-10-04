@@ -18,7 +18,7 @@
 
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
-    $hash_pass = password_hash($password, PASSWORD_DEFAULT);
+    $hash_pass = md5($password);
 
     $email = $_POST['e-mail'];
     $confirm_email = $_POST['confirm_e-mail'];

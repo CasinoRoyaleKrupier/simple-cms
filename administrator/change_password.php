@@ -18,15 +18,14 @@
     {
         $old_password = $_POST['old_password'];
         $new_password = $_POST['new_password'];
-        $user = $_SESSION['user'];
 
         if (($old_password == "") || ($new_password == ""))
         {
             header('Location: user_panel.php');
             exit();
         }
-        $hash_pass = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "UPDATE `administrators` SET `pass` = '$hash_pass' WHERE `administrators`.`username` = '$user';";
+        $hash_pass = md5($password);
+        $sql = "UPDATE `administrators` SET `pass` = '$hash_pass' WHERE `administrators`.`id` = '$_SESSION['id']';";
 
         if ( $connection->query($sql) != true )
         {
