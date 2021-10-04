@@ -28,13 +28,15 @@
 
         if(password_verify($old_password, $_SESSION['password']))
         {
-            $hash_pass = password_hash($password, PASSWORD_DEFAULT);
+            $hash_pass = password_hash($new_password, PASSWORD_DEFAULT);
             $sql = "UPDATE `administrators` SET `pass` = '$hash_pass' WHERE `administrators`.`username` = '$user';";
 
             if ( $connection->query($sql) != true )
                 echo "Error: " . $connection->connect_errno;
 
         }
+        else
+            header('Location: user_panel.php');
 
         $connection->close();
         header('Location: logout.php');
