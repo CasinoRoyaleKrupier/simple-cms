@@ -28,7 +28,6 @@
             {
                 $row = $result->fetch_assoc();
 
-                // $is_verify = password_verify($password, $row['pass']);
                 if (md5($password) == $row['pass'])
                 {
                     $_SESSION['logged'] = true;
