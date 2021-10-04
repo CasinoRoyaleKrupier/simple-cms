@@ -28,14 +28,14 @@
             {
                 $row = $result->fetch_assoc();
 
-                $is_verify = password_verify($password, $row['pass']);
-                if ($is_verify)
+                if (password_verify($password, $row['pass']))
                 {
                     $_SESSION['logged'] = true;
 
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['user'] = $row['username'];
                     $_SESSION['email'] = $row['mail'];
+                    $_SESSION['password'] = $row['pass'];
 
                     unset($_SESSION['error']);
                     header('Location: admin_panel.php');

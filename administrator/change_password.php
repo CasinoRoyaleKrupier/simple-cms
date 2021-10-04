@@ -26,27 +26,14 @@
             exit();
         }
 
-        if ( $result = $connection->query(sprintf("SELECT * FROM `administrators` WHERE `username` = '%s'", mysqli_real_escape_string($connection, $login))))
+        if(password_verify($old_password, $_SESSION['password']))
         {
-            $user_count = $result->num_rows;
-            if ($user_count > 0)
-            {
-                $row = $result->fetch_assoc();
+            $hash_pass = password_hash($password, PASSWORD_DEFAULT);
+            $sql = "UPDATE `administrators` SET `pass` = '$hash_pass' WHERE `administrators`.`username` = '$user';";
 
-                $is_verify = password_verify($old_password, $row['pass']);
-                if ($is_verify)
-                {
-                    $hash_pass = password_hash($new_password, PASSWORD_DEFAULT);
-                    if ( $connection->query("UPDATE `administrators` SET `pass` = '$hash_pass' WHERE `administrators`.`username` = '$user';") != true )
-                    {
-                        echo "Error: " . $connection->connect_errno;
-                    }
-                }
-                else
-                {
-                    header('Location: index.php');
-                }
-            }
+            if ( $connection->query($sql) != true )
+                echo "Error: " . $connection->connect_errno;
+
         }
 
         $connection->close();
